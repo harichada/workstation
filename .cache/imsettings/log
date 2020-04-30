@@ -1,0 +1,72 @@
+[ 1538175180.991449]: IMSettings-Daemon[7800]: INFO: Starting imsettings-daemon...
+[ 1538175180.995449]: IMSettings-Daemon[7800]: INFO:   [HOME=/home/hchada/.config/imsettings]
+[ 1538175180.998449]: IMSettings-Daemon[7800]: INFO:   [XINPUTRCDIR=/etc/X11/xinit/]
+[ 1538175181.001449]: IMSettings-Daemon[7800]: INFO:   [XINPUTDIR=/etc/X11/xinit/xinput.d/]
+
+[ 1538175181.005449]: IMSettings-Daemon[7800]: INFO:   [MODULEDIR=/usr/lib/imsettings]
+
+[ 1538175181.008449]: IMSettings-Daemon[7800]: INFO:   [MODULES=lxde, mate-gsettings, gsettings, xfce, qt, cinnamon-gsettings]
+
+
+[ 1538175181.025449]: IMSettings-Cinnamon-GSettings backend[7800]: WARNING **: Settings schema 'org.cinnamon.desktop.interface' is not installed.
+
+[ 1538175181.029449]: IMSettings-Qt backend[7800]: WARNING **: Unable to read the Qt config file: No such file or directory
+
+[ 1538175181.271449]: IMSettings-LXDE backend[7800]: WARNING **: Unable to load the lxde configuration file.
+
+[ 1538175181.456449]: IMSettings-Cinnamon-GSettings backend[7800]: WARNING **: Settings schema 'org.cinnamon.desktop.interface' is not installed.
+
+[ 1538175181.460449]: IMSettings-Qt backend[7800]: WARNING **: Unable to read the Qt config file: No such file or directory
+
+[ 1538175181.468449]: IMSettings-LXDE backend[7800]: WARNING **: Unable to load the lxde configuration file.
+imsettings information
+==========================
+XINPUTRC: N/A
+Is DBus enabled: yes
+Is imsettings enabled: yes
+Is GTK+ supported: no
+Is Qt supported: 
+[ 1538175181.914449]: IMSettings-Cinnamon-GSettings backend[7800]: WARNING **: Settings schema 'org.cinnamon.desktop.interface' is not installed.
+
+[ 1538175181.919449]: IMSettings-Qt backend[7800]: WARNING **: Unable to read the Qt config file: No such file or directory
+
+[ 1538175181.930449]: IMSettings-LXDE backend[7800]: WARNING **: Unable to load the lxde configuration file.
+
+[ 1538175181.991449]: IMSettings-Cinnamon-GSettings backend[7800]: WARNING **: Settings schema 'org.cinnamon.desktop.interface' is not installed.
+
+[ 1538175181.997449]: IMSettings-Qt backend[7800]: WARNING **: Unable to read the Qt config file: No such file or directory
+
+[ 1538175182.008449]: IMSettings-LXDE backend[7800]: WARNING **: Unable to load the lxde configuration file.
+yes
+DESKTOP: X-Cygwin
+GUESS_DESKTOP: $XDG_CURRENT_DESKTOP
+DISABLE_IMSETTINGS: 
+IMSETTINGS_DISABLE_DESKTOP_CHECK: 
+DBUS_SESSION_BUS_ADDRESS: unix:path=/tmp/dbus-RrNoJNOre4,guid=a746cee6aa089a54b35fe2165baeb0cc
+GTK_IM_MODULE: 
+QT_IM_MODULE: 
+XMODIFIERS: @im=none
+IMSETTINGS_MODULE: none
+IMSETTINGS_INTEGRATE_DESKTOP: no
+
+
+[ 1538175182.192449]: IMSettings-Cinnamon-GSettings backend[7800]: WARNING **: Settings schema 'org.cinnamon.desktop.interface' is not installed.
+
+[ 1538175182.196449]: IMSettings-Qt backend[7800]: WARNING **: Unable to read the Qt config file: No such file or directory
+
+[ 1538175182.204449]: IMSettings-LXDE backend[7800]: WARNING **: Unable to load the lxde configuration file.
+[ 1538175182.216449]: IMSettings-Daemon[7800]: INFO: Attempting to switch IM to none [lang=en_US.UTF-8, desktop=X-Cygwin, update=false]
+[ 1538175182.802449]: IMSettings-Daemon[7800]: INFO:   no need to invoke any auxiliary process for none
+[ 1538175182.808449]: IMSettings-Daemon[7800]: INFO:   no need to invoke any main process for none
+
+[ 1538175182.812449]: IMSettings-Cinnamon-GSettings backend[7800]: WARNING **: Settings schema 'org.cinnamon.desktop.interface' is not installed.
+
+[ 1538175182.816449]: IMSettings-Qt backend[7800]: WARNING **: Unable to read the Qt config file: No such file or directory
+[ 1538175182.822449]: IMSettings-XFCE backend[7800]: INFO: Setting up gtk-im-context-simple:xim as gtk+ immodule
+[ 1538175182.827449]: IMSettings-GSettings backend[7800]: INFO: Setting up gtk-im-context-simple:xim as gtk+ immodule
+[ 1538175182.834449]: IMSettings-MATE-GSettings backend[7800]: INFO: Setting up gtk-im-context-simple:xim as gtk+ immodule
+
+[ 1538175182.839449]: IMSettings-LXDE backend[7800]: WARNING **: Unable to read the LXDE configuration file.
+[ 1538175273.347449]: IMSettings-LXDE backend[7800]: INFO: Setting up gtk-im-context-simple as gtk+ immodule
+[ 1538175273.368449]: IMSettings-Daemon[7800]: INFO: Release the ownership of com.redhat.imsettings
+

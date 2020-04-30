@@ -1,0 +1,438 @@
+[Fri Sep 28 15:24:37 2018 : 199449] speechd:   Speech Dispatcher Logging to file /home/hchada/.cache/speech-dispatcher/log//speech-dispatcher.log
+[Fri Sep 28 15:24:37 2018 : 213449] speechd:  Configuration has been read from "/etc/speech-dispatcher/speechd.conf"
+[Fri Sep 28 15:24:37 2018 : 259449] speechd:  Initializing output module cicero with binary /usr/lib/speech-dispatcher-modules/sd_cicero.exe and configuration /etc/speech-dispatcher/modules/cicero.conf
+[Fri Sep 28 15:24:37 2018 : 259449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//cicero.log
+[Fri Sep 28 15:24:37 2018 : 270449] speechd:  Module cicero loaded.
+[Fri Sep 28 15:24:37 2018 : 386449] speechd:  Module cicero started successfully with message: 
+---------------
+Cicero initialized successfully.
+---------------
+
+[Fri Sep 28 15:24:37 2018 : 669449] speechd:  Initializing output module dummy with binary /usr/lib/speech-dispatcher-modules/sd_dummy.exe and configuration /etc/speech-dispatcher/modules/dummy.conf
+[Fri Sep 28 15:24:37 2018 : 669449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//dummy.log
+[Fri Sep 28 15:24:37 2018 : 676449] speechd:  Module dummy loaded.
+[Fri Sep 28 15:24:37 2018 : 871449] speechd:  Module dummy started successfully with message: 
+---------------
+Everything ok so far.
+---------------
+
+[Fri Sep 28 15:24:38 2018 : 140449] speechd:  Initializing output module espeak with binary /usr/lib/speech-dispatcher-modules/sd_espeak.exe and configuration /etc/speech-dispatcher/modules/espeak.conf
+[Fri Sep 28 15:24:38 2018 : 164449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//espeak.log
+[Fri Sep 28 15:24:38 2018 : 487449] speechd:  Module espeak loaded.
+[Fri Sep 28 15:24:45 2018 : 446449] speechd:  Module espeak started successfully with message: 
+---------------
+Espeak: Initialized successfully.
+---------------
+
+[Fri Sep 28 15:24:45 2018 : 509449] speechd:  Initializing output module festival with binary /usr/lib/speech-dispatcher-modules/sd_festival.exe and configuration /etc/speech-dispatcher/modules/festival.conf
+[Fri Sep 28 15:24:45 2018 : 509449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//festival.log
+[Fri Sep 28 15:24:45 2018 : 518449] speechd:  Module festival loaded.
+[Fri Sep 28 15:24:46 2018 : 630449] speechd: ERROR: Module festival failed to initialize. Reason: 
+---------------
+Communicating with Festival through a socket. Can't connect to Festival server. Check your configuration in etc/speechd-modules/festival.conf for the specified host and port and check if Festival is really running there, e.g. with telnet. Please see documentation for more info.
+---------------
+
+[Fri Sep 28 15:24:46 2018 : 630449] speechd:  Initializing output module flite with binary /usr/lib/speech-dispatcher-modules/sd_flite.exe and configuration /etc/speech-dispatcher/modules/flite.conf
+[Fri Sep 28 15:24:46 2018 : 631449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//flite.log
+[Fri Sep 28 15:24:46 2018 : 639449] speechd:  Module flite loaded.
+[Fri Sep 28 15:24:48 2018 : 972449] speechd:  Module flite started successfully with message: 
+---------------
+Flite initialized successfully.
+---------------
+
+[Fri Sep 28 15:24:49 2018 : 157449] speechd:  Initializing output module generic with binary /usr/lib/speech-dispatcher-modules/sd_generic.exe and configuration /etc/speech-dispatcher/modules/generic.conf
+[Fri Sep 28 15:24:49 2018 : 157449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//generic.log
+[Fri Sep 28 15:24:49 2018 : 207449] speechd:  Module generic loaded.
+[Fri Sep 28 15:24:49 2018 : 731449] speechd:  Module generic started successfully with message: 
+---------------
+Everything ok so far.
+---------------
+
+[Fri Sep 28 15:24:50 2018 : 391449] speechd:   Speech Dispatcher Logging to file /home/hchada/.cache/speech-dispatcher/log//speech-dispatcher.log
+[Fri Sep 28 15:24:50 2018 : 391449] speechd:   Speech Dispatcher started with 5 output modules
+[Fri Sep 28 15:24:51 2018 : 275449] speechd: Speech Dispatcher started and waiting for clients ...
+[Fri Sep 28 15:24:52 2018 : 70449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:24:52 2018 : 72449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-afrikaans af none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-aragonese an none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-bulgarian bg none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-bosnian bs none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-catalan ca none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-czech cs none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-welsh cy none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-danish da none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-german de none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-greek el none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-default en none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-english en gb|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-en-scottish en sc|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-english-north en uk-north|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-english_rp en uk-rp|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-english_wmids en uk-wmids|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-english-us en us|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-en-westindies en wi|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-esperanto eo none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-spanish es none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-spanish-latin-am es la|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-estonian et none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-Farsi fa none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-Farsi-Pinglish fa pin|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-finnish fi none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-french-Belgium fr be|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-french fr fr|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-irish-gaeilge ga none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-greek-ancient grc none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-hindi hi none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-croatian hr none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-hungarian hu none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-armenian hy none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-armenian-west hy west|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-indonesian id none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-icelandic is none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-italian it none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-lojban jbo none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-georgian ka none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-kannada kn none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-kurdish ku none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-latin la none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-lithuanian lt none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-latvian lv none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-macedonian mk none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-malayalam ml none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-malay ms none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-nepali ne none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-dutch nl none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-norwegian no none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-punjabi pa none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-polish pl none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-brazil pt br|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-portugal pt pt|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-romanian ro none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-russian ru none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-slovak sk none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-albanian sq none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-serbian sr none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-swedish sv none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-swahili-test sw none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-tamil ta none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-turkish tr none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-vietnam vi none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-vietnam_hue vi hue|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-vietnam_sgn vi sgn|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-Mandarin zh none|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200-cantonese zh yue|
+[Fri Sep 28 15:24:52 2018 : 79449] speechd: LINE here:|200 OK VOICE LIST SENT|
+[Fri Sep 28 15:24:52 2018 : 386449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:24:52 2018 : 388449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:28:20 2018 : 487449] speechd: Terminating...
+[Fri Sep 28 15:28:20 2018 : 487449] speechd:  Closing open connections...
+[Fri Sep 28 15:28:20 2018 : 496449] speechd:  Closing open output modules...
+[Fri Sep 28 15:28:20 2018 : 496449] speechd:   Unloading module name=cicero
+[Fri Sep 28 15:28:20 2018 : 496449] speechd:   Closing module "cicero"...
+[Fri Sep 28 15:28:20 2018 : 497449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:28:20 2018 : 497449] speechd:   Unloading module name=dummy
+[Fri Sep 28 15:28:20 2018 : 497449] speechd:   Closing module "dummy"...
+[Fri Sep 28 15:28:20 2018 : 498449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:28:20 2018 : 498449] speechd:   Unloading module name=espeak
+[Fri Sep 28 15:28:20 2018 : 498449] speechd:   Closing module "espeak"...
+[Fri Sep 28 15:28:20 2018 : 499449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:28:20 2018 : 499449] speechd:   Unloading module name=flite
+[Fri Sep 28 15:28:20 2018 : 499449] speechd:   Closing module "flite"...
+[Fri Sep 28 15:28:20 2018 : 500449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:28:20 2018 : 500449] speechd:   Unloading module name=generic
+[Fri Sep 28 15:28:20 2018 : 500449] speechd:   Closing module "generic"...
+[Fri Sep 28 15:28:20 2018 : 501449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:28:20 2018 : 501449] speechd:  Closing server connection...
+[Fri Sep 28 15:28:20 2018 : 506449] speechd:  Speech Dispatcher terminated correctly
+[Fri Sep 28 15:30:41 2018 : 493449] speechd:   Speech Dispatcher Logging to file /home/hchada/.cache/speech-dispatcher/log//speech-dispatcher.log
+[Fri Sep 28 15:30:41 2018 : 494449] speechd:  Configuration has been read from "/etc/speech-dispatcher/speechd.conf"
+[Fri Sep 28 15:30:41 2018 : 494449] speechd:  Initializing output module cicero with binary /usr/lib/speech-dispatcher-modules/sd_cicero.exe and configuration /etc/speech-dispatcher/modules/cicero.conf
+[Fri Sep 28 15:30:41 2018 : 494449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//cicero.log
+[Fri Sep 28 15:30:41 2018 : 609449] speechd:  Module cicero loaded.
+[Fri Sep 28 15:30:41 2018 : 712449] speechd:  Module cicero started successfully with message: 
+---------------
+Cicero initialized successfully.
+---------------
+
+[Fri Sep 28 15:30:43 2018 : 173449] speechd:  Initializing output module dummy with binary /usr/lib/speech-dispatcher-modules/sd_dummy.exe and configuration /etc/speech-dispatcher/modules/dummy.conf
+[Fri Sep 28 15:30:43 2018 : 173449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//dummy.log
+[Fri Sep 28 15:30:43 2018 : 201449] speechd:  Module dummy loaded.
+[Fri Sep 28 15:30:43 2018 : 285449] speechd:  Module dummy started successfully with message: 
+---------------
+Everything ok so far.
+---------------
+
+[Fri Sep 28 15:30:43 2018 : 379449] speechd:  Initializing output module espeak with binary /usr/lib/speech-dispatcher-modules/sd_espeak.exe and configuration /etc/speech-dispatcher/modules/espeak.conf
+[Fri Sep 28 15:30:43 2018 : 379449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//espeak.log
+[Fri Sep 28 15:30:43 2018 : 565449] speechd:  Module espeak loaded.
+[Fri Sep 28 15:30:43 2018 : 926449] speechd:  Module espeak started successfully with message: 
+---------------
+Espeak: Initialized successfully.
+---------------
+
+[Fri Sep 28 15:30:44 2018 : 113449] speechd:  Initializing output module festival with binary /usr/lib/speech-dispatcher-modules/sd_festival.exe and configuration /etc/speech-dispatcher/modules/festival.conf
+[Fri Sep 28 15:30:44 2018 : 113449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//festival.log
+[Fri Sep 28 15:30:44 2018 : 226449] speechd:  Module festival loaded.
+[Fri Sep 28 15:30:45 2018 : 395449] speechd: ERROR: Module festival failed to initialize. Reason: 
+---------------
+Communicating with Festival through a socket. Can't connect to Festival server. Check your configuration in etc/speechd-modules/festival.conf for the specified host and port and check if Festival is really running there, e.g. with telnet. Please see documentation for more info.
+---------------
+
+[Fri Sep 28 15:30:45 2018 : 395449] speechd:  Initializing output module flite with binary /usr/lib/speech-dispatcher-modules/sd_flite.exe and configuration /etc/speech-dispatcher/modules/flite.conf
+[Fri Sep 28 15:30:45 2018 : 395449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//flite.log
+[Fri Sep 28 15:30:45 2018 : 450449] speechd:  Module flite loaded.
+[Fri Sep 28 15:30:45 2018 : 552449] speechd:  Module flite started successfully with message: 
+---------------
+Flite initialized successfully.
+---------------
+
+[Fri Sep 28 15:30:45 2018 : 644449] speechd:  Initializing output module generic with binary /usr/lib/speech-dispatcher-modules/sd_generic.exe and configuration /etc/speech-dispatcher/modules/generic.conf
+[Fri Sep 28 15:30:45 2018 : 644449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//generic.log
+[Fri Sep 28 15:30:45 2018 : 701449] speechd:  Module generic loaded.
+[Fri Sep 28 15:30:45 2018 : 761449] speechd:  Module generic started successfully with message: 
+---------------
+Everything ok so far.
+---------------
+
+[Fri Sep 28 15:30:45 2018 : 928449] speechd:   Speech Dispatcher Logging to file /home/hchada/.cache/speech-dispatcher/log//speech-dispatcher.log
+[Fri Sep 28 15:30:45 2018 : 928449] speechd:   Speech Dispatcher started with 5 output modules
+[Fri Sep 28 15:30:46 2018 : 15449] speechd: Speech Dispatcher started and waiting for clients ...
+[Fri Sep 28 15:30:47 2018 : 25449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:30:47 2018 : 27449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-afrikaans af none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-aragonese an none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-bulgarian bg none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-bosnian bs none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-catalan ca none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-czech cs none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-welsh cy none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-danish da none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-german de none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-greek el none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-default en none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-english en gb|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-en-scottish en sc|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-english-north en uk-north|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-english_rp en uk-rp|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-english_wmids en uk-wmids|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-english-us en us|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-en-westindies en wi|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-esperanto eo none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-spanish es none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-spanish-latin-am es la|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-estonian et none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-Farsi fa none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-Farsi-Pinglish fa pin|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-finnish fi none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-french-Belgium fr be|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-french fr fr|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-irish-gaeilge ga none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-greek-ancient grc none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-hindi hi none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-croatian hr none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-hungarian hu none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-armenian hy none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-armenian-west hy west|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-indonesian id none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-icelandic is none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-italian it none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-lojban jbo none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-georgian ka none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-kannada kn none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-kurdish ku none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-latin la none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-lithuanian lt none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-latvian lv none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-macedonian mk none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-malayalam ml none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-malay ms none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-nepali ne none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-dutch nl none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-norwegian no none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-punjabi pa none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-polish pl none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-brazil pt br|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-portugal pt pt|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-romanian ro none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-russian ru none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-slovak sk none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-albanian sq none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-serbian sr none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-swedish sv none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-swahili-test sw none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-tamil ta none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-turkish tr none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-vietnam vi none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-vietnam_hue vi hue|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-vietnam_sgn vi sgn|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-Mandarin zh none|
+[Fri Sep 28 15:30:47 2018 : 32449] speechd: LINE here:|200-cantonese zh yue|
+[Fri Sep 28 15:30:47 2018 : 33449] speechd: LINE here:|200 OK VOICE LIST SENT|
+[Fri Sep 28 15:30:47 2018 : 44449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:30:47 2018 : 46449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:32:41 2018 : 960449] speechd: Terminating...
+[Fri Sep 28 15:32:41 2018 : 960449] speechd:  Closing open connections...
+[Fri Sep 28 15:32:41 2018 : 963449] speechd:  Closing open output modules...
+[Fri Sep 28 15:32:41 2018 : 963449] speechd:   Unloading module name=cicero
+[Fri Sep 28 15:32:41 2018 : 963449] speechd:   Closing module "cicero"...
+[Fri Sep 28 15:32:41 2018 : 964449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:32:41 2018 : 964449] speechd:   Unloading module name=dummy
+[Fri Sep 28 15:32:41 2018 : 964449] speechd:   Closing module "dummy"...
+[Fri Sep 28 15:32:41 2018 : 965449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:32:41 2018 : 965449] speechd:   Unloading module name=espeak
+[Fri Sep 28 15:32:41 2018 : 965449] speechd:   Closing module "espeak"...
+[Fri Sep 28 15:32:41 2018 : 966449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:32:41 2018 : 966449] speechd:   Unloading module name=flite
+[Fri Sep 28 15:32:41 2018 : 966449] speechd:   Closing module "flite"...
+[Fri Sep 28 15:32:41 2018 : 967449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:32:41 2018 : 967449] speechd:   Unloading module name=generic
+[Fri Sep 28 15:32:41 2018 : 967449] speechd:   Closing module "generic"...
+[Fri Sep 28 15:32:41 2018 : 968449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:32:41 2018 : 968449] speechd:  Closing server connection...
+[Fri Sep 28 15:32:41 2018 : 972449] speechd:  Speech Dispatcher terminated correctly
+[Fri Sep 28 15:53:06 2018 : 637449] speechd:   Speech Dispatcher Logging to file /home/hchada/.cache/speech-dispatcher/log//speech-dispatcher.log
+[Fri Sep 28 15:53:06 2018 : 638449] speechd:  Configuration has been read from "/etc/speech-dispatcher/speechd.conf"
+[Fri Sep 28 15:53:06 2018 : 639449] speechd:  Initializing output module cicero with binary /usr/lib/speech-dispatcher-modules/sd_cicero.exe and configuration /etc/speech-dispatcher/modules/cicero.conf
+[Fri Sep 28 15:53:06 2018 : 639449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//cicero.log
+[Fri Sep 28 15:53:06 2018 : 650449] speechd:  Module cicero loaded.
+[Fri Sep 28 15:53:06 2018 : 673449] speechd:  Module cicero started successfully with message: 
+---------------
+Cicero initialized successfully.
+---------------
+
+[Fri Sep 28 15:53:08 2018 : 701449] speechd:  Initializing output module dummy with binary /usr/lib/speech-dispatcher-modules/sd_dummy.exe and configuration /etc/speech-dispatcher/modules/dummy.conf
+[Fri Sep 28 15:53:08 2018 : 701449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//dummy.log
+[Fri Sep 28 15:53:08 2018 : 739449] speechd:  Module dummy loaded.
+[Fri Sep 28 15:53:08 2018 : 930449] speechd:  Module dummy started successfully with message: 
+---------------
+Everything ok so far.
+---------------
+
+[Fri Sep 28 15:53:08 2018 : 999449] speechd:  Initializing output module espeak with binary /usr/lib/speech-dispatcher-modules/sd_espeak.exe and configuration /etc/speech-dispatcher/modules/espeak.conf
+[Fri Sep 28 15:53:08 2018 : 999449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//espeak.log
+[Fri Sep 28 15:53:09 2018 : 55449] speechd:  Module espeak loaded.
+[Fri Sep 28 15:53:09 2018 : 194449] speechd:  Module espeak started successfully with message: 
+---------------
+Espeak: Initialized successfully.
+---------------
+
+[Fri Sep 28 15:53:09 2018 : 279449] speechd:  Initializing output module festival with binary /usr/lib/speech-dispatcher-modules/sd_festival.exe and configuration /etc/speech-dispatcher/modules/festival.conf
+[Fri Sep 28 15:53:09 2018 : 279449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//festival.log
+[Fri Sep 28 15:53:09 2018 : 313449] speechd:  Module festival loaded.
+[Fri Sep 28 15:53:10 2018 : 859449] speechd: ERROR: Module festival failed to initialize. Reason: 
+---------------
+Communicating with Festival through a socket. Can't connect to Festival server. Check your configuration in etc/speechd-modules/festival.conf for the specified host and port and check if Festival is really running there, e.g. with telnet. Please see documentation for more info.
+---------------
+
+[Fri Sep 28 15:53:10 2018 : 859449] speechd:  Initializing output module flite with binary /usr/lib/speech-dispatcher-modules/sd_flite.exe and configuration /etc/speech-dispatcher/modules/flite.conf
+[Fri Sep 28 15:53:10 2018 : 859449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//flite.log
+[Fri Sep 28 15:53:10 2018 : 905449] speechd:  Module flite loaded.
+[Fri Sep 28 15:53:11 2018 : 41449] speechd:  Module flite started successfully with message: 
+---------------
+Flite initialized successfully.
+---------------
+
+[Fri Sep 28 15:53:11 2018 : 239449] speechd:  Initializing output module generic with binary /usr/lib/speech-dispatcher-modules/sd_generic.exe and configuration /etc/speech-dispatcher/modules/generic.conf
+[Fri Sep 28 15:53:11 2018 : 239449] speechd:   Output module is logging to file /home/hchada/.cache/speech-dispatcher/log//generic.log
+[Fri Sep 28 15:53:11 2018 : 285449] speechd:  Module generic loaded.
+[Fri Sep 28 15:53:11 2018 : 323449] speechd:  Module generic started successfully with message: 
+---------------
+Everything ok so far.
+---------------
+
+[Fri Sep 28 15:53:11 2018 : 473449] speechd:   Speech Dispatcher Logging to file /home/hchada/.cache/speech-dispatcher/log//speech-dispatcher.log
+[Fri Sep 28 15:53:11 2018 : 473449] speechd:   Speech Dispatcher started with 5 output modules
+[Fri Sep 28 15:53:11 2018 : 642449] speechd: Speech Dispatcher started and waiting for clients ...
+[Fri Sep 28 15:53:12 2018 : 668449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:53:12 2018 : 670449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-afrikaans af none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-aragonese an none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-bulgarian bg none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-bosnian bs none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-catalan ca none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-czech cs none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-welsh cy none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-danish da none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-german de none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-greek el none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-default en none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-english en gb|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-en-scottish en sc|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-english-north en uk-north|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-english_rp en uk-rp|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-english_wmids en uk-wmids|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-english-us en us|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-en-westindies en wi|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-esperanto eo none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-spanish es none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-spanish-latin-am es la|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-estonian et none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-Farsi fa none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-Farsi-Pinglish fa pin|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-finnish fi none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-french-Belgium fr be|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-french fr fr|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-irish-gaeilge ga none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-greek-ancient grc none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-hindi hi none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-croatian hr none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-hungarian hu none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-armenian hy none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-armenian-west hy west|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-indonesian id none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-icelandic is none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-italian it none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-lojban jbo none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-georgian ka none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-kannada kn none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-kurdish ku none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-latin la none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-lithuanian lt none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-latvian lv none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-macedonian mk none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-malayalam ml none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-malay ms none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-nepali ne none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-dutch nl none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-norwegian no none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-punjabi pa none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-polish pl none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-brazil pt br|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-portugal pt pt|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-romanian ro none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-russian ru none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-slovak sk none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-albanian sq none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-serbian sr none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-swedish sv none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-swahili-test sw none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-tamil ta none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-turkish tr none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-vietnam vi none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-vietnam_hue vi hue|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-vietnam_sgn vi sgn|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-Mandarin zh none|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200-cantonese zh yue|
+[Fri Sep 28 15:53:12 2018 : 675449] speechd: LINE here:|200 OK VOICE LIST SENT|
+[Fri Sep 28 15:53:12 2018 : 682449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:53:12 2018 : 684449] speechd: LINE here:|304 CANT LIST VOICES|
+[Fri Sep 28 15:54:38 2018 : 759449] speechd: Terminating...
+[Fri Sep 28 15:54:38 2018 : 759449] speechd:  Closing open connections...
+[Fri Sep 28 15:54:38 2018 : 767449] speechd:  Closing open output modules...
+[Fri Sep 28 15:54:38 2018 : 767449] speechd:   Unloading module name=cicero
+[Fri Sep 28 15:54:38 2018 : 767449] speechd:   Closing module "cicero"...
+[Fri Sep 28 15:54:38 2018 : 768449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:54:38 2018 : 768449] speechd:   Unloading module name=dummy
+[Fri Sep 28 15:54:38 2018 : 768449] speechd:   Closing module "dummy"...
+[Fri Sep 28 15:54:38 2018 : 769449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:54:38 2018 : 769449] speechd:   Unloading module name=espeak
+[Fri Sep 28 15:54:38 2018 : 769449] speechd:   Closing module "espeak"...
+[Fri Sep 28 15:54:38 2018 : 770449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:54:38 2018 : 770449] speechd:   Unloading module name=flite
+[Fri Sep 28 15:54:38 2018 : 770449] speechd:   Closing module "flite"...
+[Fri Sep 28 15:54:38 2018 : 771449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:54:38 2018 : 771449] speechd:   Unloading module name=generic
+[Fri Sep 28 15:54:38 2018 : 771449] speechd:   Closing module "generic"...
+[Fri Sep 28 15:54:38 2018 : 772449] speechd: ERROR: waitpid() failed when waiting for child (module).
+[Fri Sep 28 15:54:38 2018 : 772449] speechd:  Closing server connection...
+[Fri Sep 28 15:54:38 2018 : 777449] speechd:  Speech Dispatcher terminated correctly

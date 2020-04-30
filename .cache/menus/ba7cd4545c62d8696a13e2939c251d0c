@@ -1,0 +1,10933 @@
+1.2
+lxde-applications.menu+hidden
+16
+D/home/hchada/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/home/hchada/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/applications
+D/usr/share/applications/kde
+D/usr/share/applications/kde4
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/home/hchada/.config/menus/applications-merged
+F/home/hchada/.config/menus/lxde-applications.menu
+F/etc/xdg/menus/lxde-applications.menu
+Unity;MATE;GNOME-Flashback;Pantheon;KDE3;LXQt;X-Cygwin;
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+2
+0
++Accessories
+Accessories
+Desktop accessories
+applications-accessories
+lxde-utility.directory
+2
+0
+-mate-about.desktop
+About MATE
+Learn more about MATE
+mate
+
+7
+
+mate-about
+4
+64
+
+
+GTK;Core;Utility
+
+-xfce4-about.desktop
+About Xfce
+Information about the Xfce Desktop Environment
+help-about
+
+7
+
+xfce4-about
+0
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-gnome-activity-journal.desktop
+Activity Journal
+Browse a chronological log of your activities and easily find files, contacts, etc.
+gnome-activity-journal
+
+7
+Activity Journal
+gnome-activity-journal
+0
+0
+
+
+GTK;Utility
+
+-activity-log-manager.desktop
+Activity Log Manager
+Configure what gets logged in your Zeitgeist activity log
+activity-log-manager
+
+7
+Activity Log Manager
+activity-log-manager
+0
+-33
+
+
+GNOME;GTK;Utility
+
+-alarm-clock-applet.desktop
+Alarm Clock
+Wake up in the morning
+alarm-clock
+
+7
+
+alarm-clock-applet
+0
+0
+
+
+GNOME;GTK;Utility
+
+-xfce4-appfinder.desktop
+Application Finder
+Find and launch applications installed on your system
+gtk-find
+
+7
+
+xfce4-appfinder
+2
+0
+
+
+Utility;X-XFCE
+
+-org.gnome.FileRoller.desktop
+Archive Manager
+Create and modify an archive
+file-roller
+
+7
+
+file-roller %U
+2
+-5
+file-roller
+
+GTK;GNOME;Utility;Archiving;Compression;X-GNOME-Utilities
+zip,tar,extract,unpack
+-org.kde.ark.desktop
+Ark
+Work with file archives
+ark
+
+7
+Archiving Tool
+ark %U
+0
+0
+
+
+Qt;KDE;Utility;Archiving;Compression;X-KDE-Utilities-File
+
+-deja-dup-preferences.desktop
+Backups
+Change your backup settings
+deja-dup
+
+7
+
+deja-dup-preferences
+2
+-1
+deja-dup-preferences
+
+Settings;Utility;Archiving;GNOME;GTK;X-GNOME-SystemSettings
+déjà,deja,dup
+-deja-dup.desktop
+Backups
+
+deja-dup
+
+7
+
+deja-dup --backup
+6
+0
+deja-dup
+
+Utility;Archiving;GNOME;GTK
+
+-org.gnome.Calculator.desktop
+Calculator
+Perform arithmetic, scientific or financial calculations
+accessories-calculator
+
+7
+
+gnome-calculator
+2
+0
+
+
+GNOME;GTK;Utility;Calculator
+calculation,arithmetic,scientific,financial
+-gucharmap.desktop
+Character Map
+Insert special characters into documents
+accessories-character-map
+
+7
+
+gucharmap
+2
+0
+
+
+GNOME;GTK;Utility
+font,unicode
+-xfce4-clipman.desktop
+Clipman
+Clipboard manager
+xfce4-clipman-plugin
+
+7
+
+xfce4-clipman
+0
+10
+xfce4-clipman
+
+GTK;Utility;TrayIcon
+
+-org.gnome.clocks.desktop
+Clocks
+Clocks for world times, plus alarms, stopwatch and a timer
+org.gnome.clocks
+
+7
+Clocks
+gnome-clocks
+2
+0
+
+
+GNOME;GTK;Utility;Clock
+time,timer,alarm,world clock,stopwatch,time zone
+-convertall.desktop
+ConvertAll
+
+convertall
+
+7
+
+convertall
+0
+0
+convertall
+
+Calculator;Utility;Qt
+
+-eekboard.desktop
+Eekboard
+Virtual Keyboard
+eekboard
+
+7
+Eekboard Virtual Keyboard
+eekboard
+0
+0
+
+
+GTK;Utility
+
+-emoji-picker.desktop
+Emoji Picker
+An emoji selection tool
+/usr/share/ibus-typing-booster/icons/ibus-hunspell-table.svg
+
+7
+
+/usr/bin/emoji-picker
+2
+0
+
+
+GTK;Utility
+
+-engrampa.desktop
+Engrampa Archive Manager
+Create and modify an archive
+engrampa
+
+7
+Archive Manager
+engrampa %U
+2
+0
+engrampa
+
+GTK;Utility;Archiving;Compression
+MATE,archive,manager,compression
+-exo-file-manager.desktop
+File Manager
+Browse the file system
+system-file-manager
+
+7
+
+exo-open --launch FileManager %u
+2
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-org.kde.filelight.desktop
+Filelight
+View disk usage information
+filelight
+
+7
+Disk Usage Statistics
+filelight %f
+0
+0
+
+
+Qt;KDE;Utility
+
+-org.gnome.Nautilus.desktop
+Files
+Access and organize files
+org.gnome.Nautilus
+
+7
+
+nautilus --new-window %U
+2
+0
+
+
+GNOME;GTK;Utility;Core;FileManager
+folder,manager,explore,disk,filesystem
+-org.gnome.font-viewer.desktop
+Fonts
+View fonts on your system
+preferences-desktop-font
+
+7
+
+gnome-font-viewer %u
+2
+0
+
+
+GTK;GNOME;Utility;X-GNOME-Utilities
+fonts,fontface
+-galculator.desktop
+Galculator
+Perform simple and scientific calculations
+galculator
+
+7
+
+galculator
+2
+0
+
+
+Utility
+
+-gnome-commander.desktop
+GNOME Commander
+A two paned file manager
+gnome-commander
+
+7
+
+gnome-commander
+2
+0
+
+
+GNOME;GTK;Utility;FileManager
+file,manager,folder,explore,disk,filesystem
+-gpa.desktop
+gpa
+
+gpa
+
+7
+GNU Privacy Assistant
+gpa
+0
+0
+
+
+GTK;Application;Security;Utility
+
+-gvim.desktop
+GVim
+Edit text files
+gvim
+
+7
+Text Editor
+gvim -f %F
+2
+0
+gvim
+
+Utility;TextEditor
+Text,editor
+-yelp.desktop
+Help
+Get help with GNOME
+help-browser
+
+7
+
+yelp %u
+2
+34
+
+
+GNOME;GTK;Core;Documentation;Utility
+documentation,information,manual
+-highlight.desktop
+Highlight
+Converts source code to formatted text (HTML, RTF, TeX, LaTeX, SVG, BBCode, Pango Markup, XML) with syntax highlighting
+highlight
+
+7
+
+highlight-gui
+2
+0
+highlight-gui
+
+Utility;TextTools
+
+-gpicview.desktop
+Image Viewer
+View your images easily
+gpicview
+
+7
+Image Viewer
+gpicview %f
+2
+0
+
+
+Graphics;Utility;Core;GTK;Viewer;RasterGraphics;2DGraphics;Photography
+
+-juffed.desktop
+JuffEd text editor
+Advanced text editor
+juffed
+
+7
+Advanced text editor
+juffed %F
+0
+0
+
+
+Qt;Utility;TextEditor
+
+-org.kde.kate.desktop
+Kate
+KDE Advanced Text Editor
+kate
+
+7
+Advanced Text Editor
+kate -b %U
+2
+0
+
+
+Qt;KDE;Utility;TextEditor
+
+-org.kde.kcalc.desktop
+KCalc
+
+accessories-calculator
+
+7
+Scientific Calculator
+kcalc
+2
+0
+
+
+Qt;KDE;Utility;Calculator;X-KDE-Utilities-Desktop
+
+-org.kde.kcharselect.desktop
+KCharSelect
+Browse all unicode characters
+accessories-character-map
+
+7
+Character Selector
+kcharselect --qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Utility
+
+-org.kde.kdebugsettings.desktop
+KDebugSettings
+Configure debug output from Qt applications
+debug-run
+
+7
+Debug settings
+kdebugsettings
+4
+0
+
+
+Qt;KDE;Utility
+
+-keepassx.desktop
+KeePassX
+
+keepassx
+
+7
+Password Manager
+keepassx %f
+0
+0
+
+
+Qt;Utility
+
+-krb5-auth-dialog.desktop
+Kerberos Authentication
+Kerberos Network Authentication Dialog
+krb-valid-ticket
+
+7
+
+krb5-auth-dialog
+0
+0
+
+
+GNOME;GTK;Utility;Network
+kerberos,authentication
+-kde4-kfilereplace.desktop
+KFileReplace
+
+kfilereplace
+kfilereplace.desktop
+9
+Search & Replace Tool
+kfilereplace %i -caption %c
+0
+0
+
+
+Qt;KDE;Utility;X-KDE-Utilities-File
+
+-org.kde.kfind.desktop
+KFind
+
+kfind
+
+7
+Find Files/Folders
+kfind %u
+0
+4
+
+
+Qt;KDE;Utility
+
+-org.kde.kfontview.desktop
+KFontView
+
+kfontview
+
+7
+Font Viewer
+kfontview %U
+4
+0
+
+
+Qt;KDE;Utility
+
+-org.kde.kgpg.desktop
+KGpg
+A GnuPG frontend
+kgpg
+
+7
+Encryption Tool
+kgpg %U
+0
+0
+
+
+Qt;KDE;Utility;X-KDE-Utilities-PIM
+
+-org.kde.klipper.desktop
+Klipper
+A cut & paste history utility
+klipper
+
+7
+Clipboard Tool
+klipper
+0
+-5
+
+
+Qt;KDE;Utility;X-KDE-Utilities-Desktop
+
+-konsolekalendar.desktop
+KonsoleKalendar
+
+konsolekalendar
+
+7
+
+kdialog --sorry "konsolekalendar is a command-line only program.  Please read the handbook at help:/konsolekalendar for more info."
+4
+0
+
+
+Qt;KDE;Utility;X-KDE-More
+
+-org.kde.krename.desktop
+KRename
+A batch renamer
+krename
+
+7
+
+krename -qwindowtitle "%c" %i %U
+0
+0
+
+
+Qt;KDE;Utility
+
+-org.kde.kteatime.desktop
+KTeaTime
+
+kteatime
+
+7
+Tea Cooker
+kteatime
+0
+0
+
+
+Qt;KDE;Utility
+
+-org.kde.ktimer.desktop
+KTimer
+Desktop stopwatch
+ktimer
+
+7
+Countdown Launcher
+ktimer
+2
+0
+
+
+Qt;KDE;Utility
+
+-org.kde.kwrite.desktop
+KWrite
+KDE Text Editor
+kwrite
+
+7
+Text Editor
+kwrite %U
+2
+0
+
+
+Qt;KDE;Utility;TextEditor
+
+-leafpad.desktop
+Leafpad
+Simple text editor
+leafpad
+
+7
+
+leafpad %f
+0
+0
+
+
+GTK;Utility;TextEditor
+
+-alacarte.desktop
+Main Menu
+Add or remove applications from the main menu
+alacarte
+
+7
+
+alacarte
+2
+-5
+
+
+GNOME;Settings;DesktopSettings;Utility
+
+-mate-calc.desktop
+MATE Calculator
+Perform arithmetic, scientific or financial calculations
+accessories-calculator
+
+7
+Calculator
+mate-calc
+2
+0
+
+
+GTK;Utility;Calculator
+
+-mate-font-viewer.desktop
+MATE Font Viewer
+View fonts on your system
+preferences-desktop-font
+
+7
+
+mate-font-viewer %u
+2
+0
+
+
+GTK;Utility
+mate-control-center,MATE,font,viewer,preview,desktop,preferences
+-mate-search-tool.desktop
+MATE Search Tool
+Locate documents and folders on this computer by name or content
+system-search
+
+7
+
+mate-search-tool
+2
+64
+
+
+GTK;Utility;Core
+MATE,search,files,locate,documents,folders,computer,name,content,find,tool
+-mined.desktop
+MinEd
+
+mined.xpm
+
+7
+Text Editor
+umined %F
+0
+0
+
+
+TextEditor;Utility
+
+-mousepad.desktop
+Mousepad
+Simple Text Editor
+accessories-text-editor
+
+7
+Text Editor
+mousepad %F
+2
+0
+
+
+Utility;TextEditor;GTK
+
+-nedit.desktop
+NEdit
+
+nedit
+
+7
+
+nedit
+0
+0
+nedit
+
+Utility;TextEditor;Motif
+
+-xfce4-notes.desktop
+Notes
+Ideal for your quick notes
+xfce4-notes-plugin
+
+7
+
+xfce4-notes
+0
+10
+xfce4-notes
+
+GTK;Utility;TrayIcon
+
+-org.kde.okteta.desktop
+Okteta
+
+okteta
+
+7
+Hex Editor
+okteta %U
+0
+0
+
+
+Qt;KDE;Utility;X-KDE-Utilities-File
+
+-globaltime.desktop
+Orage Globaltime
+Show clocks from different countries
+orage_globaltime
+
+7
+Globaltime
+globaltime
+2
+0
+
+
+X-XFCE;Office;Clock;GTK;Utility
+
+-seahorse.desktop
+Passwords and Keys
+Manage your passwords and encryption keys
+seahorse
+
+7
+
+/usr/bin/seahorse
+2
+0
+
+
+GNOME;GTK;Security;Utility;DesktopSettings;X-XFCE-SettingsDialog
+keyring,encryption,security,sign,ssh
+-pcmanfm-qt.desktop
+PCManFM File Manager
+Browse the file system and manage the files
+system-file-manager
+
+7
+File Manager
+pcmanfm-qt %U
+2
+0
+
+
+FileManager;Utility;Core;Qt
+
+-pluma.desktop
+Pluma
+Edit text files
+accessories-text-editor
+
+7
+Text Editor
+pluma %U
+2
+0
+
+
+GTK;Utility;TextEditor
+text,editor,MATE,tabs,highlighting,code,multiple,files,pluggable
+-rclock.desktop
+RClock
+Clock and appointment reminder
+clock
+
+7
+
+rclock
+0
+0
+rclock
+
+Utility
+
+-org.gnome.Recipes.desktop
+Recipes
+GNOME cooks unite!
+org.gnome.Recipes
+
+7
+
+gnome-recipes %f
+2
+0
+
+
+Utility;GTK;GNOME
+
+-xfce4-run.desktop
+Run Program...
+Run a program
+gtk-execute
+
+7
+
+xfce4-appfinder --collapsed
+2
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-org.gnome.Screenshot.desktop
+Screenshot
+Save images of your screen or individual windows
+applets-screenshooter
+
+7
+
+gnome-screenshot --interactive
+2
+-5
+
+
+GTK;GNOME;Utility;X-GNOME-Utilities
+snapshot,capture,print,screenshot
+-xfce4-screenshooter.desktop
+Screenshot
+Take screenshots of the entire screen, of the active window or of a region
+applets-screenshooter
+
+7
+
+xfce4-screenshooter
+2
+-7
+
+
+GTK;Utility
+
+-lxshortcut.desktop
+Shortcut Editor
+Create new or change existing desktop entry
+applications-other
+
+7
+
+lxshortcut -i %f
+6
+0
+
+
+Utility;GTK
+
+-org.kde.spectacle.desktop
+Spectacle
+
+spectacle
+
+7
+Screenshot Capture Utility
+spectacle
+0
+0
+
+
+Qt;KDE;Utility
+
+-org.kde.sweeper.desktop
+Sweeper
+Helps to clean unwanted traces the user leaves on the system and to regain disk space removing unused temporary files
+sweeper
+
+7
+System Cleaner
+sweeper
+0
+0
+
+
+Qt;KDE;Utility
+
+-mate-screenshot.desktop
+Take Screenshot
+Save images of your desktop or individual windows
+applets-screenshooter
+
+7
+
+mate-screenshot --interactive
+2
+64
+
+
+GTK;Utility
+MATE,screenshot,snapshot,desktop,window,image
+-exo-terminal-emulator.desktop
+Terminal Emulator
+Use the command line
+utilities-terminal
+
+7
+
+exo-open --launch TerminalEmulator
+2
+8
+
+
+Utility;X-XFCE;X-Xfce-Toplevel
+
+-org.gnome.gedit.desktop
+Text Editor
+Edit text files
+gedit
+
+7
+
+gedit %U
+2
+0
+
+
+GNOME;GTK;Utility;TextEditor
+Text,Editor,Plaintext,Write
+-aiksaurus.desktop
+Thesaurus
+Lookup words in a thesaurus
+aiksaurus.png
+
+7
+
+gaiksaurus
+2
+0
+
+
+GNOME;Application;Utility
+
+-hamster-windows-service.desktop
+Time Tracker
+Project Hamster - track your time
+hamster-time-tracker
+
+7
+
+/usr/bin/hamster overview
+4
+0
+
+
+GNOME;GTK;Utility
+
+-hamster-time-tracker.desktop
+Time Tracker
+Project Hamster - track your time
+hamster-time-tracker
+
+7
+
+/usr/bin/hamster
+0
+0
+
+
+GNOME;GTK;Utility
+
+-hamster-time-tracker-overview.desktop
+Time Tracking Overview
+The overview window of hamster time tracker
+hamster-time-tracker
+
+7
+
+/usr/bin/hamster overview
+0
+0
+
+
+GNOME;GTK;Utility
+
+-org.gnome.Todo.desktop
+To Do
+Manage your personal tasks
+org.gnome.Todo
+
+7
+
+gnome-todo
+2
+0
+
+
+GNOME;GTK;Utility
+Task,Productivity,Todo
+-gnome-tweak-tool.desktop
+Tweaks
+Tweak advanced GNOME 3 settings
+gnome-tweak-tool
+
+7
+
+gnome-tweak-tool
+2
+290
+
+
+GNOME;GTK;Utility
+Settings,Advanced,Preferences,Extensions,Fonts,Theme,XKB,Keyboard,Typing
+-gonvert.desktop
+Unit Convertor
+Convert between various units
+gonvert.png
+
+7
+
+gonvert
+2
+0
+
+
+GNOME;Application;Utility
+
+-vim.desktop
+Vim
+Edit text files
+gvim
+
+7
+Text Editor
+vim %F
+1
+0
+vim
+
+Utility;TextEditor
+Text,editor
+-org.gnome.Weather.Application.desktop
+Weather
+Show weather conditions and forecast
+org.gnome.Weather.Application
+
+7
+
+gapplication launch org.gnome.Weather.Application
+2
+0
+
+
+GNOME;GTK;Utility;Core
+Weather,Forecast
+-xarchiver.desktop
+Xarchiver
+A GTK+2 only archive manager
+xarchiver
+
+7
+Archive manager
+xarchiver
+2
+0
+
+
+GTK;Archiving;Utility
+
+-xedit.desktop
+Xedit
+Simple text editor for X
+
+
+7
+
+xedit
+0
+0
+xedit
+
+Utility;TextEditor
+
+-xhtml2ps.desktop
+X-html2ps
+
+
+
+7
+
+xhtml2ps
+0
+0
+xhtml2ps
+
+Utility
+
+-xman.desktop
+Xman
+
+xman
+
+7
+
+xman
+0
+0
+xman
+
+Utility;Documentation
+
+-xpad.desktop
+Xpad
+Jot down notes for later
+xpad
+
+7
+Sticky Notes
+xpad
+2
+0
+xpad
+
+GTK;Utility
+
+-zim.desktop
+Zim Desktop Wiki
+Edit text files "wiki style"
+zim
+
+7
+Text Editor
+zim %f
+2
+0
+
+
+Utility;TextEditor;GTK
+Text,Editor,Write,Wiki,Notes,Notebook,Journal
+
++Education
+Education
+
+applications-science
+lxde-education.directory
+2
+0
+-org.kde.artikulate.desktop
+Artikulate
+
+artikulate
+
+7
+Artikulate Pronunciation Trainer
+artikulate -qwindowtitle "%c" %i
+0
+0
+
+
+Qt;KDE;Education;X-KDE-Edu-Misc
+
+-avogadro.desktop
+Avogadro
+Molecular Graphics and Modelling System
+avogadro-icon
+
+7
+Advanced molecular editor
+avogadro %f
+2
+0
+
+
+Qt;Science;Chemistry;Physics;Education
+
+-org.kde.blinken.desktop
+Blinken
+A memory enhancement game
+blinken
+
+7
+Memory Enhancement Game
+blinken
+0
+0
+
+
+Qt;KDE;Education;Game;KidsGame
+
+-org.kde.cantor.desktop
+Cantor
+KDE Frontend to Mathematical Software
+cantor
+
+7
+Frontend to Mathematical Software
+cantor -qwindowicon cantor -qwindowtitle %c %U
+0
+0
+
+
+Qt;KDE;Education;Math;Science
+
+-free42dec.desktop
+Free42
+
+free42
+
+7
+
+free42dec
+0
+0
+free42dec
+
+Education;Math;GTK
+
+-org.octave.Octave.desktop
+GNU Octave
+Interactive programming environment for numerical computations
+octave
+
+7
+
+/usr/bin/octave --gui %f
+0
+0
+/usr/bin/octave
+
+Education;Science;Math
+science,math,matrix,numerical computation,plotting
+-texmacs.desktop
+GNU TeXmacs
+A structured wysiwyg scientific text editor
+TeXmacs
+
+7
+
+texmacs %f
+0
+0
+
+
+Education;Science;Math
+
+-xmgrace.desktop
+Grace
+
+xmgrace
+
+7
+
+xmgrace
+0
+0
+xmgrace
+
+Education;Science;DataVisualization;Motif
+
+-org.kde.kalgebra.desktop
+KAlgebra
+Math Expression Solver and Plotter
+kalgebra
+
+7
+Graph Calculator
+kalgebra %u
+0
+0
+
+
+Qt;KDE;Education;Math;Science
+
+-kalgebramobile.desktop
+KAlgebra Mobile
+Pocket Math Expression Solver and Plotter
+kalgebra
+
+7
+Pocket Graph Calculator
+kalgebramobile %u
+0
+0
+
+
+Qt;KDE;Education;Math;Science
+
+-org.kde.kalzium.desktop
+Kalzium
+KDE Periodic Table of Elements
+kalzium
+
+7
+Periodic Table of Elements
+kalzium -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Education;Science;Chemistry
+
+-org.kde.kanagram.desktop
+Kanagram
+KDE Letter Order Game
+kanagram
+
+7
+Letter Order Game
+kanagram
+0
+0
+
+
+Qt;KDE;Education;Languages;Game;KidsGame
+
+-org.kde.kitenkanjibrowser.desktop
+Kanji Browser
+
+kiten
+
+7
+
+kitenkanjibrowser
+4
+0
+
+
+Qt;KDE;Education;Languages
+
+-org.kde.kbruch.desktop
+KBruch
+Practice exercises with fractions
+kbruch
+
+7
+Exercise Fractions
+kbruch -qwindowtitle %c -qwindowicon kbruch
+0
+0
+
+
+Qt;KDE;Education;Math
+
+-org.kde.marble.desktop
+KDE Marble
+Navigation and Maps
+marble
+
+7
+Virtual Globe
+marble %F
+0
+0
+marble
+
+Qt;KDE;Education;Geoscience;Geography;Science;Maps
+
+-org.kde.kgeography.desktop
+KGeography
+A Geography Learning Program
+kgeography
+
+7
+Geography Trainer
+kgeography
+0
+0
+
+
+Qt;KDE;Education;Geography
+
+-org.kde.khangman.desktop
+KHangMan
+KDE Hangman Game
+khangman
+
+7
+Hangman Game
+khangman -qwindowtitle "%c" %i
+0
+0
+
+
+Qt;KDE;Education;Languages;Game;KidsGame
+
+-org.kde.kig.desktop
+Kig
+Explore Geometric Constructions
+kig
+
+7
+Interactive Geometry
+kig %U --qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Education;Math
+
+-org.kde.kiten.desktop
+Kiten
+Japanese Reference and Study Tool
+kiten
+
+7
+Japanese Reference/Study Tool
+kiten -qwindowtitle %c -qwindowicon kiten
+0
+0
+
+
+Qt;KDE;Education;Languages
+
+-klavaro.desktop
+Klavaro
+A very flexible and efficient touch typing tutor.
+klavaro
+
+7
+
+klavaro
+2
+0
+
+
+Education;GTK
+keyboard,typing,tutor,CAI
+-org.kde.klettres.desktop
+KLettres
+a KDE program to learn the alphabet
+klettres
+
+7
+Learn The Alphabet
+klettres -qwindowtitle %c -qwindowicon klettres
+0
+0
+
+
+Qt;KDE;Education;Languages
+
+-org.kde.kmplot.desktop
+KmPlot
+Function Plotter
+kmplot
+
+7
+Mathematical Function Plotter
+kmplot %u
+0
+0
+
+
+Qt;KDE;Education;Math
+
+-org.kde.kstars.desktop
+KStars
+Desktop Planetarium
+kstars
+
+7
+Desktop Planetarium
+kstars %U
+0
+0
+
+
+Qt;KDE;Education;Science;Astronomy
+
+-org.kde.ktouch.desktop
+KTouch
+Learn typing without looking for keys
+ktouch
+
+7
+Touch Typing Tutor
+ktouch
+0
+0
+
+
+Qt;KDE;Education;X-KDE-Edu-Misc
+
+-org.kde.kturtle.desktop
+KTurtle
+
+kturtle
+
+7
+Educational Programming Environment
+kturtle -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Education;ComputerScience;X-KDE-Edu-Misc
+
+-org.kde.kwordquiz.desktop
+KWordQuiz
+A flashcard and vocabulary learning program
+kwordquiz
+
+7
+Flash Card Trainer
+kwordquiz %u -qwindowtitle %c -qwindowicon kwordquiz
+0
+0
+
+
+Qt;KDE;Education;Languages
+
+-marble_gpx.desktop
+Marble
+
+marble
+
+7
+Virtual Globe
+marble %F
+4
+0
+marble
+
+Qt;KDE;Education;Geography
+
+-marble_kmz.desktop
+Marble
+
+marble
+
+7
+Virtual Globe
+marble %F
+4
+0
+marble
+
+Qt;KDE;Education;Geography
+
+-marble_geojson.desktop
+Marble
+
+marble
+
+7
+Virtual Globe
+marble %F
+4
+0
+marble
+
+Qt;KDE;Education;Geography
+
+-marble_kml.desktop
+Marble
+
+marble
+
+7
+Virtual Globe
+marble %F
+4
+0
+marble
+
+Qt;KDE;Education;Geography
+
+-org.kde.marble-qt.desktop
+Marble
+Navigation and Maps
+marble
+
+7
+Virtual Globe
+marble-qt %F
+0
+0
+marble-qt
+
+Qt;KDE;Education;Geoscience;Geography;Science;Maps
+
+-org.kde.minuet.desktop
+Minuet
+
+minuet
+
+7
+Music Education Software
+minuet
+0
+0
+
+
+Qt;KDE;Education;Music;X-KDE-Edu-Misc
+
+-obgui.desktop
+OpenBabel GUI
+
+babel
+
+7
+
+obgui
+0
+0
+obgui
+
+Education;Science;Chemistry
+
+-kde4-pairs.desktop
+Pairs
+
+pairs
+pairs.desktop
+9
+A game to enhance your memory
+pairs %i -caption %c
+0
+0
+
+
+Qt;KDE;Education;Game;KidsGame
+
+-kde4-pairseditor.desktop
+Pairs Theme Editor
+
+pairseditor
+pairseditor.desktop
+9
+A Pairs theme editor
+pairseditor %i -caption %c
+0
+0
+
+
+Qt;KDE;Education;Game;KidsGame
+
+-org.kde.parley.desktop
+Parley
+A program to help you memorize things.
+parley
+
+7
+Vocabulary Trainer
+parley %u
+0
+0
+
+
+Qt;KDE;Education;Languages
+
+-org.kde.kitenradselect.desktop
+Radical Selector
+
+kiten
+
+7
+
+kitenradselect
+4
+0
+
+
+Qt;KDE;Education;Languages
+
+-org.kde.rocs.desktop
+Rocs
+Graph Theory Tool for Professors and Students.
+rocs
+
+7
+Rocs Graph Theory
+rocs %u -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Education;Science;Math
+
+-Singular.desktop
+Singular
+run Singular 4.0.2 in a terminal
+/icons/Singular.png
+
+7
+
+Singular
+1
+0
+
+
+Math;Science;Education
+
+-stellarium.desktop
+Stellarium
+Planetarium
+stellarium
+
+7
+Desktop planetarium
+stellarium
+0
+0
+
+
+Astronomy;Education;Science
+astronomy,planetarium
+-org.kde.step.desktop
+Step
+Simulate physics experiments
+step
+
+7
+Interactive Physical Simulator
+step -qwindowtitle %c -qwindowicon step
+0
+0
+
+
+Qt;KDE;Education;Physics
+
+-xmaxima.desktop
+xmaxima
+A graphical interface for Maxima, a Computer Algebra System
+maxima-new
+
+7
+GUI for Maxima, a Computer Algebra system
+xmaxima
+0
+0
+
+
+Education;Math
+maths,cas,algebra,education,engineering,physics
+
++Games
+Games
+Games and amusements
+applications-games
+lxde-game.directory
+2
+0
+-org.gnome.gnome-2048.desktop
+2048
+Obtain the 2048 tile
+gnome-2048
+
+7
+
+gnome-2048
+2
+0
+gnome-2048
+
+GNOME;GTK;Game
+puzzle
+-2048-qt.desktop
+2048-Qt
+The 2048 number game implemented in Qt
+2048-qt
+
+7
+2048-Qt
+2048-qt
+0
+0
+
+
+Game;Math;Qt
+
+-kde-atlantik.desktop
+Atlantik
+
+atlantik
+atlantik.desktop
+8
+Monopoly®-like Board Games
+atlantik -caption "%c" %i %m
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-kde-atlantikdesigner.desktop
+Atlantik Designer
+Game board designer for Atlantik
+atlantikdesigner
+atlantikdesigner.desktop
+8
+Monopoly®-like Board Designer
+atlantikdesigner -caption "%c" %i %m
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-atomix.desktop
+Atomix
+A puzzle game about atoms and molecules
+atomix
+
+7
+Molecule puzzle game
+atomix
+0
+0
+
+
+GNOME;GTK;Game;LogicGame
+GNOME,game,logic,puzzle,atoms,molecules,sokoban
+-org.kde.blinken.desktop
+Blinken
+A memory enhancement game
+blinken
+
+7
+Memory Enhancement Game
+blinken
+0
+0
+
+
+Qt;KDE;Education;Game;KidsGame
+
+-org.kde.bomber.desktop
+Bomber
+
+bomber
+
+7
+Arcade Bombing Game
+bomber -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.bovo.desktop
+Bovo
+
+bovo
+
+7
+Five-in-a-row Board Game
+bovo -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-gnome-chess.desktop
+Chess
+Play the classic two-player board game of chess
+gnome-chess
+
+7
+Chess Game
+gnome-chess
+2
+0
+
+
+GNOME;GTK;Game;BoardGame
+game,strategy
+-connectagram.desktop
+Connectagram
+Unscramble words placed in patterns
+connectagram
+
+7
+Anagram Game
+connectagram
+0
+0
+
+
+Qt;Game;LogicGame
+
+-cutemaze.desktop
+CuteMaze
+Find targets in a maze
+cutemaze
+
+7
+Simple Maze Game
+cutemaze
+0
+0
+
+
+Qt;Game;LogicGame
+
+-five-or-more.desktop
+Five or More
+Remove colored balls from the board by forming lines
+five-or-more
+
+7
+
+five-or-more
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+game,strategy,logic
+-foobillard.desktop
+FooBillard
+OpenGL billard game
+foobillard
+
+7
+
+foobillard
+0
+0
+foobillard
+
+Game
+
+-four-in-a-row.desktop
+Four-in-a-row
+Make lines of the same color to win
+four-in-a-row
+
+7
+
+four-in-a-row
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+game,strategy,logic
+-gottet.desktop
+Gottet
+Clear the board of falling blocks
+gottet
+
+7
+Falling Blocks Game
+gottet
+0
+0
+
+
+Qt;Game;ArcadeGame
+
+-org.kde.granatier.desktop
+Granatier
+
+granatier
+
+7
+Bomberman clone
+granatier
+0
+0
+granatier
+
+Qt;KDE;Game;ArcadeGame
+
+-gweled.desktop
+Gweled
+Play a puzzle game similar to "Diamond Mine"
+gweled
+
+7
+
+gweled
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+
+-hexalate.desktop
+Hexalate
+Spin circles to match colors
+hexalate
+
+7
+Color Matching Game
+hexalate
+0
+0
+
+
+Qt;Game;LogicGame
+
+-org.gnome.Hitori.desktop
+Hitori
+Play the Hitori puzzle game
+org.gnome.Hitori
+
+7
+
+hitori
+2
+0
+
+
+GTK;Game;LogicGame
+puzzle,game,logic,grid
+-iagno.desktop
+Iagno
+Dominate the board in a classic version of Reversi
+iagno
+
+7
+Reversi
+iagno
+2
+0
+
+
+GNOME;GTK;Game;BoardGame
+reversi,othello
+-org.kde.kajongg.desktop
+Kajongg
+The ancient Chinese board game for 4 players
+kajongg
+
+7
+Mah Jongg
+kajongg
+0
+0
+kajongg
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.kanagram.desktop
+Kanagram
+KDE Letter Order Game
+kanagram
+
+7
+Letter Order Game
+kanagram
+0
+0
+
+
+Qt;KDE;Education;Languages;Game;KidsGame
+
+-org.kde.kapman.desktop
+Kapman
+Eat pills escaping ghosts
+kapman
+
+7
+Pac-Man Clone
+kapman
+0
+0
+kapman
+
+Qt;KDE;Game;ArcadeGame
+
+-kde-kasteroids.desktop
+KAsteroids
+
+kasteroids
+kasteroids.desktop
+8
+Space Game
+kasteroids %i %m -caption "%c"
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.katomic.desktop
+KAtomic
+
+katomic
+
+7
+Sokoban-like Logic Game
+katomic -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-kde-kbackgammon.desktop
+KBackgammon
+
+kbackgammon
+kbackgammon.desktop
+8
+Backgammon Game
+kbackgammon %i %m -caption "%c"
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.kblackbox.desktop
+KBlackBox
+
+kblackbox
+
+7
+Blackbox Logic Game
+kblackbox -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.kblocks.desktop
+KBlocks
+
+kblocks
+
+7
+Falling Blocks Game
+kblocks -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.kbounce.desktop
+KBounce
+Ball Bouncing Game
+kbounce
+
+7
+Ball Bouncing Game
+kbounce -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-kde-ksokoban.desktop
+KBoxPush
+
+ksokoban
+ksokoban.desktop
+8
+BoxPush Game
+ksokoban %i %m -caption "%c"
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.kbrickbuster.desktop
+KBrickbuster
+Classic arcade game
+kbrickbuster
+
+7
+Brickbuster-like Game
+kbrickbuster -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.kdiamond.desktop
+KDiamond
+Logic game
+kdiamond
+
+7
+Three-in-a-row game
+kdiamond -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;LogicGame
+
+-kde-kenolaba.desktop
+Kenolaba
+
+kenolaba
+kenolaba.desktop
+8
+Abalone-like Board Game
+kenolaba %i %m -caption "%c"
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-kde-kfouleggs.desktop
+KFoulEggs
+
+kfouleggs
+kfouleggs.desktop
+8
+Japanese PuyoPuyo-like Game
+kfouleggs -caption "%c" %i %m
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.kfourinline.desktop
+KFourInLine
+Classic turn based game
+kfourinline
+
+7
+Four-in-a-row Board Game
+kfourinline
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.kgoldrunner.desktop
+KGoldrunner
+A game of action and puzzle-solving
+kgoldrunner
+
+7
+Hunt Gold, Dodge Enemies and Solve Puzzles
+kgoldrunner
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.khangman.desktop
+KHangMan
+KDE Hangman Game
+khangman
+
+7
+Hangman Game
+khangman -qwindowtitle "%c" %i
+0
+0
+
+
+Qt;KDE;Education;Languages;Game;KidsGame
+
+-org.kde.kigo.desktop
+Kigo
+
+kigo
+
+7
+Go Board Game
+kigo %u -qwindowicon kigo -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.killbots.desktop
+Killbots
+A KDE game of killer robots and teleportation.
+killbots
+
+7
+Strategy Game with Robots
+killbots -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.kiriki.desktop
+Kiriki
+
+kiriki
+
+7
+Yahtzee-like Dice Game
+kiriki -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.kjumpingcube.desktop
+KJumpingCube
+Territory Capture Game
+kjumpingcube
+
+7
+Territory Capture Game
+kjumpingcube -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.klickety.desktop
+Klickety
+
+klickety
+
+7
+Board Game
+klickety -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-gnome-klotski.desktop
+Klotski
+Slide blocks to solve the puzzle
+gnome-klotski
+
+7
+
+gnome-klotski
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+game,strategy,logic,move
+-org.kde.kmahjongg.desktop
+KMahjongg
+
+kmahjongg
+
+7
+Mahjongg Solitaire
+kmahjongg -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.kmines.desktop
+KMines
+Minesweeper-like Game
+kmines
+
+7
+Minesweeper-like Game
+kmines -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.knetwalk.desktop
+KNetWalk
+Strategy game
+knetwalk
+
+7
+Network Construction Game
+knetwalk -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.kolf.desktop
+Kolf
+
+kolf
+
+7
+Miniature Golf
+kolf %U
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.kollision.desktop
+Kollision
+
+kollision
+
+7
+A simple ball dodging game
+kollision
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.klines.desktop
+Kolor Lines
+Tactical game
+klines
+
+7
+Tactical Game
+klines -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.konquest.desktop
+Konquest
+
+konquest
+
+7
+Galactic Strategy Game
+konquest -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.kpat.desktop
+KPatience
+Solitaire card game
+kpat
+
+7
+Patience Card Game
+kpat -qwindowtitle %c %u
+0
+0
+
+
+Qt;KDE;Game;CardGame
+
+-org.kde.kreversi.desktop
+KReversi
+
+kreversi
+
+7
+Reversi Board Game
+kreversi -qwindowtitle %c
+2
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-org.kde.ksirk.desktop
+KsirK
+
+ksirk
+
+7
+World Domination Strategy Game
+ksirk -qwindowtitle %c -qwindowicon ksirk
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.ksirkskineditor.desktop
+KsirK Skin Editor
+
+preferences-desktop-locale
+
+7
+Skin Editor for the World Domination Strategy Game
+ksirkskineditor -qwindowtitle %c -qwindowicon preferences-desktop-locale
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-kde-ksirtet.desktop
+KSirtet
+
+ksirtet
+ksirtet.desktop
+8
+Tetris Game
+ksirtet -caption "%c" %i %m
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-kde-ksmiletris.desktop
+KSmileTris
+
+ksmiletris
+ksmiletris.desktop
+8
+Tetris-like Game
+ksmiletris -caption "%c" %i %m
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.ksnakeduel.desktop
+KSnakeDuel
+
+ksnakeduel
+
+7
+A race in hyperspace
+ksnakeduel
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-kde-ksnake.desktop
+KSnakeRace
+
+ksnake
+ksnake.desktop
+8
+Snake Race Game
+ksnake %i %m -caption "%c"
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.kspaceduel.desktop
+KSpaceDuel
+
+kspaceduel
+
+7
+Space Arcade Game
+kspaceduel -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;ArcadeGame
+
+-org.kde.ksquares.desktop
+KSquares
+Connect the dots to create squares
+ksquares
+
+7
+Connect the dots to create squares
+ksquares -qwindowicon ksquares -qwindowtitle %c
+0
+0
+
+
+Game;BoardGame;Qt;KDE
+
+-org.kde.ksudoku.desktop
+KSudoku
+KSudoku, Sudoku game & more by KDE
+ksudoku
+
+7
+Sudoku Game
+ksudoku -qwindowicon ksudoku -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;LogicGame
+
+-org.kde.kubrick.desktop
+Kubrick
+A 3-D game based on Rubik's Cube
+kubrick
+
+7
+3-D Game based on Rubik's Cube
+kubrick
+0
+0
+
+
+Qt;KDE;Game;LogicGame
+
+-lightsoff.desktop
+Lights Off
+Turn off all the lights
+lightsoff
+
+7
+
+lightsoff
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+game,logic,board,tiles,adjacent,puzzle
+-org.kde.lskat.desktop
+LSkat
+
+lskat
+
+7
+Card Game
+lskat
+0
+0
+
+
+Qt;KDE;Game;CardGame
+
+-gnome-mahjongg.desktop
+Mahjongg
+Disassemble a pile of tiles by removing matching pairs
+gnome-mahjongg
+
+7
+
+gnome-mahjongg
+2
+0
+
+
+GNOME;GTK;Game;BoardGame
+game,strategy,puzzle,board
+-gnome-mines.desktop
+Mines
+Clear hidden mines from a minefield
+gnome-mines
+
+7
+
+gnome-mines
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+minesweeper
+-gmult.desktop
+Multiplication Puzzle
+Figure out which letters are which numbers
+gmult
+
+7
+
+gmult
+2
+0
+gmult
+
+Game;LogicGame;GTK
+
+-org.kde.knavalbattle.desktop
+Naval Battle
+
+knavalbattle
+
+7
+Ship Sinking Game
+knavalbattle -qwindowtitle %c %U
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.gnome.Nibbles.desktop
+Nibbles
+Guide a worm around a maze
+gnome-nibbles
+
+7
+
+gnome-nibbles
+2
+0
+
+
+GNOME;GTK;Game;ArcadeGame
+game,snake,board
+-kde4-pairs.desktop
+Pairs
+
+pairs
+pairs.desktop
+9
+A game to enhance your memory
+pairs %i -caption %c
+0
+0
+
+
+Qt;KDE;Education;Game;KidsGame
+
+-kde4-pairseditor.desktop
+Pairs Theme Editor
+
+pairseditor
+pairseditor.desktop
+9
+A Pairs theme editor
+pairseditor %i -caption %c
+0
+0
+
+
+Qt;KDE;Education;Game;KidsGame
+
+-org.kde.palapeli.desktop
+Palapeli
+
+palapeli
+
+7
+Jigsaw puzzle game
+palapeli
+2
+0
+
+
+Qt;KDE;Game;LogicGame
+
+-peg-e.desktop
+Peg-E
+Jump pegs to eliminate them
+peg-e
+
+7
+Peg Elimination Game
+peg-e
+0
+0
+
+
+Qt;Game;BoardGame
+
+-org.kde.picmi.desktop
+picmi
+A number logic game
+picmi
+
+7
+Logic Game
+picmi
+2
+0
+
+
+Qt;KDE;Game;LogicGame
+
+-org.kde.ktuberling.desktop
+Potato Guy
+A simple constructor game suitable for children and adults alike
+ktuberling
+
+7
+Picture Game for Children
+ktuberling -qwindowtitle %c %u
+2
+0
+
+
+Qt;KDE;Game;KidsGame
+
+-quadrapassel.desktop
+Quadrapassel
+Fit falling blocks together
+quadrapassel
+
+7
+
+quadrapassel
+2
+0
+
+
+GNOME;GTK;Game;BlocksGame
+tetris
+-gnome-robots.desktop
+Robots
+Avoid the robots and make them crash into each other
+gnome-robots
+
+7
+
+gnome-robots
+2
+0
+
+
+GNOME;GTK;Game;ArcadeGame
+game,arcade,teleport
+-org.kde.ksame.desktop
+SameGame
+
+ksame
+
+7
+Board Game
+klickety --KSameMode -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;StrategyGame
+
+-org.kde.kshisen.desktop
+Shisen-Sho
+
+kshisen
+
+7
+Shisen-Sho Mahjongg-like Tile Game
+kshisen -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Game;BoardGame
+
+-simsu.desktop
+Simsu
+Fill in numbers to solve puzzles
+simsu
+
+7
+Sudoku Game
+simsu
+0
+0
+
+
+Qt;Game;LogicGame
+
+-gnome-sudoku.desktop
+Sudoku
+Test your logic skills in this number grid puzzle
+gnome-sudoku
+
+7
+
+gnome-sudoku
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+magic,square
+-swell-foop.desktop
+Swell Foop
+Clear the screen by removing groups of colored and shaped tiles
+swell-foop
+
+7
+
+swell-foop
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+game,logic,board,same,matching
+-tali.desktop
+Tali
+Beat the odds in a poker-style dice game
+tali
+
+7
+
+tali
+2
+0
+
+
+GNOME;GTK;Game;CardGame
+yahtzee
+-tanglet.desktop
+Tanglet
+Single player variant of Boggle
+tanglet
+
+7
+Word Finding Game
+tanglet %f
+0
+0
+
+
+Qt;Game;LogicGame
+
+-org.gnome.taquin.desktop
+Taquin
+Slide tiles to their correct places
+gnome-taquin
+
+7
+15-puzzle
+gnome-taquin
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+puzzle
+-gnome-tetravex.desktop
+Tetravex
+Complete the puzzle by matching numbered tiles
+gnome-tetravex
+
+7
+
+gnome-tetravex
+2
+0
+
+
+GNOME;GTK;Game;LogicGame
+game,logic,board
+-tetzle.desktop
+Tetzle
+Jigsaw puzzle with tetromino pieces
+tetzle
+
+7
+Jigsaw Puzzle Game
+tetzle %F
+0
+0
+tetzle
+
+Qt;Game;LogicGame
+
+-xboard-tourney.desktop
+Xboard
+Resume XBoard chess tourney
+xboard
+
+7
+X-windows chess board
+xboard -mm -tf %f
+4
+0
+
+
+Game;BoardGame
+
+-xboard.desktop
+Xboard
+Chess Game
+xboard
+
+7
+Chess Game
+xboard
+0
+0
+
+
+Game;BoardGame
+
+-xboard-pgn-viewer.desktop
+Xboard
+Run XBoard as PGN viewer
+xboard
+
+7
+X-windows chess board
+xboard -viewer -lgf %f
+4
+0
+
+
+Game;BoardGame
+
+-xboard-config.desktop
+Xboard
+Start preconfigured XBoard
+xboard
+
+7
+X-windows chess board
+xboard -opt %f
+4
+0
+
+
+Game;BoardGame
+
+-xboard-fen-viewer.desktop
+Xboard
+XBoard FEN display
+xboard
+
+7
+X-windows chess board
+xboard -ncp -lpf %f
+4
+0
+
+
+Game;BoardGame
+
+
++Graphics
+Graphics
+Graphics applications
+applications-graphics
+lxde-graphics.directory
+2
+0
+-dia.desktop
+Dia Diagram Editor
+Edit your Diagrams
+dia
+
+7
+
+dia %F
+2
+0
+
+
+GNOME;Graphics
+
+-djvulibre-djview4.desktop
+DjView4
+Viewer for DjVu documents
+djvulibre-djview4
+
+7
+DjVu Viewer
+djview %f
+0
+0
+
+
+Qt;Graphics;Viewer
+
+-evince.desktop
+Document Viewer
+View multi-page documents
+evince
+
+7
+
+evince %U
+2
+0
+evince
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,document,presentation
+-eom.desktop
+Eye of MATE Image Viewer
+Browse and rotate images
+eom
+
+7
+
+eom %U
+2
+0
+eom
+
+GTK;Graphics;RasterGraphics;Viewer
+image,viewer,JPEG,PNG,TIFF,SVG,MATE,photos,browse,thumbnails,rotate
+-feh.desktop
+feh
+Fast Imlib2-based Image Viewer
+feh
+
+7
+Image viewer
+feh %F
+4
+0
+
+
+Graphics;2DGraphics;Viewer
+
+-fontforge.desktop
+FontForge
+An outline font editor
+fontforge
+
+7
+Font Editor
+fontforge %U
+0
+0
+fontforge
+
+Graphics
+font,fonts,editor,TTF,OTF,typeface
+-org.gnome.frogr.desktop
+frogr
+Upload and organize photos in Flickr accounts
+org.gnome.frogr
+
+7
+frogr: a Flickr Remote Organizer for GNOME
+/usr/bin/frogr %F
+2
+0
+/usr/bin/frogr
+
+GNOME;GTK;Graphics
+Flickr,Image,Picture,Photo,Video,Uploader
+-gimp.desktop
+GNU Image Manipulation Program
+Create images and edit photographs
+gimp
+
+7
+Image Editor
+gimp-2.8 %U
+2
+0
+gimp-2.8
+
+Graphics;2DGraphics;RasterGraphics;GTK
+
+-gvedit.desktop
+GraphViz Editor
+
+gvedit
+
+7
+
+gvedit
+0
+0
+gvedit
+
+Graphics;2DGraphics;Viewer;DataVisualization;Qt
+
+-gthumb.desktop
+gThumb
+View and organize your images
+gthumb
+
+7
+Image Viewer
+gthumb %U
+2
+0
+
+
+GNOME;GTK;Graphics;Viewer;RasterGraphics;2DGraphics;Photography
+
+-org.kde.gwenview.desktop
+Gwenview
+A simple image viewer
+gwenview
+
+7
+KDE Image Viewer
+gwenview %U
+0
+0
+
+
+Qt;KDE;Graphics;Viewer;Photography
+
+-eog.desktop
+Image Viewer
+Browse and rotate images
+eog
+
+7
+
+eog %U
+2
+0
+eog
+
+GNOME;GTK;Graphics;2DGraphics;RasterGraphics;Viewer
+Picture,Slideshow,Graphics
+-gthumb-import.desktop
+Import with gThumb
+Import the photos on your camera card
+gthumb
+
+7
+Photo Import Tool
+gthumb --import-photos %U
+6
+0
+
+
+GNOME;GTK;Graphics;Viewer;RasterGraphics;2DGraphics;Photography
+
+-inkscape.desktop
+Inkscape
+Create and edit Scalable Vector Graphics images
+inkscape
+
+7
+Vector Graphics Editor
+inkscape %F
+2
+0
+inkscape
+
+Graphics;VectorGraphics;GTK
+image,editor,vector,drawing
+-org.kde.karbon.desktop
+Karbon
+Create scalable vector drawings
+calligrakarbon
+
+7
+Scalable Graphics
+karbon %U
+0
+0
+
+
+Qt;KDE;Graphics;Office;VectorGraphics
+
+-org.kde.kcolorchooser.desktop
+KColorChooser
+Color selector and palette editor
+kcolorchooser
+
+7
+Color Chooser
+kcolorchooser
+0
+0
+
+
+Qt;KDE;Graphics;X-KDE-More
+
+-kde4-kcoloredit.desktop
+KColorEdit
+
+kcoloredit
+kcoloredit.desktop
+9
+Color Palette Editor
+kcoloredit
+0
+0
+
+
+Qt;KDE;Graphics
+
+-kde4-kiconedit.desktop
+KIconEdit
+
+kiconedit
+kiconedit.desktop
+9
+Icon Editor
+kiconedit -caption "%c" %u
+0
+0
+
+
+Qt;KDE;Graphics;X-KDE-More
+
+-org.kde.kolourpaint.desktop
+KolourPaint
+An easy-to-use paint program
+kolourpaint
+
+7
+Paint Program
+kolourpaint %u
+0
+0
+
+
+Qt;KDE;Graphics;2DGraphics;RasterGraphics
+
+-org.kde.krita.desktop
+Krita
+Digital Painting
+calligrakrita
+
+7
+Digital Painting
+krita %U
+2
+0
+
+
+Qt;KDE;Graphics
+
+-krita_ppm.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_xcf.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_tiff.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_bmp.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_raw.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_pdf.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_csv.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_heightmap.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_exr.desktop
+Krita
+
+calligrakrita
+
+7
+Application for Drawing and Handling of Images
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_png.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_ora.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_tga.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_odg.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_jpeg.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_brush.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_spriter.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_psd.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-org.kde.kruler.desktop
+KRuler
+
+kruler
+
+7
+Screen Ruler
+kruler
+2
+0
+
+
+Qt;KDE;Graphics;X-KDE-More
+
+-lximage-qt.desktop
+LXImage
+The LXQt image viewer
+lximage-qt
+
+7
+Image Viewer
+lximage-qt %F
+2
+0
+
+
+Graphics;Viewer;RasterGraphics;2DGraphics;Photography
+
+-mate-color-select.desktop
+MATE Color Selection
+Choose colors from the palette or the screen
+gtk-select-color
+
+7
+Color selection dialog
+mate-color-select
+0
+64
+
+
+GTK;Graphics
+MATE,color,chooser,pick,palette,screen,selection
+-okularApplication_powerpoint_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_odt_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_wpd_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_odp_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_pptx_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_doc_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_docx_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_rtf_calligra.desktop
+okular
+
+okular
+
+7
+Document Viewer
+okular %U %i -qwindowtitle %c
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_plucker.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_ooo.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_fax.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_comicbook.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_djvu.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_kimgio.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_dvi.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_ghostview.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_fb.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_epub.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_tiff.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_txt.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_pdf.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-org.kde.okular.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+0
+0
+
+
+Qt;KDE;Graphics;Office;Viewer
+
+-okularApplication_xps.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_mobi.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+okular
+
+Qt;KDE;Graphics;Viewer
+
+-okularApplication_chm.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+4
+0
+
+
+Qt;KDE;Graphics;Viewer
+
+-exrdisplay%f.desktop
+OpenEXR Viewer
+
+
+
+7
+
+exrdisplay %f
+4
+0
+exrdisplay
+
+Graphics;Viewer
+
+-evince-previewer.desktop
+Print Preview
+Preview before printing
+document-print-preview
+
+7
+
+evince-previewer %U
+6
+0
+evince-previewer
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+
+-org.kde.mobile.okular_djvu.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_comicbook.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_ghostview.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_txt.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_epub.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_pdf.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_xps.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_tiff.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_chm.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_mobi.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_ooo.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_fax.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_fb.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_dvi.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_kimgio.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_plucker.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-ristretto.desktop
+Ristretto Image Viewer
+Look at your images easily
+ristretto
+
+7
+Image Viewer
+ristretto %F
+2
+0
+
+
+GTK;Graphics;Viewer
+
+-screenruler.desktop
+Screen Ruler
+
+screenruler
+
+7
+
+screenruler
+0
+0
+screenruler
+
+Graphics;GTK
+
+-lximage-qt-screenshot.desktop
+Screenshot
+Take a screenshot
+camera-photo
+
+7
+Screenshot
+lximage-qt --screenshot
+2
+0
+
+
+Graphics;Core;Qt
+
+-scribus.desktop
+Scribus
+Page Layout and Publication
+scribus
+
+7
+Page Layout (Development)
+scribus %f
+0
+0
+scribus
+
+Qt;Graphics;Publishing
+
+-ufraw.desktop
+UFRaw
+A utility to read and manipulate raw images from digital cameras
+ufraw
+
+7
+Raw image converter
+ufraw %U
+2
+0
+ufraw
+
+Graphics;Photography;GTK
+
+-xdvi.desktop
+XDvi
+
+
+
+7
+DVI Viewer
+xdvi %f
+0
+0
+
+
+Graphics;Viewer
+documents
+-xfig.desktop
+xfig
+Facility for Interactive Generation of figures under X11
+xfig
+
+7
+
+/usr/bin/xfig %f
+0
+0
+
+
+Graphics
+vector,graphics,figure,drawing
+-zart.desktop
+ZArt
+
+gmic
+
+7
+
+zart
+0
+0
+zart
+
+Graphics;2DGraphics;RasterGraphics
+
+-zint-qt.desktop
+Zint Barcode Studio
+
+zint
+
+7
+
+zint-qt
+0
+0
+zint-qt
+
+Graphics;Qt
+
+
++Internet
+Internet
+Programs for Internet access such as web and email
+applications-internet
+lxde-network.directory
+2
+0
+-bssh.desktop
+Avahi SSH Server Browser
+Browse for Zeroconf-enabled SSH Servers
+network-wired
+
+7
+
+/usr/bin/bssh
+0
+0
+
+
+GNOME;Network
+
+-bvnc.desktop
+Avahi VNC Server Browser
+Browse for Zeroconf-enabled VNC Servers
+network-wired
+
+7
+
+/usr/bin/bvnc
+0
+0
+
+
+GNOME;Network
+
+-org.kde.keditbookmarks.desktop
+Bookmark Editor
+Bookmark Organizer and Editor
+bookmarks-organize
+
+7
+
+keditbookmarks
+4
+0
+
+
+Qt;KDE;Network;WebBrowser
+
+-org.kde.choqok.desktop
+Choqok
+
+choqok
+
+7
+Micro-blogging Client
+choqok -qwindowtitle %c
+0
+0
+
+
+Network
+
+-org.baedert.corebird.desktop
+Corebird
+Use Twitter from within a normal desktop application
+corebird
+
+7
+Twitter Client
+corebird
+0
+0
+
+
+Network;GTK
+twitter
+-empathy.desktop
+Empathy
+Chat on Google Talk, Facebook, MSN and many other chat services
+empathy
+
+7
+IM Client
+empathy
+2
+0
+
+
+GNOME;GTK;Network;InstantMessaging
+chat,talk,im,message,irc,voip,gtalk,facebook,jabber
+-filezilla.desktop
+FileZilla
+Download and upload files via FTP, FTPS and SFTP
+filezilla
+
+7
+FTP client
+filezilla
+0
+0
+
+
+Network;FileTransfer
+
+-gobby-0.5.desktop
+Gobby
+Edit text files collaboratively
+gobby-0.5
+
+7
+Collaborative Editor
+gobby-0.5
+2
+0
+
+
+TextEditor;Network
+
+-gobby.desktop
+Gobby Collaborative Editor
+Edit text files collaboratively
+gobby.png
+
+7
+
+gobby
+2
+0
+
+
+TextEditor;Network
+
+-gq.desktop
+GQ LDAP Client
+Browse, Search and Manipulate LDAP Directories
+gq
+
+7
+LDAP Client
+gq
+2
+0
+
+
+Application;Network;GNOME;GTK;LDAP
+
+-io.github.Hexchat.desktop
+HexChat
+Chat with other people online
+hexchat
+
+7
+IRC Client
+hexchat --existing %U
+2
+0
+
+
+GTK;Network;IRCClient
+IM,Chat
+-krb5-auth-dialog.desktop
+Kerberos Authentication
+Kerberos Network Authentication Dialog
+krb-valid-ticket
+
+7
+
+krb5-auth-dialog
+0
+0
+
+
+GNOME;GTK;Utility;Network
+kerberos,authentication
+-org.kde.kget.desktop
+KGet
+
+kget
+
+7
+Download Manager
+kget -qwindowtitle %c %i %U
+0
+0
+
+
+Qt;KDE;Network;FileTransfer
+
+-org.kde.knetattach.desktop
+KNetAttach
+
+knetattach
+
+7
+Network Folder Wizard
+knetattach
+4
+0
+
+
+Qt;KDE;Network;RemoteAccess
+
+-kde4-knetattach.desktop
+KNetAttach
+
+knetattach
+knetattach.desktop
+9
+Network Folder Wizard
+knetattach
+0
+4
+
+
+Qt;KDE;Network;RemoteAccess
+
+-konqbrowser.desktop
+Konqueror
+
+konqueror
+
+7
+Web Browser
+konqueror
+0
+0
+
+
+Qt;KDE;Network;WebBrowser
+
+-org.kde.konversation.desktop
+Konversation
+
+konversation
+
+7
+IRC Client
+konversation -qwindowtitle %c %u
+2
+0
+
+
+Qt;KDE;Network;IRCClient
+
+-org.kde.krdc.desktop
+KRDC
+Connect with RDP or VNC to another computer
+krdc
+
+7
+Remote Desktop Client
+krdc -qwindowtitle %c %u
+0
+0
+
+
+Qt;KDE;Network;RemoteAccess
+
+-org.kde.krfb.desktop
+Krfb
+Desktop Sharing
+krfb
+
+7
+Desktop Sharing
+krfb -qwindowtitle %c %i
+0
+0
+
+
+Qt;KDE;System;Network;RemoteAccess
+
+-org.kde.ktorrent.desktop
+KTorrent
+A BitTorrent program by KDE
+ktorrent
+
+7
+BitTorrent Client
+ktorrent %U
+0
+0
+
+
+Qt;KDE;Network;FileTransfer;P2P
+
+-exo-mail-reader.desktop
+Mail Reader
+Read your email
+internet-mail
+
+7
+
+exo-open --launch MailReader %u
+2
+8
+
+
+Network;X-XFCE;X-Xfce-Toplevel
+
+-midori.desktop
+Midori
+Browse the Web
+midori
+
+7
+Web Browser
+midori %U
+2
+0
+
+
+GTK;Network;WebBrowser
+
+-midori-private.desktop
+Midori Private Browsing
+Open a new private browsing window
+midori
+
+7
+Private Browsing
+midori --private %U
+2
+-257
+
+
+GTK;Network;WebBrowser
+
+-pidgin.desktop
+Pidgin Internet Messenger
+Chat over IM.  Supports AIM, Google Talk, Jabber/XMPP, and more
+pidgin
+
+7
+Internet Messenger
+pidgin
+2
+0
+
+
+Network;InstantMessaging
+
+-putty.desktop
+PuTTY
+
+putty
+
+7
+
+putty
+0
+0
+putty
+
+Network;RemoteAccess
+
+-qmpdclient.desktop
+QMPDClient
+A nicer MPD client
+qmpdclient
+
+7
+Qt4 based MPD client
+qmpdclient
+0
+0
+
+
+Qt;Network;Music
+
+-transmission-qt.desktop
+Qtransmission Bittorrent Client
+Download and share files over BitTorrent
+transmission
+
+7
+BitTorrent Client
+transmission-qt %U
+0
+0
+
+
+Network;FileTransfer;P2P;Qt
+
+-qupzilla.desktop
+QupZilla
+A fast and secure web browser
+qupzilla
+
+7
+Web Browser
+qupzilla %u
+0
+0
+
+
+Network;WebBrowser
+
+-org.remmina.Remmina.desktop
+Remmina
+Connect to remote desktops
+remmina
+
+7
+Remote Desktop Client
+/usr/bin/remmina
+0
+0
+/usr/bin/remmina
+
+GTK;GNOME;X-GNOME-NetworkSettings;Network
+remote desktop,rdp,vnc,nx,ssh,spice,xdmcp
+-vinagre.desktop
+Remote Desktop Viewer
+Access remote desktops
+preferences-desktop-remote-desktop
+
+7
+
+vinagre %U
+2
+0
+
+
+GNOME;GTK;Network;RemoteAccess
+VNC,RDP,SSH
+-remote-viewer.desktop
+Remote Viewer
+Access remote desktops
+virt-viewer
+
+7
+
+remote-viewer %u
+2
+0
+
+
+GNOME;GTK;Network;RemoteAccess
+
+-vncviewer.desktop
+TigerVNC Viewer
+Connect to VNC server and display remote desktop
+tigervnc
+
+7
+
+/usr/bin/vncviewer
+0
+0
+
+
+Network;RemoteAccess
+
+-transmission-gtk.desktop
+Transmission
+Download and share files over BitTorrent
+transmission
+
+7
+BitTorrent Client
+transmission-gtk %U
+2
+0
+transmission-gtk
+
+Network;FileTransfer;P2P;GTK
+
+-transmission-remote-gtk.desktop
+Transmission Remote
+Remotely manage the Transmission BitTorrent client
+transmission-remote-gtk
+
+7
+
+transmission-remote-gtk %U
+0
+0
+
+
+Network;FileTransfer;P2P;GTK
+p2p,bittorrent,transmission,rpc
+-epiphany.desktop
+Web
+Browse the web
+web-browser
+
+7
+Web Browser
+epiphany %U
+2
+0
+
+
+Network;GNOME;GTK;WebBrowser
+web,browser,internet
+-exo-web-browser.desktop
+Web Browser
+Browse the web
+web-browser
+
+7
+
+exo-open --launch WebBrowser %u
+2
+8
+
+
+Network;X-XFCE;X-Xfce-Toplevel
+
+-x11vnc.desktop
+X11VNC Server
+Share this desktop by VNC
+computer
+
+7
+
+x11vnc -gui tray=setpass -rfbport PROMPT -bg -o %%HOME/.x11vnc.log.%%VNCDISPLAY
+0
+0
+
+
+Network;RemoteAccess
+
+
++Office
+Office
+Office Applications
+applications-office
+lxde-office.directory
+2
+0
+-abiword.desktop
+AbiWord
+Compose, edit, and view documents
+abiword
+
+7
+Word Processor
+abiword %U
+2
+0
+
+
+Office;WordProcessor;GNOME;GTK;X-Red-Hat-Base
+
+-alexandria.desktop
+Alexandria Book Collection Manager
+Manage your book collection
+alexandria
+
+7
+Book Collection Manager
+/usr/bin/alexandria
+0
+0
+
+
+GNOME;GTK;Office;Database
+
+-atril.desktop
+Atril Document Viewer
+View multi-page documents
+atril
+
+7
+Document Viewer
+atril %U
+2
+0
+atril
+
+GTK;Office;Viewer
+MATE,document,viewer,pdf,dvi,ps,xps,tiff,pixbuf,djvu,comics
+-org.gnome.Calendar.desktop
+Calendar
+Access and manage your calendars
+org.gnome.Calendar
+
+7
+
+gnome-calendar
+2
+0
+
+
+GNOME;GTK;Office;Calendar;Core
+Calendar,Event,Reminder
+-org.kde.calligrasheets.desktop
+Calligra Sheets
+Write spreadsheet documents
+calligrasheets
+
+7
+Spreadsheet
+calligrasheets %U
+0
+0
+
+
+Qt;KDE;Office;Spreadsheet
+
+-org.kde.calligrawords_ascii.desktop
+Calligra Words
+
+calligrawords
+
+7
+
+calligrawords %u
+6
+0
+
+
+Qt;KDE;Office
+
+-org.kde.calligrawords.desktop
+Calligra Words
+Write documents
+calligrawords
+
+7
+Word Processor
+calligrawords %U
+0
+0
+
+
+Qt;KDE;Office;WordProcessor
+
+-org.gnome.Contacts.desktop
+Contacts
+A contacts manager for GNOME
+gnome-contacts
+
+7
+
+gnome-contacts
+2
+0
+
+
+GNOME;GTK;Office;ContactManagement
+friends,address book
+-org.gnome.Dictionary.desktop
+Dictionary
+Check word definitions and spellings in an online dictionary
+accessories-dictionary
+
+7
+
+gnome-dictionary
+2
+-5
+
+
+GNOME;GTK;Office;Dictionary
+word,synonym,definition,spelling
+-xfce4-dict.desktop
+Dictionary
+A client program to query different dictionaries.
+xfce4-dict
+
+7
+Dictionary Client
+xfce4-dict
+2
+0
+
+
+Office;TextTools;Dictionary;GTK
+
+-evince.desktop
+Document Viewer
+View multi-page documents
+evince
+
+7
+
+evince %U
+2
+0
+evince
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+pdf,ps,postscript,dvi,xps,djvu,tiff,document,presentation
+-evolution.desktop
+Evolution
+Manage your email, contacts and schedule
+evolution
+
+7
+Groupware Suite
+evolution %U
+2
+0
+
+
+GNOME;GTK;Office;Email;Calendar;ContactManagement;X-Red-Hat-Base
+email,calendar,contact,addressbook,task
+-focuswriter.desktop
+FocusWriter
+Write without distractions
+focuswriter
+
+7
+Fullscreen Word Processor
+focuswriter %F
+0
+0
+focuswriter
+
+Qt;Office;WordProcessor
+fullscreen,editor,typewriter,keyclick,distraction,concentration,focused,monomaniacal,writing
+-glabels-3.0.desktop
+gLabels Label Designer 3
+Create labels, business cards and media covers
+glabels-3.0
+
+7
+
+glabels-3 %F
+2
+0
+
+
+Application;Office;GTK
+label,card,print,office,barcode
+-gnucash.desktop
+GnuCash
+Manage your finances, accounts, and investments
+gnucash-icon
+
+7
+Finance Management
+gnucash %f
+2
+0
+
+
+Office;Finance
+
+-gnumeric.desktop
+Gnumeric
+Calculation, Analysis, and Visualization of Information
+gnumeric
+
+7
+Spreadsheet
+gnumeric %U
+2
+0
+
+
+Office;Spreadsheet;Science;Math;GNOME;GTK
+Spreadsheet
+-homebank.desktop
+HomeBank
+Free, easy, personal accounting for everyone
+homebank
+
+7
+Personal finance
+homebank %f
+2
+0
+
+
+GNOME;GTK;Office;Finance
+finance,accounting,budget,personal,money
+-htmldoc.desktop
+HTMLDOC
+HTML Conversion Software
+htmldoc
+
+7
+
+htmldoc %F
+0
+0
+htmldoc
+
+Application;Office;X-Red-Hat-Base
+
+-kapow.desktop
+Kapow Punch Clock
+Keep track of time spent on projects
+kapow
+
+7
+Punch Clock
+kapow
+0
+0
+
+
+Qt;Office;Calendar
+
+-org.kde.karbon.desktop
+Karbon
+Create scalable vector drawings
+calligrakarbon
+
+7
+Scalable Graphics
+karbon %U
+0
+0
+
+
+Qt;KDE;Graphics;Office;VectorGraphics
+
+-kchmviewer.desktop
+KchmViewer
+A viewer of CHM (MS-Help) files
+kchmviewer
+
+7
+CHM file viewer
+kchmviewer %f
+0
+0
+
+
+Qt;KDE;Office;Viewer
+
+-org.kde.kexi.desktop
+Kexi
+Visually develop database applications
+calligrakexi
+
+7
+Visual database apps builder
+kexi
+0
+0
+
+
+Qt;KDE;Office
+
+-org.kde.kmymoney.desktop
+KMyMoney
+Personal Finance Manager
+kmymoney
+
+7
+Personal Finance Manager
+kmymoney %u
+0
+0
+
+
+Qt;KDE;Office;Finance
+
+-krita_ppm.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_xcf.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_tiff.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_bmp.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_raw.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_pdf.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_csv.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_heightmap.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_exr.desktop
+Krita
+
+calligrakrita
+
+7
+Application for Drawing and Handling of Images
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_png.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_ora.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_tga.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_odg.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_jpeg.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_brush.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_spriter.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-krita_psd.desktop
+Krita
+
+calligrakrita
+
+7
+
+krita %u
+6
+0
+
+
+Qt;KDE;Office;Graphics
+
+-org.gnome.latexila.desktop
+LaTeXila
+Edit LaTeX documents
+latexila
+
+7
+Integrated LaTeX Environment
+latexila %U
+2
+0
+
+
+GNOME;GTK;Office;WordProcessor;Publishing
+text,tex,latex,editor,documents
+-org.kde.lokalize.desktop
+Lokalize
+
+lokalize
+
+7
+Computer-Aided Translation System
+lokalize %F
+0
+0
+
+
+Qt;KDE;Development;Office;Translation
+
+-lyx.desktop
+LyX
+High level LaTeX frontend
+lyx
+
+7
+Document Processor
+lyx %F
+0
+0
+lyx
+
+Office;WordProcessor;Qt
+WYSIWYG,WYSIWYM,TeX,LaTeX,GUI,frontend,editor
+-mate-dictionary.desktop
+MATE Dictionary
+Check word definitions and spellings in an online dictionary
+accessories-dictionary
+
+7
+
+mate-dictionary
+2
+64
+
+
+GTK;Office;Dictionary
+MATE,dictionary,applet,thesaurus,spelling,definitions,online
+-gmdb2.desktop
+MDB File Viewer
+
+gmdb2
+
+7
+
+gmdb2
+0
+0
+gmdb2
+
+Office;Database
+
+-novprog.desktop
+NovProg
+Track your novel progress
+novprog
+
+7
+Wordcount Graphing Program
+novprog
+0
+0
+
+
+Qt;Office;Chart
+
+-org.kde.okular.desktop
+Okular
+Universal document viewer
+okular
+
+7
+Document Viewer
+okular %U
+0
+0
+
+
+Qt;KDE;Graphics;Office;Viewer
+
+-xfcalendar.desktop
+Orage Calendar
+Desktop calendar
+xfcalendar
+
+7
+Calendar
+orage
+2
+0
+
+
+X-XFCE;Office;Calendar;GTK
+
+-globaltime.desktop
+Orage Globaltime
+Show clocks from different countries
+orage_globaltime
+
+7
+Globaltime
+globaltime
+2
+0
+
+
+X-XFCE;Office;Clock;GTK;Utility
+
+-org.kde.calligraplan.desktop
+Plan
+
+calligraplan
+
+7
+Project Management
+calligraplan %U
+0
+0
+
+
+Qt;KDE;Office;ProjectManagement
+
+-org.kde.calligraplanwork.desktop
+Plan WorkPackage Handler
+Work Package handler for the Plan project planning tool
+calligraplanwork
+
+7
+Project Management
+calligraplanwork %u
+0
+0
+
+
+Qt;KDE;Office
+
+-evince-previewer.desktop
+Print Preview
+Preview before printing
+document-print-preview
+
+7
+
+evince-previewer %U
+6
+0
+evince-previewer
+
+GNOME;GTK;Office;Viewer;Graphics;2DGraphics;VectorGraphics
+
+-qpdfview.desktop
+qpdfview
+A tabbed document viewer using Qt and the Poppler library.
+qpdfview
+
+7
+tabbed document viewer
+qpdfview --unique %F
+0
+0
+qpdfview
+
+Viewer;Office
+viewer,document,presentation,pdf,ps,djvu
+-org.kde.mobile.okular_djvu.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_comicbook.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_ghostview.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_txt.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_epub.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_pdf.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_xps.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_tiff.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_chm.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_mobi.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_ooo.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_fax.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_fb.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_dvi.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_kimgio.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.mobile.okular_plucker.desktop
+Reader
+Viewer for various types of documents
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+kpackagelauncherqml -a org.kde.mobile.okular
+
+Qt;KDE;Graphics;Office;Viewer
+
+-org.kde.skrooge.desktop
+skrooge
+Skrooge is a personal finances manager powered by KDE, aiming at being simple and intuitive.
+skrooge
+
+7
+Manage your money
+skrooge %F
+0
+0
+
+
+Qt;KDE;Office;Finance
+
+-Ted.desktop
+Ted rtf text processor
+A lightweight rtf text processor
+/usr/share/Ted/Ted.png
+
+7
+rtf text processor
+Ted %F
+0
+0
+
+
+Office;WordProcessor
+
+-org.kde.tellico.desktop
+Tellico
+A collection manager
+tellico
+
+7
+Collection Manager
+tellico -qwindowtitle %c %u
+0
+0
+
+
+KDE;Qt;Office;Database
+
+-xchm.desktop
+xCHM
+Compiled HTML Help (CHM) file viewer
+xchm
+
+7
+
+xchm %f
+0
+0
+xchm
+
+Office;Viewer
+
+-xpdf.desktop
+XpdfReader
+
+xpdf
+
+7
+
+xpdf
+0
+0
+xpdf
+
+Viewer;Office
+
+-zathura-pdf-poppler.desktop
+Zathura
+A minimalistic document viewer
+
+
+7
+
+zathura %f
+4
+0
+
+
+Office;Viewer
+
+-zathura.desktop
+Zathura
+A minimalistic document viewer
+
+
+7
+
+zathura %f
+0
+0
+
+
+Office;Viewer
+PDF,PS,PostScript,DjVU,document,presentation
+-zathura-djvu.desktop
+Zathura
+A minimalistic document viewer
+
+
+7
+
+zathura %f
+4
+0
+
+
+Office;Viewer
+
+-zathura-cb.desktop
+Zathura
+A minimalistic document viewer
+
+
+7
+
+zathura %f
+4
+0
+
+
+Office;Viewer
+
+-zathura-ps.desktop
+Zathura
+A minimalistic document viewer
+
+
+7
+
+zathura %f
+4
+0
+
+
+Office;Viewer
+
+
++Other
+Other
+Applications that did not fit in other categories
+applications-other
+lxde-other.directory
+2
+0
+-gcr-prompter.desktop
+Access Prompt
+Unlock access to passwords and other secrets
+security-medium
+
+7
+
+/usr/libexec/gcr-prompter
+4
+0
+
+
+
+
+-kde-kcmaccess.desktop
+Accessibility
+Improve accessibility for disabled persons
+access
+kcmaccess.desktop
+8
+
+kcmshell kcmaccess
+0
+0
+
+
+Qt;KDE;X-KDE-settings-accessibility
+access,accessibility,deaf,impaired,bell,audible bell,visible bell,Keyboard,keys,sticky keys,bounce keys,slow keys,mouse navigation,num pad
+-kde-khtml_filter.desktop
+AdBlocK Filters
+Configure Konqueror AdBlocK filters
+filter
+khtml_filter.desktop
+8
+
+kcmshell khtml_filter
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+
+-mount-archive.desktop
+Archive Mounter
+
+
+
+7
+
+/usr/libexec/gvfsd-archive file=%u
+4
+0
+
+
+
+
+-caja-autorun-software.desktop
+Autorun Prompt
+
+application-x-executable
+
+7
+
+caja-autorun-software %u
+6
+0
+caja-autorun-software
+
+
+
+-kde-desktopbehavior.desktop
+Behavior
+You can configure how the desktop behaves here
+desktop
+desktopbehavior.desktop
+8
+
+kcmshell desktopbehavior
+0
+0
+
+
+Qt;KDE;X-KDE-settings-desktop
+konqueror,filemanager,kfm,tips,file tips,separate window,spawn windows,behavior,behaviour,memory usage,Home URL,
+-kde-useragent.desktop
+Browser Identification
+Configure the way Konqueror reports itself
+agent
+useragent.desktop
+8
+
+kcmshell useragent
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+User Agent,Browser,Internet,WWW,Network,agent,bindings,server,login
+-kde-cache.desktop
+Cache
+Configure web cache settings
+cache
+cache.desktop
+8
+
+kcmshell cache
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+Cache,History,Browsing History,Ports,Size
+-caja.desktop
+Caja
+
+system-file-manager
+
+7
+File Manager
+caja
+4
+64
+
+
+
+
+-caja-folder-handler.desktop
+Caja
+
+folder-open
+
+7
+Open Folder
+caja --no-desktop %U
+4
+64
+caja
+
+
+
+-kde-cdinfo.desktop
+CD-ROM Information
+CD/DVD Drive Capabilites
+kcmdevices
+cdinfo.desktop
+8
+
+kcmshell cdinfo
+0
+0
+
+
+Qt;KDE;X-KDE-information
+CD-ROM Information,CD-ROM,CD,CD Drive,Writer Capabilities
+-celestia.desktop
+Celestia
+Space Simulator
+celestia
+
+7
+
+celestia
+2
+0
+
+
+Astronomy;Science;Application
+
+-kde-kcmcgi.desktop
+CGI Scripts
+Configure the CGI KIO slave
+run
+kcmcgi.desktop
+8
+
+kcmshell kcmcgi
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+CGI,KIO,Slave,Paths
+-kde-colors.desktop
+Colors
+Color settings
+colorscm
+colors.desktop
+8
+
+kcmshell colors
+0
+0
+
+
+Qt;KDE;X-KDE-settings-looknfeel
+colors,colours,scheme,contrast,Widget colors,Color Scheme
+-kde-componentchooser.desktop
+Component Chooser
+Choose the default components for various services
+misc
+componentchooser.desktop
+8
+
+kcmshell componentchooser
+0
+0
+
+
+Qt;KDE;X-KDE-settings-components
+components,component chooser,resources, email client, terminal emulator
+-kde-netpref.desktop
+Connection Preferences
+Configure generic network preferences, like timeout values
+network
+netpref.desktop
+8
+
+kcmshell netpref
+0
+0
+
+
+Qt;KDE;X-KDE-settings-network
+timeout,iopref,netpref,network preferences,ftp
+-panel-desktop-handler.desktop
+Create Launcher on the panel
+Add a new launcher to the panel based on the information of this desktop file
+application-x-executable
+
+7
+
+xfce4-panel --add=launcher %u
+4
+0
+
+
+
+
+-kde-crypto.desktop
+Crypto
+Configure SSL, manage certificates, and other cryptography settings
+encrypted
+crypto.desktop
+8
+
+kcmshell crypto
+0
+0
+
+
+Qt;KDE;X-KDE-settings-security
+Crypto,Krypto,Cryptography,encryption,SSL,https,certificates,ciphers,TLS,secure,security
+-cygstart.desktop
+cygstart
+Open according to Windows filetype associations
+application-x-executable
+
+7
+
+cygstart %f
+4
+0
+cygstart
+
+
+
+-nautilus-classic.desktop
+Desktop Icons
+Classic session desktop file for desktop icons
+
+
+7
+
+nautilus-desktop --force
+4
+2
+
+
+
+
+-vino-server.desktop
+Desktop Sharing
+GNOME Desktop Sharing Server
+preferences-desktop-remote-desktop
+
+7
+
+/usr/libexec/vino-server
+4
+0
+
+
+
+vnc,share,remote
+-kde-devices.desktop
+Devices
+Attached devices information
+kcmdevices
+devices.desktop
+8
+
+kcmshell devices
+0
+0
+
+
+Qt;KDE;X-KDE-information
+dev,Devices,System Information,Information
+-kde-dma.desktop
+DMA-Channels
+DMA information
+kcmmemory
+dma.desktop
+8
+
+kcmshell dma
+0
+0
+
+
+Qt;KDE;X-KDE-information
+dma,DMA-Channels,System Information
+-kde-filetypes.desktop
+File Associations
+Configure file associations
+filetypes
+filetypes.desktop
+8
+
+kcmshell filetypes
+0
+0
+
+
+Qt;KDE;X-KDE-settings-components
+Filetypes,File Associations,Mime Types,File Patterns,Files,Pattern
+-kde-filebrowser.desktop
+File Manager
+You can configure Konqueror's file manager mode here
+kfm
+filebrowser.desktop
+8
+
+kcmshell filebrowser
+0
+0
+
+
+Qt;KDE;X-KDE-settings-components
+konqueror,filemanager,word wrap,wrap,underline,display,filesize,bytes,font,color,colour
+-fluxbox.desktop
+Fluxbox
+Very small and fast window manger
+
+
+7
+
+startfluxbox
+4
+0
+
+
+
+
+-kde-khtml_fonts.desktop
+Fonts
+Configure the fonts used on web pages
+fonts
+khtml_fonts.desktop
+8
+
+kcmshell khtml_fonts
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+konqueror,kfm,browser,html,web,www,fonts,charsets,character sets,encoding
+-gnome-flashback.desktop
+GNOME Flashback
+
+
+
+7
+
+gnome-flashback
+4
+128
+
+
+
+
+-gnome-flashback-init.desktop
+GNOME Flashback Initialization
+
+
+
+7
+
+gnome-flashback --initialize
+4
+128
+
+
+
+
+-ibus-setup-anthy.desktop
+IBus Anthy Setup
+Set up IBus Anthy engine
+ibus-anthy
+
+7
+
+/usr/libexec/ibus-setup-anthy
+6
+0
+
+
+
+
+-ibus-setup-bopomofo.desktop
+IBus Bopomofo Preferences
+Set ibus-Bopomofo Preferences
+/usr/share/ibus-pinyin/icons/ibus-bopomofo.svg
+
+7
+
+/usr/libexec/ibus-setup-pinyin bopomofo
+6
+0
+
+
+
+
+-ibus-setup-input-pad.desktop
+IBus Input Pad Setup
+Set up IBus Input Pad engine
+/usr/share/pixmaps/input-pad.png
+
+7
+
+/usr/libexec/ibus-setup-input-pad
+6
+0
+
+
+
+
+-ibus-setup-pinyin.desktop
+IBus Pinyin Setup
+Set ibus-pinyin Preferences
+/usr/share/ibus-pinyin/icons/ibus-pinyin.svg
+
+7
+
+/usr/libexec/ibus-setup-pinyin
+6
+0
+
+
+
+
+-kde-interrupts.desktop
+Interrupts
+Interrupt information
+kcmmemory
+interrupts.desktop
+8
+
+kcmshell interrupts
+0
+0
+
+
+Qt;KDE;X-KDE-information
+Interrupts,IRQ,System Information
+-kde-ioports.desktop
+IO-Ports
+IO-port information
+kcmmemory
+ioports.desktop
+8
+
+kcmshell ioports
+0
+0
+
+
+Qt;KDE;X-KDE-information
+IO,I/O,IO-Ports,I/O-Ports,Ports,IO-Range,I/O-Range,System Information
+-kde-khtml_java_js.desktop
+Java & JavaScript
+Configure the behavior of Java and JavaScript
+konqueror
+khtml_java_js.desktop
+8
+
+kcmshell khtml_java_js
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+konqueror,kfm,browser,html,web,www,java,javascript
+-org.kde.kalzium_cml.desktop
+Kalzium
+
+kalzium
+
+7
+
+kalzium -qwindowtitle %c -molecule %f
+4
+0
+
+
+
+
+-ibus-setup-kkc.desktop
+Kana Kanji Conversion Preferences
+Customize Kana Kanji Conversion input-method
+/usr/share/ibus-kkc/icons/ibus-kkc.svg
+
+7
+
+/usr/libexec/ibus-setup-kkc
+6
+0
+
+
+
+
+-kde-kcmperformance.desktop
+KDE Performance
+Configure settings that can improve KDE performance
+launch
+kcmperformance.desktop
+8
+
+kcmshell kcmperformance
+0
+0
+
+
+Qt;KDE;X-KDE-settings-components
+performance,speed,memory,improve
+-kde-kresources.desktop
+KDE Resources
+Configure KDE Resources
+date
+kresources.desktop
+8
+
+kcmshell kresources
+0
+512
+
+
+Qt;KDE;X-KDE-settings-components
+resources,konnector resource,contact resource,calendar resource,notes resource,imap
+-kde-keys.desktop
+Keyboard Shortcuts
+Configuration of keybindings
+key_bindings
+keys.desktop
+8
+
+kcmshell keys
+0
+0
+
+
+Qt;KDE;X-KDE-settings-accessibility
+Keys,Global key bindings,Key scheme,Key bindings,shortcuts,application shortcuts
+-kde4-kmailservice.desktop
+KMailService
+
+mail-message-new
+kmailservice.desktop
+9
+
+kmailservice %u
+4
+0
+
+
+
+
+-kde4-ktelnetservice.desktop
+KTelnetService
+
+utilities-terminal
+ktelnetservice.desktop
+9
+
+ktelnetservice %u
+4
+0
+
+
+
+
+-ktelnetservice5.desktop
+KTelnetService
+
+utilities-terminal
+
+7
+
+ktelnetservice5 %u
+4
+0
+
+
+
+
+-kde-kcmlaunch.desktop
+Launch Feedback
+Choose application-launch feedback style
+launch
+kcmlaunch.desktop
+8
+
+kcmshell kcmlaunch
+0
+0
+
+
+Qt;KDE;X-KDE-settings-looknfeel
+application,start,launch,busy,cursor,feedback,mouse,pointer,rotating,spinning,disk,startup,program,report
+-kde-lanbrowser.desktop
+Local Network Browsing
+Setup lisa, reslisa and the ioslaves
+samba
+lanbrowser.desktop
+8
+
+kcmshell lanbrowser
+0
+0
+
+
+Qt;KDE;X-KDE-settings-network
+samba,smb,windows,network
+-lxde-logout.desktop
+Logout
+Logout, shutdown or reboot
+gnome-logout
+
+7
+
+lxde-logout
+4
+0
+lxsession-logout
+
+
+
+-marble_geo.desktop
+Marble
+
+
+
+7
+
+marble --geo-uri=%u
+5
+0
+
+
+
+
+-marble_worldwind.desktop
+Marble
+
+
+
+7
+
+marble --geo-uri=%u
+5
+0
+
+
+
+
+-marco.desktop
+Marco
+
+
+
+7
+
+marco
+4
+0
+
+
+
+
+-kde-memory.desktop
+Memory
+Memory information
+kcmmemory
+memory.desktop
+8
+
+kcmshell memory
+0
+0
+
+
+Qt;KDE;X-KDE-information
+Memory,RAM,Virtual memory,Physical memory,Shared memory,Swap,System Information
+-metacity.desktop
+Metacity
+
+preferences-system-windows
+
+7
+
+metacity
+4
+0
+
+
+
+
+-kde-mouse.desktop
+Mouse
+Mouse settings
+mouse
+mouse.desktop
+8
+
+kcmshell mouse
+0
+0
+
+
+Qt;KDE;X-KDE-settings-hardware
+Mouse,Mouse acceleration,Mouse threshold,Mouse buttons,Selection,Cursor Shape,Input Devices,Button Mapping,Click,icons,feedback,Pointers,Drag,DoubleClick,mapping,right handed,left handed
+-mutter.desktop
+Mutter
+
+
+
+7
+
+mutter
+4
+0
+
+
+
+
+-kde-nic.desktop
+Network Interfaces
+Network interface information
+network
+nic.desktop
+8
+
+kcmshell nic
+0
+0
+
+
+Qt;KDE;X-KDE-information
+
+-notification-daemon.desktop
+Notification Daemon
+Display notifications
+
+
+7
+
+/usr/libexec/notification-daemon
+4
+0
+
+
+
+
+-org.kde.mobile.okular.desktop
+Okular
+
+okular
+
+7
+Document viewer
+kpackagelauncherqml -a org.kde.mobile.okular %u
+4
+0
+
+
+
+
+-openbox.desktop
+Openbox
+
+openbox
+
+7
+
+openbox
+4
+0
+
+
+
+
+-kde-opengl.desktop
+OpenGL
+OpenGL information
+kcmopengl
+opengl.desktop
+8
+
+kcmshell opengl
+0
+0
+
+
+Qt;KDE;X-KDE-information
+OpenGL,DRI,GLX,3D,VideoCard,Hardware Acceleration,Graphics,X,X11,Xserver,X-Server,XFree86,Display
+-kde-partitions.desktop
+Partitions
+Partition information
+kcmpartitions
+partitions.desktop
+8
+
+kcmshell partitions
+0
+0
+
+
+Qt;KDE;X-KDE-information
+Partitions,Harddrive,HD,System Information
+-kde-desktoppath.desktop
+Paths
+Change the location important files are stored
+kfm
+desktoppath.desktop
+8
+
+kcmshell desktoppath
+0
+0
+
+
+Qt;KDE;X-KDE-settings-system
+konqueror,filemanager,paths,desktop,directories,autostart
+-kde-pci.desktop
+PCI
+PCI information
+kcmpci
+pci.desktop
+8
+
+kcmshell pci
+0
+0
+
+
+Qt;KDE;X-KDE-information
+PCI,PCI-Devices,PCI-Bus,System Information
+-gnome-user-share-webdav.desktop
+Personal File Sharing
+Launch Personal File Sharing if enabled
+folder-remote
+
+7
+
+/usr/libexec/gnome-user-share-webdav
+4
+0
+
+
+
+share,files,http,network,copy,send
+-poedit-uri.desktop
+Poedit
+
+poedit
+
+7
+
+poedit --handle-poedit-uri %u
+4
+0
+
+
+
+
+-kde-privacy.desktop
+Privacy
+Privacy - a kcontrol module to clean unwanted traces the user leaves on the system
+trashcan_empty
+privacy.desktop
+8
+
+kcmshell privacy
+0
+0
+
+
+Qt;KDE;X-KDE-settings-security
+Privacy,privacy
+-kde-processor.desktop
+Processor
+Processor information
+kcmprocessor
+processor.desktop
+8
+
+kcmshell processor
+0
+0
+
+
+Qt;KDE;X-KDE-information
+Processor,CPU,FPU,MHz,System Information
+-kde-ioslaveinfo.desktop
+Protocols
+Information about the available protocols
+history
+ioslaveinfo.desktop
+8
+
+kcmshell ioslaveinfo
+0
+0
+
+
+Qt;KDE;X-KDE-information
+Protocol,IO slaves,Slaves,Network,Information,Timeout
+-kde-proxy.desktop
+Proxy
+Configure the proxy servers used
+proxy
+proxy.desktop
+8
+
+kcmshell proxy
+0
+0
+
+
+Qt;KDE;X-KDE-settings-network
+Proxy,Proxy server,Firewall,Squid,proxy
+-remmina-file.desktop
+Remmina Remote File
+Access remote desktops with Remmina
+remmina
+
+7
+
+/usr/bin/remmina --connect %U
+6
+0
+
+
+
+
+-vinagre-file.desktop
+Remote Desktop Viewer
+Access remote desktops
+preferences-desktop-remote-desktop
+
+7
+
+vinagre -F %U
+6
+2
+
+
+
+
+-nautilus-autorun-software.desktop
+Run Software
+
+application-x-executable
+
+7
+
+nautilus-autorun-software %u
+6
+0
+nautilus-autorun-software
+
+
+
+-kde-smbstatus.desktop
+Samba Status
+Samba status monitor
+samba
+smbstatus.desktop
+8
+
+kcmshell smbstatus
+0
+0
+
+
+Qt;KDE;X-KDE-information
+SMB,SAMBA,Windows network,LAN,System Information
+-lxde-screenlock.desktop
+ScreenLock
+Lock your screen
+system-lock-screen
+
+7
+
+lxlock
+4
+0
+lxlock
+
+
+
+-kde-scsi.desktop
+SCSI
+SCSI information
+kcmscsi
+scsi.desktop
+8
+
+kcmshell scsi
+0
+0
+
+
+Qt;KDE;X-KDE-information
+SCSI,SCSI-Bus,System Information
+-kde-kcm_kdnssd.desktop
+Service Discovery
+Configure service discovery
+blockdevice
+kcm_kdnssd.desktop
+8
+
+kcmshell kcm_kdnssd
+2
+0
+
+
+Qt;KDE;X-KDE-settings-network
+
+-kde-kcmkded.desktop
+Service Manager
+System Services Configuration
+services
+kcmkded.desktop
+8
+
+kcmshell kcmkded
+0
+0
+
+
+Qt;KDE;X-KDE-settings-components
+KDED,Daemon,Services
+-kde-kcmsmserver.desktop
+Session Manager
+Configure the session manager and logout settings
+exit
+kcmsmserver.desktop
+8
+
+kcmshell kcmsmserver
+0
+0
+
+
+Qt;KDE;X-KDE-settings-components
+ksmserver,session,logout,confirmation,save,restore
+-kde-sound.desktop
+Sound
+Sound information
+kcmsound
+sound.desktop
+8
+
+kcmshell sound
+0
+0
+
+
+Qt;KDE;X-KDE-information
+Sound,Audio,Soundcard,MIDI,OSS,System Information
+-kde-arts.desktop
+Sound System
+Sound System Configuration
+arts
+arts.desktop
+8
+
+kcmshell arts
+0
+0
+
+
+Qt;KDE;X-KDE-settings-sound
+aRts,Sound Server,artsd,Audio,Sound,startup,network transparency,transparency,priority,duplex,full duplex,response time,Mixer,Volume,KMix,Mix,login,MIDI,synthesizer,music
+-kde-spellchecking.desktop
+Spell Checker
+Configure the spell checker
+spellcheck
+spellchecking.desktop
+8
+
+kcmshell spellchecking
+0
+0
+
+
+Qt;KDE;X-KDE-settings-components
+Spell
+-kde-kcmcss.desktop
+Stylesheets
+Configure the stylesheets used to render web pages
+stylesheet
+kcmcss.desktop
+8
+
+kcmshell kcmcss
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+CSS,HTML,style,stylesheet,accessibility
+-kde-bell.desktop
+System Bell
+System Bell Configuration
+bell
+bell.desktop
+8
+
+kcmshell bell
+0
+0
+
+
+Qt;KDE;X-KDE-settings-sound
+Bell,Audio,Sound,Volume,Pitch,Duration
+-kde-kcmnotify.desktop
+System Notifications
+System Notification Configuration
+knotify
+kcmnotify.desktop
+8
+
+kcmshell kcmnotify
+0
+0
+
+
+Qt;KDE;X-KDE-settings-sound
+System sounds,Audio,Sound,Notify,Alerts,Notification
+-ibus-setup-typing-booster.desktop
+Typing Booster Preferences
+Set ibus-typing-booster Preferences
+/usr/share/ibus-typing-booster/icons/ibus-hunspell-table.svg
+
+7
+
+/usr/libexec/ibus-setup-typing-booster
+6
+0
+
+
+
+
+-gcr-viewer.desktop
+View file
+
+
+
+7
+
+/usr/bin/gcr-viewer
+4
+0
+
+
+
+
+-kde4-kwalletmanager-kwalletd.desktop
+Wallet Management Tool
+
+kwalletmanager
+kwalletmanager-kwalletd.desktop
+9
+
+kwalletmanager --kwalletd
+4
+0
+
+
+
+
+-kwalletmanager5-kwalletd.desktop
+Wallet Management Tool
+Wallet Management Tool
+kwalletmanager
+
+7
+
+kwalletmanager5 --kwalletd
+4
+0
+
+
+
+
+-kde-khtml_behavior.desktop
+Web Behavior
+Configure the browser behavior
+konqueror
+khtml_behavior.desktop
+8
+
+kcmshell khtml_behavior
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+konqueror,kfm,browser,html,web,www,fonts,colours,colors,java,javascript,cursor,links,images,charsets,character sets,encoding
+-kde-ebrowsing.desktop
+Web Shortcuts
+Configure enhanced browsing
+enhanced_browsing
+ebrowsing.desktop
+8
+
+kcmshell ebrowsing
+0
+0
+
+
+Qt;KDE;X-KDE-settings-webbrowsing
+Enhanced Browsing,Browsing,WWW,Internet,Internet Keywords,Internet Filters,Network,Search Engines,Shortcuts
+-kde-xserver.desktop
+X-Server
+X-Server information
+kcmx
+xserver.desktop
+8
+
+kcmshell xserver
+0
+0
+
+
+Qt;KDE;X-KDE-information
+X,X-Server,XServer,XFree86,Display,VideoCard,System Information
+
++Development
+Programming
+Tools for software development
+applications-development
+lxde-development.directory
+2
+0
+-accerciser.desktop
+Accerciser
+Give your application an accessibility workout
+accerciser
+
+7
+
+/usr/bin/accerciser
+2
+0
+
+
+Development;GNOME;GTK;Accessibility
+accessibility,development,test
+-anjuta.desktop
+Anjuta
+Develop software in an integrated development environment
+anjuta
+
+7
+Integrated Development Environment
+anjuta %U
+2
+0
+
+
+GNOME;GTK;Development;IDE
+IDE,development,programming
+-org.kde.cervisia.desktop
+Cervisia
+
+cervisia
+
+7
+CVS Frontend
+cervisia -qwindowtitle %c %u
+0
+0
+
+
+Qt;KDE;Development;RevisionControl
+
+-CMake.desktop
+CMake
+Cross-platform buildsystem
+CMakeSetup
+
+7
+
+cmake-gui %f
+2
+0
+
+
+Development
+
+-cppcheck-gui.desktop
+Cppcheck
+
+cppcheck
+
+7
+
+cppcheck-gui
+0
+0
+cppcheck-gui
+
+Development
+
+-org.kde.cuttlefish.desktop
+Cuttlefish
+Icon Previewer for Artists and Developers
+cuttlefish
+
+7
+Icon Viewer
+cuttlefish
+0
+0
+
+
+Qt;KDE;Development;IDE
+
+-ddd.desktop
+Data Display Debugger
+Graphical debugger frontend
+ddd
+
+7
+
+ddd
+0
+0
+
+
+Development
+
+-gda-browser-5.0.desktop
+Database browser
+Browse your database's contents
+gda-browser-5.0
+
+7
+
+gda-browser-5.0
+2
+0
+
+
+GTK;Development;Database
+
+-devhelp.desktop
+Devhelp
+Developer's Help program
+devhelp
+
+7
+Documentation Browser
+devhelp
+2
+0
+
+
+GNOME;GTK;Development
+documentation,information,manual,developer,api
+-d-feet.desktop
+D-Feet
+Debug D-Bus applications
+d-feet
+
+7
+D-Bus Debugger
+d-feet
+2
+0
+
+
+GNOME;GTK;Development;Debugger
+debug,d-bus,dbus,dfeet
+-doxywizard.desktop
+Doxygen Wizard
+
+doxywizard
+
+7
+
+doxywizard
+0
+0
+doxywizard
+
+Development
+
+-emacs.desktop
+Emacs
+Edit text
+emacs
+
+7
+Text Editor
+emacs %F
+0
+0
+
+
+Development;TextEditor
+Text,Editor
+-fluid.desktop
+FLUID
+FLTK GUI Designer
+fluid
+
+7
+
+fluid %F
+0
+0
+fluid
+
+Development;GUIDesigner
+
+-gambas3.desktop
+Gambas3
+Gambas3 Integrated Development Environment
+gambas3.png
+
+7
+
+gambas3
+2
+0
+
+
+Application;Development
+
+-geany.desktop
+Geany
+A fast and lightweight IDE using GTK+
+geany
+
+7
+Integrated Development Environment
+geany %F
+2
+0
+
+
+GTK;Development;IDE
+Text,Editor
+-ghex.desktop
+GHex
+Inspect and edit binary files
+ghex
+
+7
+Hex Editor
+ghex %F
+2
+0
+
+
+GNOME;GTK;Development
+binary,debug
+-gitg.desktop
+gitg
+Git repository browser
+gitg
+
+7
+
+gitg --no-wd %U
+0
+0
+gitg
+
+GNOME;GTK;Development
+
+-glade.desktop
+Glade
+Create or open user interface designs for GTK+ applications
+glade
+
+7
+Interface Designer
+glade %F
+2
+0
+
+
+GNOME;GTK;Development;GUIDesigner
+GUI designer,user interface,ui builder
+-glade-3.desktop
+Glade
+Create or open user interface designs for GTK+ applications
+glade-3
+
+7
+Interface Designer
+glade-3 %F
+2
+0
+
+
+GNOME;GTK;Development;GUIDesigner
+
+-glade-2.desktop
+Glade Interface Designer
+Create or open user interface designs for GTK+ or GNOME applications
+glade-2
+
+7
+
+glade-2 %F
+0
+0
+
+
+Application;Development
+
+-gtk3-demo.desktop
+GTK+ Demo
+GTK+ code examples and demonstrations
+gtk3-demo
+
+7
+
+gtk3-demo
+6
+0
+
+
+Development;GTK
+
+-gtranslator.desktop
+Gtranslator
+Translate and localize applications and libraries
+gtranslator
+
+7
+PO File Editor
+gtranslator %F
+2
+0
+
+
+GNOME;GTK;Development;Translation
+
+-yad-icon-browser.desktop
+Icon Browser
+Inspect GTK Icon Theme
+yad
+
+7
+
+yad-icon-browser
+2
+0
+
+
+GTK;Development
+
+-gtk3-icon-browser.desktop
+Icon Browser
+An application that shows themed icons
+gtk3-icon-browser
+
+7
+
+gtk3-icon-browser
+6
+0
+
+
+Development;GTK
+
+-idle2.7.desktop
+IDLE 2.7
+
+idle27
+
+7
+
+idle2.7
+0
+0
+idle2.7
+
+Development;IDE
+
+-idle3.6.desktop
+IDLE 3.6
+
+idle36
+
+7
+
+idle3.6
+0
+0
+idle3.6
+
+Development;IDE
+
+-org.kde.kapptemplate.desktop
+KAppTemplate
+
+kapptemplate
+
+7
+KDE Template Generator
+kapptemplate
+0
+0
+
+
+Qt;KDE;Development
+
+-org.kde.kdesvn.desktop
+kdesvn
+A Subversion client for KDE
+kdesvn
+
+7
+SVN Client
+kdesvn -caption "%c" %u
+0
+0
+
+
+Qt;KDE;Development;RevisionControl
+
+-kde4-kdiff3.desktop
+KDiff3
+A File And Directory Comparison And Merge Tool
+kdiff3
+kdiff3.desktop
+9
+Diff/Patch Frontend
+kdiff3 %i -caption "%c"
+0
+0
+
+
+Qt;KDE;Development
+
+-kdiff3-qt.desktop
+KDiff3 (Qt-only)
+
+kdiff3-qt
+
+7
+
+kdiff3-qt
+0
+0
+kdiff3-qt
+
+Development;Qt
+
+-org.kde.kimagemapeditor.desktop
+KImageMapEditor
+
+kimagemapeditor
+
+7
+HTML Image Map Editor
+kimagemapeditor -qwindowtitle %c %i %F
+0
+0
+
+
+Qt;KDE;Development;WebDevelopment
+
+-kde4-klinkstatus.desktop
+KLinkStatus
+
+klinkstatus
+klinkstatus.desktop
+9
+Link Checker
+klinkstatus %i  -caption %c
+0
+0
+
+
+Qt;KDE;Development;WebDevelopment
+
+-org.kde.kompare.desktop
+Kompare
+
+kompare
+
+7
+Diff/Patch Frontend
+kompare -o %U
+0
+0
+
+
+Qt;KDE;Development
+
+-org.kde.kuiviewer.desktop
+KUIViewer
+A quick viewer for Qt Designer UI File
+kuiviewer
+
+7
+Qt Designer UI File Viewer
+kuiviewer -qwindowtitle %c %u
+0
+0
+
+
+Qt;KDE;Development
+
+-org.kde.lokalize.desktop
+Lokalize
+
+lokalize
+
+7
+Computer-Aided Translation System
+lokalize %F
+0
+0
+
+
+Qt;KDE;Development;Office;Translation
+
+-meld.desktop
+Meld
+Compare and merge your files
+meld
+
+7
+Diff Viewer
+meld %F
+2
+0
+
+
+GTK;Development
+diff,merge
+-iodbcadm-gtk.desktop
+ODBC Data Source Administrator
+
+iodbc
+
+7
+
+iodbcadm-gtk
+0
+0
+iodbcadm-gtk
+
+Development;Database
+
+-org.kde.plasma.lookandfeelexplorer.desktop
+Plasma Look And Feel Explorer
+Explore and edit your Plasma Look And Feel themes
+preferences-desktop-theme
+
+7
+
+lookandfeelexplorer
+0
+0
+
+
+Qt;KDE;Development;IDE
+
+-org.kde.plasma.themeexplorer.desktop
+Plasma Theme Explorer
+Explore and edit your Plasma themes
+preferences-desktop-theme
+
+7
+
+plasmathemeexplorer
+0
+0
+
+
+Qt;KDE;Development
+
+-plasmate.desktop
+Plasmate
+
+plasmagik
+
+7
+Plasma Addon Creator
+plasmate
+0
+0
+
+
+Qt;KDE;Development;IDE
+
+-poedit.desktop
+Poedit
+
+poedit
+
+7
+Gettext catalogs editor
+poedit %F
+2
+0
+
+
+Development;Translation
+Translate,po,gettext
+-pyalacarte.desktop
+PyAlaCarte
+
+PyCrust
+
+7
+
+pyalacarte
+0
+0
+pyalacarte
+
+Development;GTK
+
+-pyalamode.desktop
+PyAlaMode
+
+PyCrust
+
+7
+
+pyalamode
+0
+0
+pyalamode
+
+Development;GTK
+
+-pyshell.desktop
+PyCrust
+
+PyCrust
+
+7
+
+pyshell
+0
+0
+pyshell
+
+Development;GTK
+
+-pycrust.desktop
+PyCrust
+
+PyCrust
+
+7
+
+pycrust
+0
+0
+pycrust
+
+Development;GTK
+
+-assistant-qt3.desktop
+Qt3 Assistant
+
+assistant-qt3.png
+
+7
+
+assistant-qt3
+0
+0
+assistant-qt3
+
+Development;Qt
+
+-designer-qt3.desktop
+Qt3 Designer
+
+designer-qt3.png
+
+7
+
+designer-qt3
+0
+0
+designer-qt3
+
+Development;GUIDesigner;Qt
+
+-linguist-qt3.desktop
+Qt3 Linguist
+
+linguist-qt3.png
+
+7
+
+linguist-qt3
+0
+0
+linguist-qt3
+
+Development;Translation;Qt
+
+-assistant-qt4.desktop
+Qt4 Assistant
+
+assistant-qt4.png
+
+7
+
+assistant-qt4
+0
+0
+assistant-qt4
+
+Development;Documentation;Qt
+
+-qdbusviewer-qt4.desktop
+Qt4 D-Bus Viewer
+
+qdbusviewer-qt4.png
+
+7
+
+qdbusviewer-qt4
+0
+0
+qdbusviewer-qt4
+
+Development;Debugger;Qt
+
+-designer-qt4.desktop
+Qt4 Designer
+
+designer-qt4.png
+
+7
+
+designer-qt4
+0
+0
+designer-qt4
+
+Development;GUIDesigner;Qt
+
+-linguist-qt4.desktop
+Qt4 Linguist
+
+linguist-qt4.png
+
+7
+
+linguist-qt4
+0
+0
+linguist-qt4
+
+Development;Translation;Qt
+
+-assistant-qt5.desktop
+Qt5 Assistant
+
+assistant-qt5.png
+
+7
+
+assistant-qt5
+0
+0
+assistant-qt5
+
+Development;Documentation;Qt
+
+-qdbusviewer-qt5.desktop
+Qt5 D-Bus Viewer
+
+qdbusviewer-qt5.png
+
+7
+
+qdbusviewer-qt5
+0
+0
+qdbusviewer-qt5
+
+Development;Debugger;Qt
+
+-designer-qt5.desktop
+Qt5 Designer
+
+designer-qt5.png
+
+7
+
+designer-qt5
+0
+0
+designer-qt5
+
+Development;GUIDesigner;Qt
+
+-linguist-qt5.desktop
+Qt5 Linguist
+
+linguist-qt5.png
+
+7
+
+linguist-qt5
+0
+0
+linguist-qt5
+
+Development;Translation;Qt
+
+-SciTE.desktop
+SciTE Text Editor
+Edit your source files
+Sci48M
+
+7
+Text Editor
+SciTE %F
+2
+0
+
+
+TextEditor;Development;GTK;Application
+
+-sqliteman.desktop
+Sqliteman
+Administer and develop your Sqlite3 databases
+sqliteman
+
+7
+Sqlite admin tool
+sqliteman %f
+2
+0
+
+
+Development;Database
+
+-tkpp.desktop
+Tkpp
+
+par
+
+7
+
+tkpp
+0
+0
+tkpp
+
+Development;Building
+
+-org.kde.umbrello.desktop
+Umbrello
+
+umbrello
+
+7
+UML Modeller
+umbrello5 %u -caption %c
+0
+0
+
+
+Qt;KDE;Development
+
+-gtk3-widget-factory.desktop
+Widget Factory
+A showcase for GTK+ widgets, designed for testing themes.
+gtk3-widget-factory
+
+7
+
+gtk3-widget-factory
+6
+0
+
+
+Development;GTK
+
+-xrced.desktop
+XRCed
+
+XRCed
+
+7
+
+xrced
+0
+0
+xrced
+
+Development;GTK
+
+
++Multimedia
+Sound & Video
+Multimedia menu
+applications-multimedia
+lxde-audio-video.directory
+2
+0
+-audacious.desktop
+Audacious
+Listen to music
+audacious
+
+7
+Music Player
+audacious %U
+2
+0
+audacious
+
+AudioVideo;Audio;Player;GTK
+
+-audacity.desktop
+Audacity
+Record and edit audio files
+audacity
+
+7
+Sound Editor
+env UBUNTU_MENUPROXY=0 audacity %F
+0
+0
+
+
+AudioVideo;Audio;AudioVideoEditing
+
+-cantata.desktop
+Cantata
+
+cantata
+
+7
+Music Player Client
+cantata %U
+0
+0
+
+
+Qt;KDE;AudioVideo;Player
+Music,MPD
+-org.kde.dragonplayer.desktop
+Dragon Player
+
+dragonplayer
+
+7
+Video Player
+dragon %u
+0
+0
+dragon
+
+Qt;KDE;AudioVideo;Player
+
+-easytag.desktop
+EasyTAG
+Edit audio file metadata
+easytag
+
+7
+Audio File Metadata Editor
+easytag %F
+2
+0
+
+
+GTK;AudioVideo;AudioVideoEditing;Audio
+mp3,tag,audio,music
+-qmmp_enqueue.desktop
+Enqueue in Qmmp
+Add file(s) to the Qmmp playlist
+qmmp
+
+7
+
+qmmp -e %F
+4
+0
+
+
+AudioVideo;Player;Audio;Qt
+
+-gmpc.desktop
+Gnome Music Player Client
+A gnome frontend for the mpd daemon
+gmpc
+
+7
+
+gmpc
+2
+0
+
+
+GNOME;AudioVideo
+
+-isomaster.desktop
+ISO Master
+Read, write and modify ISO images
+/usr/share/isomaster/icons/isomaster.png
+
+7
+ISO File Editor
+isomaster
+2
+0
+
+
+AudioVideo;DiscBurning
+
+-org.kde.juk.desktop
+JuK
+
+juk
+
+7
+Music Player
+juk -qwindowtitle %c %i
+0
+0
+
+
+Qt;KDE;AudioVideo;Player
+
+-kid3.desktop
+Kid3
+Edit audio file metadata
+kid3
+
+7
+Audio Tagger
+kid3 %F
+2
+0
+
+
+Qt;KDE;AudioVideo;Audio;AudioVideoEditing
+audio,id3,tag,editor,id3v1,id3v2,mp3
+-kid3-qt.desktop
+Kid3-qt
+Edit audio file metadata
+kid3-qt
+
+7
+Audio Tagger
+kid3-qt %F
+2
+0
+
+
+Qt;AudioVideo;Audio;AudioVideoEditing
+audio,id3,tag,editor,id3v1,id3v2,mp3
+-org.kde.kmix.desktop
+KMix
+
+kmix
+
+7
+Sound Mixer
+kmix -qwindowtitle "%c" %i
+0
+4
+
+
+Qt;KDE;AudioVideo;Audio;Mixer
+
+-org.kde.kwave.desktop
+Kwave Sound Editor
+A sound editor by KDE
+kwave
+
+7
+Sound Editor
+kwave %F
+0
+0
+kwave
+
+Qt;KDE;AudioVideo;Audio;Player;Recorder;AudioVideoEditing
+
+-xplayer.desktop
+Media Player
+Play movies
+xplayer
+
+7
+
+xplayer %U
+2
+0
+
+
+GTK;GNOME;AudioVideo;Player;Video
+Video,Movie,Film,Clip,Series,Player,DVD,TV,Disc
+-mediainfo-gui.desktop
+MediaInfo
+Supplies technical and tag information about a video or audio file
+mediainfo
+
+7
+
+mediainfo-gui %f
+0
+0
+
+
+AudioVideo;AudioVideoEditing
+media info,metadata,tag,video,audio,subtitles,chapters,codec,mkv,mpeg,mp3,h264,avc,h265,hevc,avi
+-mediainfo-qt.desktop
+MediaInfo Qt
+Supplies technical and tag information about a video or audio file
+mediainfo
+
+7
+
+mediainfo-qt %f
+0
+0
+
+
+AudioVideo;AudioVideoEditing
+media info,metadata,tag,video,audio,subtitles,chapters,codec,mkv,mpeg,mp3,h264,avc,h265,hevc,avi
+-org.bunkus.mkvtoolnix-gui.desktop
+MKVToolNix GUI
+
+mkvtoolnix-gui
+
+7
+Matroska files creator and tools
+mkvtoolnix-gui %F
+0
+0
+
+
+AudioVideo;AudioVideoEditing
+
+-picard.desktop
+MusicBrainz Picard
+Tag your music with the next generation MusicBrainz tagger
+picard
+
+7
+
+picard %F
+2
+0
+
+
+AudioVideo;Audio;AudioVideoEditing
+
+-parole.desktop
+Parole Media Player
+Play your media
+parole
+
+7
+
+parole %F
+2
+0
+
+
+GTK;AudioVideo;Player;Video
+
+-qpaeq.desktop
+PulseAudio Equalizer
+
+multimedia-volume-control
+
+7
+
+qpaeq
+0
+0
+qpaeq
+
+AudioVideo;Audio;Mixer
+
+-paman.desktop
+PulseAudio Manager
+Manager your PulseAudio sound server.
+audio-card
+
+7
+
+paman
+2
+0
+
+
+Application;AudioVideo;Audio
+
+-pasystray.desktop
+PulseAudio System Tray
+An Applet for PulseAudio
+pasystray
+
+7
+
+pasystray
+2
+0
+
+
+AudioVideo;Audio
+pulseaudio,tray,system tray,applet,volume
+-pavucontrol.desktop
+PulseAudio Volume Control
+Adjust the volume level
+multimedia-volume-control
+
+7
+Volume Control
+pavucontrol
+2
+0
+
+
+AudioVideo;Audio;Mixer;GTK
+
+-pavumeter-record.desktop
+PulseAudio Volume Meter (Capture)
+Monitor the input volume
+audio-input-microphone
+
+7
+Capture Volume Meter
+pavumeter --record
+2
+0
+
+
+Application;AudioVideo;Audio
+
+-pavumeter.desktop
+PulseAudio Volume Meter (Playback)
+Monitor the output volume
+audio-input-microphone
+
+7
+Playback Volume Meter
+pavumeter
+2
+0
+
+
+Application;AudioVideo;Audio
+
+-qmmp.desktop
+Qmmp
+Qt5-based Multimedia Player
+qmmp
+
+7
+Audio player
+qmmp %F
+0
+0
+
+
+AudioVideo;Player;Audio;Qt
+player,audio,video,multimedia
+-qmmp_dir.desktop
+Qmmp
+Qt5-based Multimedia Player
+qmmp
+
+7
+Audio player
+qmmp %F
+4
+0
+
+
+AudioVideo;Player;Audio;Qt
+
+-mate-volume-control.desktop
+Sound
+Change sound volume and sound events
+multimedia-volume-control
+
+7
+
+mate-volume-control
+2
+64
+
+
+AudioVideo;Mixer;Settings;HardwareSettings
+MATE,volume,control,mixer,settings,sound,events
+-timidity-ig.desktop
+TiMidity
+
+timidity
+
+7
+
+timidity -ig
+0
+0
+timidity
+
+AudioVideo;Audio;Midi
+
+-timidity-ik.desktop
+TkMidity
+
+timidity
+
+7
+
+timidity -ik
+0
+0
+timidity
+
+AudioVideo;Audio;Midi
+
+-org.gnome.Totem.desktop
+Videos
+Play movies
+org.gnome.Totem
+
+7
+
+totem %U
+2
+0
+
+
+GTK;GNOME;AudioVideo;Player;Video
+Video,Movie,Film,Clip,Series,Player,DVD,TV,Disc
+
++System
+System Tools
+System configuration and monitoring
+applications-system
+lxde-system-tools.directory
+2
+0
+-lxqt-about.desktop
+About LXQt
+Learn more about LXQt
+help-about
+
+7
+About LXQt
+lxqt-about
+0
+1024
+
+
+System;Documentation
+
+-avahi-discover.desktop
+Avahi Zeroconf Browser
+Browse for Zeroconf services available on your network
+network-wired
+
+7
+
+/usr/bin/avahi-discover
+0
+0
+
+
+GNOME;System
+
+-bonobo-browser.desktop
+Bonobo Component Browser
+Shows available Bonobo components
+
+
+7
+
+bonobo-browser
+4
+0
+
+
+GNOME;GTK;System
+
+-Thunar-bulk-rename.desktop
+Bulk Rename
+Rename Multiple Files
+Thunar
+
+7
+Bulk Rename
+/usr/lib/Thunar/ThunarBulkRename %F
+2
+0
+
+
+System;Utility;Core;GTK;Filesystem
+
+-caja-browser.desktop
+Caja
+Browse the file system with the file manager
+system-file-manager
+
+7
+File Browser
+caja --no-desktop --browser %U
+0
+64
+caja
+
+GTK;System;Utility;Core
+files,browser,manager,MATE
+-cygwin-caja-browser.desktop
+Caja
+Browse the file system with the file manager
+system-file-manager
+
+7
+File Browser
+caja --no-desktop --browser %U
+0
+-65
+caja
+
+GTK;System;Utility
+files,browser,manager,MATE
+-caja-computer.desktop
+Computer
+Browse all local and remote disks and folders accessible from this computer
+computer
+
+7
+
+caja --no-desktop computer:
+6
+64
+caja
+
+GTK;System;Core
+browse,disks,folders,local,remote,computer,MATE
+-mintty.desktop
+Cygwin Terminal
+
+mintty
+
+7
+
+mintty
+0
+2048
+mintty
+
+System;TerminalEmulator
+
+-ca.desrt.dconf-editor.desktop
+dconf Editor
+Directly edit your entire configuration database
+dconf-editor
+
+7
+Configuration editor for dconf
+dconf-editor
+2
+0
+
+
+GNOME;GTK;System
+settings,configuration
+-org.gnome.baobab.desktop
+Disk Usage Analyzer
+Check folder sizes and available disk space
+baobab
+
+7
+
+baobab
+2
+-5
+baobab
+
+GTK;GNOME;System;Filesystem;X-GNOME-Utilities
+storage,space,cleanup
+-org.kde.dolphin.desktop
+Dolphin
+
+system-file-manager
+
+7
+File Manager
+dolphin %u
+0
+0
+
+
+Qt;KDE;System;FileTools;FileManager
+
+-dosbox.desktop
+DOSBox
+An x86/DOS emulator with sound/graphics
+dosbox.png
+
+7
+
+dosbox
+0
+0
+
+
+System;Emulator
+
+-pcmanfm.desktop
+File Manager PCManFM
+Browse the file system and manage the files
+system-file-manager
+
+7
+File Manager
+pcmanfm %U
+2
+0
+
+
+System;FileTools;FileManager;Utility;Core;GTK
+
+-fma-config-tool.desktop
+FileManager-Actions Configuration Tool
+Configure items to be added to the File-Manager context menus
+fma-config-tool
+
+7
+
+fma-config-tool
+2
+0
+
+
+System;FileTools;FileManager
+
+-gigolo.desktop
+Gigolo
+A simple frontend to easily connect to remote filesystems
+gtk-network
+
+7
+Gigolo
+gigolo
+2
+0
+
+
+System;GTK;Filesystem
+
+-gnome-system-monitor-kde.desktop
+GNOME System Monitor
+View current processes and monitor system state
+utilities-system-monitor
+
+7
+
+gnome-system-monitor
+2
+4
+gnome-system-monitor
+
+GNOME;GTK;System;Monitor
+Monitor,System,Process,CPU,Memory,Network,History,Usage
+-gsmartcontrol.desktop
+GSmartControl
+Monitor and control SMART data on hard disks
+gsmartcontrol
+
+7
+Hard Disk Health Inspection
+"/usr/bin/gsmartcontrol"
+0
+0
+
+
+System;Monitor
+
+-guake.desktop
+Guake Terminal
+Use the command line in a Quake-like terminal
+guake
+
+7
+
+guake
+2
+0
+guake
+
+GNOME;GTK;System;Utility;TerminalEmulator
+
+-lxqt-hibernate.desktop
+Hibernate
+hibernate the machine
+system-suspend-hibernate
+
+7
+Hibernate
+lxqt-leave --hibernate
+0
+1024
+
+
+System;X-Leave
+
+-caja-home.desktop
+Home Folder
+Open your personal folder
+user-home
+
+7
+
+caja --no-desktop
+6
+64
+caja
+
+GTK;System;Core
+home,personal,folder,open,MATE
+-org.kde.kinfocenter.desktop
+Info Center
+Centralized and convenient overview of system information
+hwinfo
+
+7
+Info Center
+kinfocenter
+0
+4
+
+
+Qt;KDE;System
+
+-org.kde.kdf.desktop
+KDiskFree
+Displays information about hard disks and other storage devices
+kdf
+
+7
+View Disk Usage
+kdf -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;System
+
+-gkbd-keyboard-display.desktop
+Keyboard Layout
+Preview keyboard layouts
+preferences-desktop-keyboard
+
+7
+
+gkbd-keyboard-display
+6
+2
+
+
+GNOME;GTK;Core;System
+
+-kfmclient_html.desktop
+Konqueror
+
+konqueror
+
+7
+
+kfmclient openURL %u text/html
+4
+0
+
+
+Qt;KDE;System
+
+-kfmclient.desktop
+Konqueror
+
+konqueror
+
+7
+
+kfmclient openURL %u
+4
+0
+
+
+Qt;KDE;System
+
+-kfmclient_war.desktop
+Konqueror
+
+konqueror
+
+7
+
+kfmclient openURL %u application/x-webarchive
+4
+0
+
+
+Qt;KDE;System
+
+-kfmclient_dir.desktop
+Konqueror
+
+konqueror
+
+7
+
+kfmclient openURL %u inode/directory
+4
+0
+
+
+Qt;KDE;System
+
+-org.kde.konsole.desktop
+Konsole
+Command line access
+utilities-terminal
+
+7
+Terminal
+konsole
+2
+0
+konsole
+
+Qt;KDE;System;TerminalEmulator
+
+-org.kde.krfb.desktop
+Krfb
+Desktop Sharing
+krfb
+
+7
+Desktop Sharing
+krfb -qwindowtitle %c %i
+0
+0
+
+
+Qt;KDE;System;Network;RemoteAccess
+
+-org.kde.ksysguard.desktop
+KSysGuard
+Monitor running processes and system performance
+utilities-system-monitor
+
+7
+System Monitor
+ksysguard %U
+2
+0
+
+
+Qt;KDE;System
+
+-org.kde.ksystemlog.desktop
+KSystemLog
+System log viewer tool
+utilities-log-viewer
+
+7
+System Log Viewer
+ksystemlog -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;System;Monitor
+
+-org.kde.kwalletmanager5.desktop
+KWalletManager
+KDE Wallet Management Tool
+kwalletmanager
+
+7
+Wallet Management Tool
+kwalletmanager5 %u
+0
+0
+
+
+Qt;KDE;System;Security
+
+-kde4-kwalletmanager.desktop
+KWalletManager
+
+kwalletmanager
+kwalletmanager.desktop
+9
+Wallet Management Tool
+kwalletmanager %u
+0
+0
+
+
+Qt;KDE;System;Security
+
+-org.kde.kwikdisk.desktop
+KwikDisk
+Panel icon to mount and unmount disks
+kwikdisk
+
+7
+Removable Media Utility
+kwikdisk -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;System
+
+-lxqt-leave.desktop
+Leave
+Leave dialog
+system-shutdown
+
+7
+Leave
+lxqt-leave
+0
+1024
+
+
+System;X-Leave
+
+-lxqt-lockscreen.desktop
+Lock Screen
+Lock the current session
+system-lock-screen
+
+7
+Lock Screen
+lxqt-leave --lockscreen
+0
+1024
+
+
+System;Screensaver
+
+-mate-system-log.desktop
+Log File Viewer
+View or monitor system log files
+mate-system-log
+
+7
+
+mate-system-log
+2
+64
+
+
+GTK;System;Monitor
+MATE,monitor,view,system,log,files,logviewer
+-xfce4-session-logout.desktop
+Log Out
+Log out of the Xfce Desktop
+system-log-out
+
+7
+
+xfce4-session-logout
+0
+8
+
+
+System;X-XFCE;X-Xfce-Toplevel
+
+-lxqt-logout.desktop
+Logout
+Logout from the current session
+system-log-out
+
+7
+Logout
+lxqt-leave --logout
+0
+1024
+
+
+System;X-Leave
+
+-lxterminal.desktop
+LXTerminal
+Use the command line
+lxterminal
+
+7
+Terminal
+lxterminal
+0
+0
+lxterminal
+
+GTK;System;TerminalEmulator
+console,command line,execute
+-mate-disk-usage-analyzer.desktop
+MATE Disk Usage Analyzer
+Check folder sizes and available disk space
+mate-disk-usage-analyzer
+
+7
+
+mate-disk-usage-analyzer
+2
+64
+mate-disk-usage-analyzer
+
+GTK;System;Filesystem
+MATE,check,disk,usage,analyze,size,space
+-mate-system-monitor.desktop
+MATE System Monitor
+View current processes and monitor system state
+utilities-system-monitor
+
+7
+System Monitor
+mate-system-monitor
+2
+64
+mate-system-monitor
+
+GTK;System;Monitor
+MATE,system,monitor,process,list,view,current,resources
+-mate-terminal.desktop
+MATE Terminal
+Use the command line
+utilities-terminal
+
+7
+Terminal
+mate-terminal
+2
+0
+mate-terminal
+
+System;GTK;Utility;TerminalEmulator
+
+-mate-network-scheme.desktop
+Network
+Browse bookmarked and local network locations
+network-workgroup
+
+7
+
+caja --no-desktop network:
+6
+64
+caja
+
+GTK;System;Core
+bookmarks,browse,local,network,locations,MATE
+-Thunar-folder-handler.desktop
+Open Folder with Thunar
+Open the specified folders in Thunar
+Thunar
+
+7
+Open Folder
+thunar %F
+6
+0
+Thunar
+
+System;Utility;Core;GTK;FileTools;FileManager
+
+-gnome-panel.desktop
+Panel
+Launch other applications and provide various utilities to manage windows, show the time, etc.
+gnome-panel
+
+7
+
+gnome-panel
+4
+128
+
+
+GNOME;GTK;System;Core
+
+-mate-panel.desktop
+Panel
+Launch other applications and provide various utilities to manage windows, show the time, etc.
+mate-panel
+
+7
+
+mate-panel
+6
+64
+
+
+GTK;System;Core
+
+-pterm.desktop
+PuTTY Terminal
+
+pterm
+
+7
+
+pterm
+0
+0
+pterm
+
+System;TerminalEmulator
+
+-qterminal.desktop
+QTerminal
+Terminal emulator
+utilities-terminal
+
+7
+Terminal emulator
+qterminal
+0
+0
+
+
+Qt;System;TerminalEmulator
+
+-qterminal_drop.desktop
+QTerminal drop down
+A drop-down terminal emulator.
+utilities-terminal
+
+7
+Drop-down Terminal
+qterminal --drop
+0
+0
+
+
+Qt;System;TerminalEmulator
+
+-lxqt-reboot.desktop
+Reboot
+reboot the machine
+system-reboot
+
+7
+Reboot
+lxqt-leave --reboot
+0
+1024
+
+
+System;X-Leave
+
+-rxvt.desktop
+RXVT
+VT102 emulator
+utilities-terminal
+
+7
+
+rxvt
+0
+0
+rxvt
+
+System;TerminalEmulator
+
+-urxvt.desktop
+rxvt-unicode
+
+utilities-terminal
+
+7
+
+urxvt
+0
+0
+urxvt
+
+System;TerminalEmulator
+
+-gnome-control-center.desktop
+Settings
+
+preferences-system
+
+7
+
+gnome-control-center --overview
+2
+34
+
+
+GNOME;GTK;System
+Preferences,Settings
+-lxqt-shutdown.desktop
+Shutdown
+shutdown the machine
+system-shutdown
+
+7
+Shutdown
+lxqt-leave --shutdown
+0
+1024
+
+
+System;X-Leave
+
+-lxqt-suspend.desktop
+Suspend
+suspend the machine
+system-suspend
+
+7
+Suspend
+lxqt-leave --suspend
+0
+1024
+
+
+System;X-Leave
+
+-gnome-system-log.desktop
+System Log
+View or monitor system log files
+logview
+
+7
+
+gnome-system-log
+2
+-5
+
+
+GTK;GNOME;System;Monitor
+logs,debug,error
+-gnome-system-monitor.desktop
+System Monitor
+View current processes and monitor system state
+utilities-system-monitor
+
+7
+
+gnome-system-monitor
+2
+-5
+gnome-system-monitor
+
+GNOME;GTK;System;Monitor
+Monitor,System,Process,CPU,Memory,Network,History,Usage,Performance,Task,Manager
+-xfce4-taskmanager.desktop
+Task Manager
+Easy to use task manager
+utilities-system-monitor
+
+7
+Task Manager
+xfce4-taskmanager
+2
+0
+
+
+System;Utility
+
+-lxtask.desktop
+Task Manager
+Manage running processes
+utilities-system-monitor
+
+7
+Process manager
+lxtask
+2
+0
+
+
+GTK;System;Monitor
+task,kill,suspend,processor,memory,monitoring,performance
+-org.gnome.Terminal.desktop
+Terminal
+Use the command line
+utilities-terminal
+
+7
+
+gnome-terminal
+2
+0
+gnome-terminal
+
+GNOME;GTK;System;TerminalEmulator
+shell,prompt,command,commandline,cmd
+-terminator.desktop
+Terminator
+Multiple terminals in one window
+terminator
+
+7
+
+terminator
+2
+0
+terminator
+
+GNOME;GTK;Utility;TerminalEmulator;System
+
+-Thunar.desktop
+Thunar File Manager
+Browse the filesystem with the file manager
+Thunar
+
+7
+File Manager
+thunar %F
+2
+0
+
+
+System;Utility;Core;GTK;FileTools;FileManager
+
+-uxterm.desktop
+UXTerm
+standard terminal emulator for the X window system
+xterm-color_48x48
+
+7
+
+uxterm
+0
+0
+
+
+System;TerminalEmulator
+shell,prompt,command,commandline,cmd
+-virt-manager.desktop
+Virtual Machine Manager
+Manage virtual machines
+virt-manager
+
+7
+
+virt-manager
+0
+0
+
+
+System
+
+-xfce4-terminal.desktop
+Xfce Terminal
+Terminal Emulator
+utilities-terminal
+
+7
+Terminal Emulator
+xfce4-terminal
+2
+0
+
+
+GTK;System;TerminalEmulator
+
+-xterm.desktop
+XTerm
+standard terminal emulator for the X window system
+xterm-color
+
+7
+Terminal
+xterm
+0
+0
+
+
+System;TerminalEmulator
+shell,prompt,command,commandline,cmd
+-org.kde.yakuake.desktop
+Yakuake
+A drop-down terminal emulator based on KDE Konsole technology.
+yakuake
+
+7
+Drop-down Terminal
+yakuake
+0
+0
+
+
+Qt;KDE;System;TerminalEmulator
+
+
++Universal Access
+Universal Access
+Universal Access Settings
+preferences-desktop-accessibility
+lxde-utility-accessibility.directory
+2
+0
+-accerciser.desktop
+Accerciser
+Give your application an accessibility workout
+accerciser
+
+7
+
+/usr/bin/accerciser
+2
+0
+
+
+Development;GNOME;GTK;Accessibility
+accessibility,development,test
+-input-pad.desktop
+Input Pad
+
+input-pad
+
+7
+
+input-pad
+0
+0
+input-pad
+
+Accessibility;Utility
+
+-kde4-org.kde.jovie.desktop
+Jovie
+KDE Text To Speech Service
+preferences-desktop-text-to-speech
+org.kde.jovie.desktop
+9
+Text To Speech Service
+jovie
+0
+0
+
+
+Qt;KDE;Utility;Accessibility
+
+-org.kde.kmag.desktop
+KMag
+A screen magnification tool
+kmag
+
+7
+Screen Magnifier
+kmag
+0
+0
+
+
+Qt;KDE;Utility;Accessibility
+
+-org.kde.kmousetool.desktop
+KMouseTool
+Clicks the mouse for you, reducing the effects of RSI
+kmousetool
+
+7
+Automatic Mouse Click
+kmousetool -qwindowtitle %c
+0
+0
+
+
+Qt;KDE;Utility;Accessibility
+
+-org.kde.kmouth.desktop
+KMouth
+
+kmouth
+
+7
+Speech Synthesizer Frontend
+kmouth
+0
+0
+
+
+Qt;KDE;Utility;Accessibility
+
+
+-
++DesktopSettings
+Preferences
+Personal preferences
+preferences-desktop
+lxde-settings.directory
+2
+0
+-gnome-info-overview-panel.desktop
+Ab­out
+View information about your system
+help-about
+
+7
+
+gnome-control-center info-overview
+6
+34
+
+
+GNOME;GTK;Settings;X-GNOME-Hidden;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;X-GNOME-DetailsSettings
+device,system,information,memory,processor,version,default,application,preferred,cd,dvd,usb,audio,video,disc,removable,media,autorun
+-mate-about-me.desktop
+About Me
+Set your personal information
+user-info
+
+7
+
+mate-about-me
+2
+64
+
+
+GTK;Settings;X-MATE-PersonalSettings
+mate-control-center,MATE,personal,information
+-xfce4-accessibility-settings.desktop
+Accessibility
+Improve keyboard and mouse accessibility
+preferences-desktop-accessibility
+
+7
+
+xfce4-accessibility-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings
+
+-kasumi.desktop
+Anthy Dictionary editor
+Edit Anthy dictionary.
+kasumi.png
+
+7
+Management tool for a private dictionary of anthy
+kasumi
+2
+0
+
+
+Applications;Settings
+
+-mate-appearance-properties.desktop
+Appearance
+Customize the look of the desktop
+preferences-desktop-theme
+
+7
+
+mate-appearance-properties %F
+2
+64
+
+
+GTK;Settings;DesktopSettings
+mate-control-center,MATE,appearance,properties,desktop,customize,look
+-xfce-ui-settings.desktop
+Appearance
+Customize the look of your desktop
+preferences-desktop-theme
+
+7
+
+xfce4-appearance-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-lxqt-config-appearance.desktop
+Appearance
+Appearance settings for LXQt
+preferences-desktop-theme
+
+7
+Appearance settings
+lxqt-config-appearance
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt
+
+-mate-at-properties.desktop
+Assistive Technologies
+Choose which accessibility features to enable when you log in
+preferences-desktop-accessibility
+
+7
+
+mate-at-properties
+2
+64
+
+
+GTK;Settings;Accessibility
+mate-control-center,MATE,accessibility,features
+-gnome-background-panel.desktop
+Back­ground
+Change your background image to a wallpaper or photo
+preferences-desktop-wallpaper
+
+7
+
+gnome-control-center background
+6
+2
+
+
+GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;X-GNOME-PersonalizationSettings
+Wallpaper,Screen,Desktop
+-lxqt-config-brightness.desktop
+Brightness
+Configure brightness
+brightnesssettings
+
+7
+Brightness Settings
+lxqt-config-brightness
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt;HardwareSettings
+
+-kde4-kdepasswd.desktop
+Change Password
+
+preferences-desktop-user-password
+kdepasswd.desktop
+9
+
+kdepasswd
+4
+0
+
+
+Qt;KDE;Settings
+
+-matecc.desktop
+Control Center
+Configure MATE settings
+preferences-desktop
+
+7
+The MATE configuration tool
+mate-control-center
+0
+64
+
+
+GTK;Settings
+MATE,control,center,configuration,tool,destop,preferences
+-lxappearance.desktop
+Customize Look and Feel
+Customizes look and feel of your desktop and applications
+preferences-desktop-theme
+
+7
+Customize Look and Feel
+lxappearance
+2
+-79
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+windows,preferences,settings,theme,style,appearance
+-gda-control-center-5.0.desktop
+Database access control center
+Configure your database access environment
+gda-control-center
+
+7
+
+gda-control-center-5.0
+2
+0
+
+
+Settings;DesktopSettings
+
+-gnome-default-apps-panel.desktop
+Defa­ult Applications
+Configure Default Applications
+starred
+
+7
+
+gnome-control-center default-apps
+6
+34
+
+
+GNOME;GTK;Settings;X-GNOME-Hidden;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;X-GNOME-DetailsSettings
+default,application,preferred,media
+-lxsession-default-apps.desktop
+Default applications for LXSession
+Change the default applications on LXDE
+preferences-desktop
+
+7
+
+lxsession-default-apps
+0
+2049
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+
+-pcmanfm-qt-desktop-pref.desktop
+Desktop
+Change wallpapers and behavior of desktop manager
+user-desktop
+
+7
+Desktop Settings
+pcmanfm-qt --desktop-pref=general
+2
+0
+
+
+Settings;Qt;DesktopSettings
+
+-xfce-backdrop-settings.desktop
+Desktop 
+Set desktop background and menu and icon behavior
+preferences-desktop-wallpaper
+
+7
+
+xfdesktop-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-lxqt-config-notificationd.desktop
+Desktop Notifications
+Configure desktop notifications
+preferences-desktop-theme
+
+7
+LXQt Notification Settings
+lxqt-config-notificationd
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt
+
+-pcmanfm-desktop-pref.desktop
+Desktop Preferences
+Change desktop wallpapers and behavior of desktop manager
+user-desktop
+
+7
+
+pcmanfm --desktop-pref
+2
+-79
+
+
+Settings;GTK;DesktopSettings;X-LXDE-Settings
+
+-lxsession-edit.desktop
+Desktop Session Settings
+Manage applications loaded in desktop session
+preferences-desktop
+
+7
+
+lxsession-edit
+0
+2049
+
+
+GTK;Settings;DesktopSettings;X-LXDE-Settings
+
+-gnome-info-panel.desktop
+De­tails
+View information about your system
+applications-system
+
+7
+
+gnome-control-center info
+6
+34
+
+
+GNOME;GTK;Settings;X-GNOME-AltHidden;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;X-GNOME-DetailsSettings
+device,system,information,memory,processor,version,default,application,preferred,cd,dvd,usb,audio,video,disc,removable,media,autorun
+-xfce-display-settings.desktop
+Display
+Configure screen settings and layout
+video-display
+
+7
+
+xfce4-display-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-mate-display-properties.desktop
+Displays
+Change resolution and position of monitors and projectors
+mate-preferences-desktop-display
+
+7
+
+mate-display-properties
+2
+64
+
+
+GTK;Settings;HardwareSettings
+mate-control-center,MATE,resolution,position,monitors,display,properties
+-lxqt-config-file-associations.desktop
+File Associations
+Configure applications associated with known file types
+preferences-desktop-filetype-association
+
+7
+File Association Settings
+lxqt-config-file-associations
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt
+
+-caja-file-management-properties.desktop
+File Management
+Change the behaviour and appearance of file manager windows
+system-file-manager
+
+7
+
+caja-file-management-properties
+2
+64
+
+
+GTK;Settings;X-MATE-PersonalSettings
+file,manager,change,properties,behaviour,appearance,windows,MATE
+-thunar-settings.desktop
+File Manager
+Configure the Thunar file manager
+system-file-manager
+
+7
+
+thunar-settings
+2
+0
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-org.gnome.GPaste.Ui.desktop
+GPaste
+Manage your clipboard history
+edit-paste
+
+7
+
+/usr/libexec/gpaste/gpaste-ui
+2
+0
+
+
+GTK;GNOME;Settings;X-GNOME-PersonalSettings
+Clipboard,Manager,Settings,Preferences,Configuration
+-guake-prefs.desktop
+Guake Preferences
+Configure your Guake sessions
+guake-prefs
+
+7
+
+guake-prefs
+2
+0
+guake-prefs
+
+GTK;GNOME;Settings;X-GNOME-PersonalSettings
+Terminal,Utility
+-ibus-setup-hangul.desktop
+IBus Hangul Preferences
+Set IBus Hangul Preferences
+ibus-setup-hangul
+
+7
+
+ibus-setup-hangul
+6
+0
+
+
+Settings
+
+-ibus-setup.desktop
+IBus Preferences
+Set IBus Preferences
+ibus-setup
+
+7
+
+ibus-setup
+2
+0
+
+
+Settings
+
+-ibus-setup-xkb.desktop
+IBus Preferences
+Set IBus Preferences
+ibus-setup-xkb
+
+7
+
+ibus-setup-xkb
+2
+0
+
+
+Settings
+
+-indicator-keylock.desktop
+Indicator-LockKeys
+Handles the locked states of CapsLock, NumLock, and ScrollLock
+caps-lock-on
+
+7
+
+indicator-keylock
+0
+0
+
+
+GNOME;GTK;Settings;HardwareSettings
+
+-im-chooser.desktop
+Input Method Selector
+Choose the input method to be used or disable the input method usage on the desktop
+im-chooser
+
+7
+
+im-chooser
+2
+-9
+
+
+Applications;Settings;X-GNOME-PersonalSettings
+
+-xfce4-im-chooser.desktop
+Input Method Selector
+Choose the input method to be used or disable the input method usage on the desktop
+im-chooser
+
+7
+
+xfce4-im-chooser
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-org.kde.kcolorschemeeditor.desktop
+KColorSchemeEditor
+Plasma color scheme editor
+preferences-desktop-color
+
+7
+Color scheme editor
+kcolorschemeeditor
+6
+4
+
+
+Qt;KDE;Settings;X-KDE-settings-looknfeel
+
+-kdesystemsettings.desktop
+KDE System Settings
+
+preferences-system
+
+7
+KDE System Settings
+systemsettings5
+0
+-5
+
+
+Qt;KDE;Settings
+
+-mate-keyboard.desktop
+Keyboard
+Set your keyboard preferences
+preferences-desktop-keyboard
+
+7
+
+mate-keyboard-properties
+2
+64
+
+
+GTK;Settings;HardwareSettings
+mate-control-center,MATE,keyboard,preferences
+-gnome-keyboard-panel.desktop
+Key­board
+View and change keyboard shortcuts and set your typing preferences
+input-keyboard
+
+7
+
+gnome-control-center keyboard
+6
+34
+
+
+GNOME;GTK;Settings;HardwareSettings;X-GNOME-Settings-Panel;X-GNOME-DevicesSettings
+Shortcut,Workspace,Window,Resize,Zoom,Contrast,Input,Source,Lock,Volume
+-xfce-keyboard-settings.desktop
+Keyboard
+Edit keyboard settings and application shortcuts
+preferences-desktop-keyboard
+
+7
+
+xfce4-keyboard-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-lxqt-config-input.desktop
+Keyboard and Mouse
+Configure keyboard, mouse, and other input devices
+input-keyboard
+
+7
+Input settings
+lxqt-config-input
+0
+1024
+
+
+Qt;Settings;HardwareSettings;DesktopSettings;LXQt
+
+-lxinput.desktop
+Keyboard and Mouse
+Configure keyboard, mouse, and other input devices
+input-keyboard
+
+7
+
+lxinput
+2
+-15
+
+
+GTK;Settings;HardwareSettings;X-LXDE-Settings
+
+-mate-keybinding.desktop
+Keyboard Shortcuts
+Assign shortcut keys to commands
+preferences-desktop-keyboard-shortcuts
+
+7
+
+mate-keybinding-properties
+2
+64
+
+
+GTK;Settings;HardwareSettings
+mate-control-center,MATE,assign,keyboard,shortcuts,keybindings
+-lxqt-config-locale.desktop
+Locale
+Locale settings for LXQt
+preferences-desktop-locale
+
+7
+Locale settings
+lxqt-config-locale
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt
+
+-lxqt-config.desktop
+LXQt Configuration Center
+Configure your system
+preferences-system
+
+7
+System Settings
+lxqt-config
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt
+
+-mozo.desktop
+Main Menu
+Change which applications are shown on the main menu
+mozo
+
+7
+
+mozo
+2
+64
+
+
+Settings;DesktopSettings
+application,main,menu,editor,customize,MATE
+-org.kde.kmenuedit.desktop
+Menu Editor
+
+kmenuedit
+
+7
+
+kmenuedit
+6
+4
+
+
+Qt;KDE;Settings
+
+-xfce4-mime-settings.desktop
+MIME Type Editor
+Associate applications with MIME types
+application-x-executable
+
+7
+
+xfce4-mime-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings
+
+-mate-settings-mouse.desktop
+Mouse
+Set your mouse preferences
+input-mouse
+
+7
+
+mate-mouse-properties
+2
+64
+
+
+GTK;Settings;HardwareSettings
+mate-control-center,MATE,mouse,preferences
+-gnome-mouse-panel.desktop
+Mouse & Touch­pad
+Change your mouse or touchpad sensitivity and select right or left-handed
+input-mouse
+
+7
+
+gnome-control-center mouse
+6
+34
+
+
+GNOME;GTK;Settings;HardwareSettings;X-GNOME-Settings-Panel;X-GNOME-DevicesSettings
+Trackpad,Pointer,Click,Tap,Double,Button,Trackball,Scroll
+-xfce-mouse-settings.desktop
+Mouse and Touchpad
+Configure pointer device behavior and appearance
+preferences-desktop-peripherals
+
+7
+
+xfce4-mouse-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-HardwareSettings
+
+-mate-network-properties.desktop
+Network Proxy
+Set your network proxy preferences
+mate-network-properties
+
+7
+
+mate-network-properties
+2
+64
+
+
+GTK;Settings;X-MATE-NetworkSettings
+mate-control-center,MATE,network,http,socks,proxy
+-xfce4-notifyd-config.desktop
+Notifications
+Customize how notifications appear on your screen
+xfce4-notifyd
+
+7
+
+xfce4-notifyd-config
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-gnome-notifications-panel.desktop
+No­ti­fi­ca­tions
+Control which notifications are displayed and what they show
+preferences-system-notifications
+
+7
+
+gnome-control-center notifications
+6
+34
+
+
+GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;X-GNOME-PersonalizationSettings
+Notifications,Banner,Message,Tray,Popup
+-gnome-online-accounts-panel.desktop
+On­line Accounts
+Connect to your online accounts and decide what to use them for
+goa-panel
+
+7
+
+gnome-control-center online-accounts
+2
+0
+
+
+GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;X-GNOME-AccountSettings
+Google,Facebook,Twitter,Yahoo,Web,Online,Chat,Calendar,Mail,Contact,ownCloud,Kerberos,IMAP,SMTP,Pocket,ReadItLater
+-obconf.desktop
+Openbox Configuration Manager
+Tweak settings for Openbox
+obconf
+
+7
+Configuration Manager
+obconf %f
+2
+0
+
+
+Settings;DesktopSettings;GTK
+
+-obconf-qt.desktop
+Openbox Settings
+Configure the Openbox window manager
+obconf-qt
+
+7
+Window Manager Settings
+obconf-qt
+2
+0
+
+
+Qt;Settings;DesktopSettings
+
+-xfce-xfcalendar-settings.desktop
+Orage preferences
+Settings for the Xfce 4 Calendar Application (Orage)
+xfcalendar
+
+7
+Orage Calendar Preferences
+orage -p
+0
+8
+
+
+X-XFCE;Settings;DesktopSettings;X-XfceSettingsDialog
+
+-panel-preferences.desktop
+Panel
+Customize the panel
+xfce4-panel
+
+7
+
+xfce4-panel --preferences
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-mate-user-share-properties.desktop
+Personal File Sharing
+Preferences for sharing of files
+folder-remote
+
+7
+
+mate-file-share-properties
+2
+64
+
+
+Settings;X-MATE-NetworkSettings
+MATE,personal,file,sharing,preferences,properties,settings,WebDAV,ObexFTP
+-mate-notification-properties.desktop
+Popup Notifications
+Set your popup notification preferences
+mate-notification-properties
+
+7
+
+mate-notification-properties
+2
+64
+
+
+GTK;Settings;DesktopSettings
+MATE,Notification,Theme
+-libfm-pref-apps.desktop
+Preferred Applications
+Select applications called on click on Web link or e-mail address
+preferences-desktop
+
+7
+
+libfm-pref-apps
+2
+-79
+
+
+Settings;DesktopSettings;X-LXDE-Settings;GTK
+
+-mate-default-applications-properties.desktop
+Preferred Applications
+Select your default applications
+preferences-desktop-default-applications
+
+7
+
+mate-default-applications-properties
+2
+64
+
+
+GTK;Settings;X-MATE-PersonalSettings
+mate-control-center,MATE,default,preferred,applications
+-exo-preferred-applications.desktop
+Preferred Applications
+Preferred Applications (Web Browser, Mail Reader and Terminal Emulator)
+preferences-desktop-default-applications
+
+7
+
+exo-preferred-applications
+2
+8
+
+
+X-XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-gnome-privacy-panel.desktop
+Pri­va­cy
+Protect your personal information and control what others might see
+preferences-system-privacy
+
+7
+
+gnome-control-center privacy
+6
+34
+
+
+GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;X-GNOME-AccountSettings
+screen,lock,diagnostics,crash,private,recent,temporary,tmp,index,name,network,identity
+-paprefs.desktop
+PulseAudio Preferences
+View and modify the configuration of the local sound server
+preferences-desktop
+
+7
+Sound Server Preferences
+paprefs
+2
+0
+
+
+Settings
+
+-qtconfig-qt3.desktop
+Qt3 Configuration
+
+qtconfig-qt3.png
+
+7
+
+qtconfig-qt3
+0
+0
+qtconfig-qt3
+
+Settings;DesktopSettings;Qt
+
+-qtconfig-qt4.desktop
+Qt4 Configuration
+
+qtconfig-qt4.png
+
+7
+
+qtconfig-qt4
+0
+0
+qtconfig-qt4
+
+Settings;DesktopSettings;Qt
+
+-qt5ct.desktop
+Qt5 Settings
+Qt5 Configuration Tool
+preferences-desktop-theme
+
+7
+
+qt5ct
+0
+0
+
+
+Settings;DesktopSettings;Qt
+
+-gnome-region-panel.desktop
+Re­gion & Lan­guage
+Select your display language, formats, keyboard layouts and input sources
+preferences-desktop-locale
+
+7
+
+gnome-control-center region
+6
+34
+
+
+GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;X-GNOME-PersonalizationSettings
+Language,Layout,Keyboard,Input
+-gnome-removable-media-panel.desktop
+Remo­vable Media
+Configure Removable Media settings
+media-removable
+
+7
+
+gnome-control-center removable-media
+6
+34
+
+
+GNOME;GTK;Settings;X-GNOME-Hidden;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;X-GNOME-DevicesSettings
+device,system,default,application,preferred,cd,dvd,usb,audio,video,disc,removable,media,autorun
+-gnome-search-panel.desktop
+Search
+Control which applications show search results in the Activities Overview
+preferences-system-search
+
+7
+
+gnome-control-center search
+6
+34
+
+
+GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalSettings;X-GNOME-PersonalizationSettings
+Search,Find,Index,Hide,Privacy,Results
+-xfce-session-settings.desktop
+Session and Startup
+Customize desktop startup and splash screen
+xfce4-session
+
+7
+
+xfce4-session-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-SystemSettings
+
+-lxqt-config-session.desktop
+Session Settings
+Configuration for LXQt sessions
+preferences-system-session-services
+
+7
+LXQt Session Settings
+lxqt-config-session
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt
+
+-xfce4-settings-editor.desktop
+Settings Editor
+Graphical settings editor for Xfconf
+preferences-system
+
+7
+
+xfce4-settings-editor
+0
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog
+
+-xfce-settings-manager.desktop
+Settings Manager
+Graphical Settings Manager for Xfce 4
+preferences-desktop
+
+7
+
+xfce4-settings-manager
+0
+8
+
+
+X-XFCE;Settings;DesktopSettings
+
+-gnome-sharing-panel.desktop
+Sha­ring
+Control what you want to share with others
+preferences-system-sharing
+
+7
+
+gnome-control-center sharing
+6
+34
+
+
+GNOME;GTK;Settings;DesktopSettings;X-GNOME-Settings-Panel;X-GNOME-SystemSettings;X-GNOME-AccountSettings
+share,sharing,ssh,host,name,remote,desktop,media,audio,video,pictures,photos,movies,server,renderer
+-lxqt-config-globalkeyshortcuts.desktop
+Shortcut Keys
+Configure shortcut keys in LXQt
+preferences-desktop-keyboard
+
+7
+Keyboard Shortcut Settings
+lxqt-config-globalkeyshortcuts
+0
+1024
+
+
+Settings;DesktopSettings;Qt;LXQt
+
+-gnome-sound-panel.desktop
+Sound
+Change sound levels, inputs, outputs, and alert sounds
+multimedia-volume-control
+
+7
+
+gnome-control-center sound
+6
+34
+
+
+GNOME;GTK;Settings;HardwareSettings;X-GNOME-Settings-Panel
+Card,Microphone,Volume,Fade,Balance,Bluetooth,Headset,Audio
+-mate-session-properties.desktop
+Startup Applications
+Choose what applications to start when you log in
+mate-session-properties
+
+7
+
+mate-session-properties
+2
+64
+
+
+GTK;Settings;X-MATE-PersonalSettings
+MATE,session,properties,applications,login,start
+-systemsettings.desktop
+System Settings
+
+preferences-system
+
+7
+System Settings
+systemsettings5
+0
+4
+
+
+Qt;KDE;Settings
+
+-mate-theme-installer.desktop
+Theme Installer
+Installs themes packages for various parts of the desktop
+preferences-desktop-theme
+
+7
+
+mate-appearance-properties -i %u
+6
+64
+
+
+GTK;Settings
+mate-control-center,MATE,install,desktop,themes
+-gnome-universal-access-panel.desktop
+Uni­ver­sal Access
+Make it easier to see, hear, type, point and click
+preferences-desktop-accessibility
+
+7
+
+gnome-control-center universal-access
+6
+34
+
+
+GNOME;GTK;Settings;X-GNOME-SystemSettings;X-GNOME-Settings-Panel;X-GNOME-PersonalizationSettings
+Keyboard,Mouse,a11y,Accessibility,Contrast,Zoom,Screen,Reader,text,font,size,AccessX,Sticky,Keys,Slow,Bounce,Mouse,Double,click,Delay,Assist,Repeat,Blink
+-xfce-wm-settings.desktop
+Window Manager
+Configure window behavior and shortcuts
+xfwm4
+
+7
+
+xfwm4-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-xfce-wmtweaks-settings.desktop
+Window Manager Tweaks
+Fine-tune window behaviour and effects
+wmtweaks
+
+7
+
+xfwm4-tweaks-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+-mate-window-properties.desktop
+Windows
+Set your window properties
+preferences-system-windows
+
+7
+
+mate-window-properties
+2
+64
+
+
+GTK;Settings;DesktopSettings
+mate-control-center,MATE,window,manager,properties,marco,preferences
+-xfce-workspaces-settings.desktop
+Workspaces
+Configure layout, names and margins
+xfce4-workspaces
+
+7
+
+xfwm4-workspace-settings
+2
+8
+
+
+XFCE;GTK;Settings;DesktopSettings;X-XFCE-SettingsDialog;X-XFCE-PersonalSettings
+
+
+

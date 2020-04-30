@@ -1,0 +1,1 @@
+W: [(null)] caps.c: Normally all extra capabilities would be dropped now, but that's impossible because PulseAudio was built without capabilities support.

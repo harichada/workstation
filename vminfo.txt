@@ -1,0 +1,339 @@
+67.157.159.117 CGDCSSL1052UL - 100.95.20.102 
+67.157.159.118 CGDCSSL1050UL - 100.95.20.101 
+67.157.159.119 CGDCSSL1051UL - 100.95.21.98 
+67.157.159.120 CGDCSSL1055UL - 100.95.20.66 
+67.157.159.121 CGDCSSL1053UL - 100.95.21.99 
+67.157.159.122 CGDCSSL1054UL - 100.95.20.65 
+67.157.159.123 CGDCSSL1056UL - 100.95.21.64 
+67.157.159.124 CGDCSSL1058UL - 100.95.20.67 
+67.157.159.125 CGDCSSL1061UL - 100.95.21.71 
+67.157.159.126 CGDCSSL1057UL - 100.95.21.69 
+67.157.159.127 CGDCSSL1060UL - 100.95.21.70 
+67.157.159.128 CGDCSSL1059UL - 100.95.20.68 
+67.157.159.129 CGDCSSL1062UL - 100.95.20.15 
+67.157.159.130 CGDCSSL1064UL - 100.95.21.16
+67.157.159.131 CGDCSSL1063UL - 100.95.20.16 
+67.157.159.132 CGDCSSL1065UL - 100.95.21.17 
+Has been reserved for DCSS  
+
+******************************************************************************
+SYT Forms Web Server (Apache) - DCSS_SYT_FormsWS1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1050UL 
+•	Your machine IPAddress is : 100.95.20.101 
+•	Machine admin User ID : root 
+•	Machine one time password : tp!2+5YtC4Xgt 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : dev 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:25 PDT
+
+******************************************************************************
+SYT Forms App Server (Tomcat) - DCSS_SYT_FormsApp1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1051UL 
+•	Your machine IPAddress is : 100.95.21.98 
+•	Machine admin User ID : root 
+•	Machine one time password : tp.Rm65N.8Fzv 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : dev 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:25 PDT
+
+******************************************************************************
+SQT Forms Web Server (Apache) - DCSS_SQT_FormsWS1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1052UL 
+•	Your machine IPAddress is : 100.95.20.102 
+•	Machine admin User ID : root 
+•	Machine one time password : tpF4c5i?KCs=7 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : dev 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:24 PDT
+
+******************************************************************************
+SQT Forms App Server (Tomcat) - DCSS_SQT_FormsApp1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1053UL 
+•	Your machine IPAddress is : 100.95.21.99 
+•	Machine admin User ID : root 
+•	Machine one time password : tpWq1pEa-2.5X 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : dev 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT1 Forms Web Server 1(Apache) - DCSS_PFT1_FormsWS1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1054UL 
+•	Your machine IPAddress is : 100.95.20.65 
+•	Machine admin User ID : root 
+•	Machine one time password : tp=Rn9a=0Y5sP 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT1 Forms Web Server 2(Apache) - DCSS_PFT1_FormsWS2
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1055UL 
+•	Your machine IPAddress is : 100.95.20.66 
+•	Machine admin User ID : root 
+•	Machine one time password : tpJt6u6Ji=R6+ 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT1 Forms App Server 1(Tomcat) - DCSS_PFT1_FormsApp1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1056UL 
+•	Your machine IPAddress is : 100.95.21.64 
+•	Machine admin User ID : root 
+•	Machine one time password : tpiX2SpW=@k96 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT1 Forms App Server 2(Tomcat) - DCSS_PFT1_FormsApp2
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1057UL 
+•	Your machine IPAddress is : 100.95.21.69 
+•	Machine admin User ID : root 
+•	Machine one time password : tp9y?A6u+h9CN 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT2 Forms Web Server 1(Apache) - DCSS_PFT2_FormsWS1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1058UL 
+•	Your machine IPAddress is : 100.95.20.67 
+•	Machine admin User ID : root 
+•	Machine one time password : tpu5*x85YuY*S 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT2 Forms Web Server 2(Apache) - DCSS_PFT2_FormsWS2
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1059UL 
+•	Your machine IPAddress is : 100.95.20.68 
+•	Machine admin User ID : root 
+•	Machine one time password : tp2+xv8zTCR-0 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT2 Forms App Server 1(Tomcat) - DCSS_PFT2_FormsApp1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1060UL 
+•	Your machine IPAddress is : 100.95.21.70 
+•	Machine admin User ID : root 
+•	Machine one time password : tp6FY.rcK8f0= 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PFT2 Forms App Server 2(Tomcat) - DCSS_PFT2_FormsApp2
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1061UL 
+•	Your machine IPAddress is : 100.95.21.71 
+•	Machine admin User ID : root 
+•	Machine one time password : tpmfC53F+n*E8 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : None 
+•	Network Environment : test 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PROD Forms Web Server 1(Apache) - DCSS_PROD_FormsWS1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1062UL 
+•	Your machine IPAddress is : 100.95.20.15 
+•	Machine admin User ID : root 
+•	Machine one time password : tp=9#v1waXQ4L 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : Tier 1 
+•	Network Environment : prod 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:26 PDT
+
+******************************************************************************
+PROD Forms Web Server 2(Apache) - DCSS_PROD_FormsWS2
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1063UL 
+•	Your machine IPAddress is : 100.95.20.16 
+•	Machine admin User ID : root 
+•	Machine one time password : tp1+C1e7+ghSC 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 0 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : Tier 1 
+•	Network Environment : prod 
+•	Network Tier : dmz 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:27 PDT
+
+******************************************************************************
+PROD Forms App Server 1(Tomcat) - DCSS_PROD_FormsApp1
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1064UL 
+•	Your machine IPAddress is : 100.95.21.16 
+•	Machine admin User ID : root 
+•	Machine one time password : tpK6B-7p?gL0s 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : Tier 1 
+•	Network Environment : prod 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:27 PDT
+
+******************************************************************************
+PROD Forms App Server 2(Tomcat) - DCSS_PROD_FormsApp2
+
+VM Credentials
+•	Your machine Name is : CGDCSSL1065UL 
+•	Your machine IPAddress is : 100.95.21.17 
+•	Machine admin User ID : root 
+•	Machine one time password : tp?7PJ7dk5!yP 
+VM Summary
+•	Your machine tShirt size : Medium - 4 CPU, 8 GB RAM, 90GB HDD 
+•	It has 8 additional GB of RAM. 
+•	It has 50 additional GB of of Storage. 
+•	Backup requested : Tier 2 
+•	Disaster recovery requested : Tier 1 
+•	Network Environment : prod 
+•	Network Tier : app 
+•	Image Template : RHEL_74_DCSS_08312018 
+•	Will expire in : null days
+Last updated : 10/17/18 11:27 PDT
+
+

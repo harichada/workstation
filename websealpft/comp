@@ -1,0 +1,173 @@
+108,110c108
+< # 03/10/2014 (ht) update to default
+< # unix-pid-file = /var/pdweb/log/webseald-csehws008.pid
+< unix-pid-file = /var/pdweb/log/webseald-default.pid
+---
+> unix-pid-file = /var/pdweb/log/webseald-csehws008.pid
+113,115c111
+< # 03/10/2014 (ht) update to default
+< # server-root = /opt/pdweb/www-csehws008
+< server-root = /opt/pdweb/www-default
+---
+> server-root = /opt/pdweb/www-csehws008
+119,121c115
+< # 03/10/2014 (ht) update to default
+< #server-name = csehws008-csehws008
+< server-name = cp2p04a.dts.ca.gov-default
+---
+> server-name = csehws008-csehws008
+492a487
+> bind-dn = cn=webseald/csehws008,cn=SecurityDaemons,secAuthority=Default
+494,497d488
+< # 03/10/2014 (ht) update to default
+< # bind-dn = cn=webseald/csehws008,cn=SecurityDaemons,secAuthority=Default
+< bind-dn = cn=default-webseald/cp2p04a.dts.ca.gov,cn=SecurityDaemons,secAuthority=Default
+< 
+499,501c490
+< # 03/10/2014 (ht) update ldap hostname
+< #host = csehds009.cse.ca.gov
+< host = cp2p06a.dts.ca.gov
+---
+> host = csehds009.cse.ca.gov
+565,567c554
+< # 03/10/2014 (ht) update to default
+< # webseal-cert-keyfile = /opt/pdweb/www-csehws008/certs/pdsrv.kdb
+< webseal-cert-keyfile = /var/pdweb/www-default/certs/pdsrv.kdb
+---
+> webseal-cert-keyfile = /opt/pdweb/www-csehws008/certs/pdsrv.kdb
+575,577c562
+< # 03/10/2014 (ht) update to default
+< #webseal-cert-keyfile-stash = /opt/pdweb/www-csehws008/certs/pdsrv.sth
+< webseal-cert-keyfile-stash = /var/pdweb/www-default/certs/pdsrv.sth
+---
+> webseal-cert-keyfile-stash = /opt/pdweb/www-csehws008/certs/pdsrv.sth
+582a568
+> webseal-cert-keyfile-label = csepft.cse.ca.gov
+584,586d569
+< # 03/10/2014 (ht) update to new hostname label
+< # webseal-cert-keyfile-label = csepft.cse.ca.gov
+< webseal-cert-keyfile-label = csepft2.dts.ca.gov
+592,594c575
+< # 03/10/2014 (ht) update to default
+< # ssl-keyfile = /var/pdweb/keytab-csehws008/webseald.kdb
+< ssl-keyfile = /var/pdweb/keytab-default/default-webseald.kdb
+---
+> ssl-keyfile = /var/pdweb/keytab-csehws008/webseald.kdb
+601,603c582
+< # 03/10/2014 (ht) update to default
+< # ssl-keyfile-stash = /var/pdweb/keytab-csehws008/webseald.sth
+< ssl-keyfile-stash = /var/pdweb/keytab-default/default-webseald.sth
+---
+> ssl-keyfile-stash = /var/pdweb/keytab-csehws008/webseald.sth
+613,614c592
+< # 02/20/2015 JR Disabled SSLv3 per POODLE remediation
+< #disable-ssl-v3 = no
+---
+> # 02/03/15 JR Disabled SSLv3 per POODLE remediation
+1773,1777c1751,1752
+< # 03/10/2014 (ht) update to default
+< #passwd-ldap = /opt/PolicyDirector/lib/libldapauthn.a & -cfgfile [/opt/pdweb/etc/webseald-csehws008.conf]
+< #cert-ldap = /opt/PolicyDirector/lib/libcertauthn.a & -cfgfile [/opt/pdweb/etc/webseald-csehws008.conf]
+< passwd-ldap = /opt/PolicyDirector/lib/libldapauthn.a & -cfgfile [/opt/pdweb/etc/webseald-default.conf]
+< cert-ldap = /opt/PolicyDirector/lib/libcertauthn.a & -cfgfile [/opt/pdweb/etc/webseald-default.conf]
+---
+> passwd-ldap = /opt/PolicyDirector/lib/libldapauthn.a & -cfgfile [/opt/pdweb/etc/webseald-csehws008.conf]
+> cert-ldap = /opt/PolicyDirector/lib/libcertauthn.a & -cfgfile [/opt/pdweb/etc/webseald-csehws008.conf]
+1998,2000c1973
+< # 03/10/2014 (ht) update to default
+< # doc-root = /opt/pdweb/www-csehws008/docs
+< doc-root = /opt/pdweb/www-default/docs
+---
+> doc-root = /opt/pdweb/www-csehws008/docs
+2316c2289,2290
+< # KL 10/14/2014
+---
+> #
+> # KL 10/09/2014
+2322d2295
+< 
+2505,2507c2478
+< # 03/10/2014 (ht) update to default
+< # server-log = /var/pdweb/log/msg__webseald-csehws008.log
+< server-log = /var/pdweb/log/msg__webseald-default.log
+---
+> server-log = /var/pdweb/log/msg__webseald-csehws008.log
+2513,2515c2484
+< # 05/11/2017 HTeoh update the rotation to daily -1 like production.  
+< # max-size = 2000000
+< max-size = -1
+---
+> max-size = 2000000
+2522c2491,2492
+< requests = yes
+---
+> #requests = yes
+> requests = no
+2524,2526c2494
+< # 03/10/2014 (ht) update to default
+< # requests-file = /var/PolicyDirector/log/HPD/logs/request.log
+< requests-file = /var/pdweb/www-default/log/request.log
+---
+> requests-file = /var/PolicyDirector/log/HPD/logs/request.log
+2528c2496
+< #
+---
+> 
+2532,2534c2500
+< # 03/10/2014 (ht) update to default
+< # referers-file = /var/pdweb/www-csehws008/log/referer.log
+< referers-file = /var/pdweb/www-default/log/referer.log
+---
+> referers-file = /var/pdweb/www-csehws008/log/referer.log
+2539,2541c2505
+< # 03/10/2014 (ht) update to default
+< # agents-file = /var/pdweb/www-csehws008/log/agent.log
+< agents-file = /var/pdweb/www-default/log/agent.log
+---
+> agents-file = /var/pdweb/www-csehws008/log/agent.log
+2555,2557c2519
+< # 03/10/2014 (ht) update to default
+< # db-file = /var/pdweb/db/webseald-csehws008.db
+< db-file = /var/pdweb/db/webseald-default.db
+---
+> db-file = /var/pdweb/db/webseald-csehws008.db
+2606,2608c2568,2570
+< # 03/10/2014 (ht) update to default
+< # auditlog = /var/pdweb/log/aznapi_webseald-csehws008.log
+< auditlog = /var/pdweb/log/aznapi_webseald-default.log
+---
+> # 10/02/18 KL changed per Rebecca
+> #auditlog = /var/pdweb/log/aznapi_webseald-csehws008.log
+> auditlog = /var/pdweb/log/aznapi_webseald-ankcsepf1w01.log
+2691,2697c2653,2655
+< # 03/10/2014 (ht) update to default
+< # azn-app-host = csehws008
+< # azn-server-name = webseald-csehws008
+< # pd-user-name = webseald/csehws008
+< azn-app-host = cp2p04a.dts.ca.gov
+< azn-server-name = default-webseald-cp2p04a.dts.ca.gov
+< pd-user-name = default-webseald/cp2p04a.dts.ca.gov
+---
+> azn-app-host = csehws008
+> azn-server-name = webseald-csehws008
+> pd-user-name = webseald/csehws008
+2699a2658
+> 
+2781,2783c2740
+< # 03/10/2014 (ht) update to default
+< # instance-name = csehws008
+< instance-name = default
+---
+> instance-name = csehws008
+2909,2911c2866
+< # 03/10/2014 (ht) update ps hostname
+< #master-host = csehds009.cse.ca.gov
+< master-host = cp2p06a.dts.ca.gov
+---
+> master-host = csehds009.cse.ca.gov
+2916,2918c2871
+< # 03/10/2014 (ht) update to default
+< # file = /opt/pdweb/etc/webseald-csehws008.conf.obf
+< file = /opt/pdweb/etc/webseald-default.conf.obf
+---
+> file = /opt/pdweb/etc/webseald-csehws008.conf.obf

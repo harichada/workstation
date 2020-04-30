@@ -1,0 +1,15 @@
+[GPG Settings]
+gpg_config_path[$e]=$HOME/.gnupg/gpg.conf
+
+[General Options]
+First run=false
+
+[MainWindow]
+State=AAAA/wAAAAD9AAAAAAAAAoAAAAGNAAAABAAAAAQAAAAIAAAACPwAAAABAAAAAgAAAAEAAAAWAG0AYQBpAG4AVABvAG8AbABCAGEAcgEAAAAA/////wAAAAAAAAAA
+ToolBarsMovable=Disabled
+
+[Servers]
+Server_List=hkp://keys.gnupg.net,hkp://pool.sks-keyservers.net,hkp://subkeys.pgp.net,hkp://search.keyserver.net,hkp://pgp.dtype.org,hkp://wwwkeys.pgp.net
+
+[User Interface]
+AutoStart=true

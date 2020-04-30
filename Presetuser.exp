@@ -1,0 +1,33 @@
+#!/usr/bin/expect -f
+set arg1 [lindex $argv 0]
+set arg2 [lindex $argv 1]
+set acount [llength $argv]
+#send_user $acount
+if {$acount != 2} {
+#	send_user " |  | |==| |  |     |==| |==|  |==| |==|\n"
+ #       send_user " |\\ | |  | |\\ |     |==  |==|  |  | |  |\n"
+  #      send_user " | \\| |__| | \\|     |    |  \\  |__| |__|\n"
+	send_user "Wrong no. of arguments\nSyntax: resetuser.exp <New Password> <hostname>\n"
+send_user " _   _ _____ _   _  ____________ ___________ \n"
+send_user "| \\ | |  _  | \\ | | | ___ \\ ___ \\  _  |  _  \\\n"
+send_user "|  \\| | | | |  \\| | | |_/ / |_/ / | | | | | |\n"
+send_user "| . ` | | | | . ` | |  __/|    /| | | | | | |\n"
+send_user "| |\\  \\ \\_/ / |\\  | | |   | |\\ \\  \\_/ / |/ / \n"
+send_user "\\_| \\_/\\___/\\_| \\_/ \\_|   \\_| \\_|\\___/|___/  \n"
+                                             
+	exit 1
+}
+spawn ssh -o StrictHostKeyChecking=no cseadmin@$arg2
+expect "*password: "
+send -- "uRreC4pH\r"
+expect "*cseadmin*"
+send -- "sudo cseresetuser hchada\r"
+expect "*Password:"
+send -- "uRreC4pH\r"
+expect "*hchada's New password: "
+send -- $arg1\r 
+expect "Enter the new password again:"
+send -- $arg1\r
+expect "*\[/home/cseadmin\]\$ "
+send -- "exit\r"
+expect eof

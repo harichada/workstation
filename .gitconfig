@@ -1,0 +1,8 @@
+[user]
+	name = Hari Kishore Chada
+	email = harikishore.chada@dcss.ca.gov
+[alias]
+	hist = log --pretty=format:'%h %ad|%s %d[%an]' --date=short
+[http]
+[http]
+	proxy = socks5://localhost:7777

@@ -1,0 +1,98 @@
+sec_master
+    Account expiry date: unlimited
+ivmgrd/master
+    Account expiry date: unlimited
+amwpm/csehds012
+    Account expiry date: unlimited
+csehap025.cse.ca.gov/csehap025.cse.ca.gov
+    Account expiry date: unlimited
+csehap026.cse.ca.gov/csehap026.cse.ca.gov
+    Account expiry date: unlimited
+tam_admin
+    Account expiry date: unlimited
+cse_batch_read
+    Account expiry date: unlimited
+csehap025/csehap025.cse.ca.gov
+    Account expiry date: unlimited
+csehap026/csehap026.cse.ca.gov
+    Account expiry date: unlimited
+appserver/cg1p15a
+    Account expiry date: unlimited
+appserver/ch1p19a
+    Account expiry date: unlimited
+appserver/ch1p15a
+    Account expiry date: unlimited
+appserver_85/cg1p15a
+    Account expiry date: unlimited
+appserver_85/ch1p15a
+    Account expiry date: unlimited
+appserver_85/ch1p19a
+    Account expiry date: unlimited
+sqt01.dcssaccounting
+    Account expiry date: unlimited
+sqt02.dcssaccounting
+    Account expiry date: unlimited
+sqt03.dcssaccounting
+    Account expiry date: unlimited
+sqt04.dcssaccounting
+    Account expiry date: unlimited
+sqt05.dcssaccounting
+    Account expiry date: unlimited
+sqt06.dcssaccounting
+    Account expiry date: unlimited
+sqt07.dcssaccounting
+    Account expiry date: unlimited
+sqt08.dcssaccounting
+    Account expiry date: unlimited
+sqt09.dcssaccounting
+    Account expiry date: unlimited
+sqt10.dcssaccounting
+    Account expiry date: unlimited
+sqt01.forceparticipantworker
+    Account expiry date: unlimited
+sqt02.forceparticipantworker
+    Account expiry date: unlimited
+sqt03.forceparticipantworker
+    Account expiry date: unlimited
+sqt04.forceparticipantworker
+    Account expiry date: unlimited
+sqt05.forceparticipantworker
+    Account expiry date: unlimited
+sqt06.forceparticipantworker
+    Account expiry date: unlimited
+sqt07.forceparticipantworker
+    Account expiry date: unlimited
+sqt08.forceparticipantworker
+    Account expiry date: unlimited
+sqt09.forceparticipantworker
+    Account expiry date: unlimited
+sqt10.forceparticipantworker
+    Account expiry date: unlimited
+sqt01.misidworker
+    Account expiry date: unlimited
+sqt02.misidworker
+    Account expiry date: unlimited
+sqt03.misidworker
+    Account expiry date: unlimited
+sqt04.misidworker
+    Account expiry date: unlimited
+sqt05.misidworker
+    Account expiry date: unlimited
+sqt06.misidworker
+    Account expiry date: unlimited
+sqt07.misidworker
+    Account expiry date: unlimited
+sqt08.misidworker
+    Account expiry date: unlimited
+sqt09.misidworker
+    Account expiry date: unlimited
+sqt10.misidworker
+    Account expiry date: unlimited
+dcssfinancialworker.sqt
+    Account expiry date: unlimited
+dcssaccountingworker.sqt
+    Account expiry date: unlimited
+eldorado.lcsaworker6
+    Account expiry date: unlimited
+cse_pass_admin
+    Account expiry date: unlimited

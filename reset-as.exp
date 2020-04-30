@@ -1,0 +1,26 @@
+#!/usr/bin/expect -f
+set arg1 [lindex $argv 0]
+set arg2 [lindex $argv 1]
+set acount [llength $argv]
+#send_user $acount
+if {$acount != 2} {
+	send_user " |  | |==| |  |     |==| |==|  |==| |==|\n"
+        send_user " |\\ | |  | |\\ |     |==  |==|  |  | |  |\n"
+        send_user " | \\| |__| | \\|     |    |  \\  |__| |__|\n"
+	send_user "Wrong no. of arguments\nSyntax: resetuser.exp <New Password> <hostname>\n"
+	exit 1
+}
+spawn ssh -o StrictHostKeyChecking=no cseadmin@$arg2
+expect "*password: "
+send -- "Am8z1ngr\r"
+expect "*cseadmin*"
+send -- "sudo cseresetuser aserikar\r"
+expect "*Password:"
+send -- "Am8z1ngr\r"
+expect "*aserikar's New password: "
+send -- $arg1\r 
+expect "Enter the new password again:"
+send -- $arg1\r
+expect "*\[/home/cseadmin\]\$ "
+send -- "exit\r"
+expect eof

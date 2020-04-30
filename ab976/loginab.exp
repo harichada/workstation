@@ -1,0 +1,25 @@
+#!/usr/bin/expect -f
+set arg1 [lindex $argv 0]
+set arg2 [lindex $argv 1]
+set acount [llength $argv]
+#send_user $acount
+if {$acount != 2} {
+#	send_user " |  | |==| |  |     |==| |==|  |==| |==|\n"
+ #       send_user " |\\ | |  | |\\ |     |==  |==|  |  | |  |\n"
+  #      send_user " | \\| |__| | \\|     |    |  \\  |__| |__|\n"
+	send_user "Wrong no. of arguments\nSyntax: loginab.exp <Password> <hostname>\n"
+send_user " _   _ _____ _   _  ____________ ___________ \n"
+send_user "| \\ | |  _  | \\ | | | ___ \\ ___ \\  _  |  _  \\\n"
+send_user "|  \\| | | | |  \\| | | |_/ / |_/ / | | | | | |\n"
+send_user "| . ` | | | | . ` | |  __/|    /| | | | | | |\n"
+send_user "| |\\  \\ \\_/ / |\\  | | |   | |\\ \\  \\_/ / |/ / \n"
+send_user "\\_| \\_/\\___/\\_| \\_/ \\_|   \\_| \\_|\\___/|___/  \n"
+                                             
+	exit 1
+}
+spawn ssh -o StrictHostKeyChecking=no tomadmin@$arg2
+expect "*password: "
+send -- "Passw0rd!\r" 
+expect "*\[/home/tomadmin\]\$ "
+send -- "exit\r"
+expect eof

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>for man page</title>
+<meta name="generator" content="make_lc3_man_pages">
+<meta name="author" content="linuxcommand.org and original man page author">
+<meta name="date" content="Sat May  5 19:04:24 EDT 2012">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="expires" content="0">
+</head>
+<body>
+<pre>
+NAME
+    for - Execute commands for each member in a list.
+
+SYNOPSIS
+    for NAME [in WORDS ... ] ; do COMMANDS; done
+
+DESCRIPTION
+    Execute commands for each member in a list.
+    
+    The `for' loop executes a sequence of commands for each member in a
+    list of items.  If `in WORDS ...;' is not present, then `in "$@"' is
+    assumed.  For each element in WORDS, NAME is set to that element, and
+    the COMMANDS are executed.
+    
+    Exit Status:
+    Returns the status of the last command executed.
+
+SEE ALSO
+    bash(1)
+
+IMPLEMENTATION
+    GNU bash, version 4.1.5(1)-release (i486-pc-linux-gnu)
+    Copyright (C) 2009 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+NAME
+    for (( - Arithmetic for loop.
+
+SYNOPSIS
+    for (( exp1; exp2; exp3 )); do COMMANDS; done
+
+DESCRIPTION
+    Arithmetic for loop.
+    
+    Equivalent to
+    	(( EXP1 ))
+    	while (( EXP2 )); do
+    		COMMANDS
+    		(( EXP3 ))
+    	done
+    EXP1, EXP2, and EXP3 are arithmetic expressions.  If any expression is
+    omitted, it behaves as if it evaluates to 1.
+    
+    Exit Status:
+    Returns the status of the last command executed.
+
+SEE ALSO
+    bash(1)
+
+IMPLEMENTATION
+    GNU bash, version 4.1.5(1)-release (i486-pc-linux-gnu)
+    Copyright (C) 2009 Free Software Foundation, Inc.
+    License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+
+</pre>
+</body>
+</html>

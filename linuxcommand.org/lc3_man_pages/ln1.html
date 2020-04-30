@@ -1,0 +1,125 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>ln man page</title>
+<meta name="generator" content="make_lc3_man_pages">
+<meta name="author" content="linuxcommand.org and original man page author">
+<meta name="date" content="Sat May  5 19:04:25 EDT 2012">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="expires" content="0">
+</head>
+<body>
+<pre>
+LN(1)                            User Commands                           LN(1)
+
+
+
+NAME
+       ln - make links between files
+
+SYNOPSIS
+       ln [OPTION]... [-T] TARGET LINK_NAME   (1st form)
+       ln [OPTION]... TARGET                  (2nd form)
+       ln [OPTION]... TARGET... DIRECTORY     (3rd form)
+       ln [OPTION]... -t DIRECTORY TARGET...  (4th form)
+
+DESCRIPTION
+       In  the  1st form, create a link to TARGET with the name LINK_NAME.  In
+       the 2nd form, create a link to TARGET in the current directory.  In the
+       3rd  and  4th  forms, create links to each TARGET in DIRECTORY.  Create
+       hard links by default, symbolic links with --symbolic.   When  creating
+       hard  links, each TARGET must exist.  Symbolic links can hold arbitrary
+       text; if later resolved, a relative link is interpreted in relation  to
+       its parent directory.
+
+       Mandatory  arguments  to  long  options are mandatory for short options
+       too.
+
+       --backup[=CONTROL]
+              make a backup of each existing destination file
+
+       -b     like --backup but does not accept an argument
+
+       -d, -F, --directory
+              allow the superuser to attempt to hard link  directories  (note:
+              will  probably  fail  due  to  system restrictions, even for the
+              superuser)
+
+       -f, --force
+              remove existing destination files
+
+       -n, --no-dereference
+              treat destination that is a symlink to a directory as if it were
+              a normal file
+
+       -i, --interactive
+              prompt whether to remove destinations
+
+       -s, --symbolic
+              make symbolic links instead of hard links
+
+       -S, --suffix=SUFFIX
+              override the usual backup suffix
+
+       -t, --target-directory=DIRECTORY
+              specify the DIRECTORY in which to create the links
+
+       -T, --no-target-directory
+              treat LINK_NAME as a normal file
+
+       -v, --verbose
+              print name of each linked file
+
+       --help display this help and exit
+
+       --version
+              output version information and exit
+
+       The   backup   suffix   is  `~',  unless  set  with  --suffix  or  SIM‐
+       PLE_BACKUP_SUFFIX.  The version control method may be selected via  the
+       --backup  option  or  through the VERSION_CONTROL environment variable.
+       Here are the values:
+
+       none, off
+              never make backups (even if --backup is given)
+
+       numbered, t
+              make numbered backups
+
+       existing, nil
+              numbered if numbered backups exist, simple otherwise
+
+       simple, never
+              always make simple backups
+
+AUTHOR
+       Written by Mike Parker and David MacKenzie.
+
+REPORTING BUGS
+       Report ln bugs to bug-coreutils@gnu.org
+       GNU coreutils home page: <http://www.gnu.org/software/coreutils/>
+       General help using GNU software: <http://www.gnu.org/gethelp/>
+
+COPYRIGHT
+       Copyright © 2009 Free Software Foundation, Inc.   License  GPLv3+:  GNU
+       GPL version 3 or later <http://gnu.org/licenses/gpl.html>.
+       This  is  free  software:  you  are free to change and redistribute it.
+       There is NO WARRANTY, to the extent permitted by law.
+
+SEE ALSO
+       link(2), symlink(2)
+
+       The full documentation for ln is maintained as a  Texinfo  manual.   If
+       the  info and ln programs are properly installed at your site, the com‐
+       mand
+
+              info coreutils 'ln invocation'
+
+       should give you access to the complete manual.
+
+
+
+GNU coreutils 7.4               September 2010                           LN(1)
+</pre>
+</body>
+</html>

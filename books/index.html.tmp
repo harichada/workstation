@@ -1,0 +1,69 @@
+<html>
+<body>
+
+	
+
+	<div>
+		<form method="POST" enctype="multipart/form-data" action="/">
+			<table>
+				<tr><td>需上传的文件:</td><td><input type="file" name="file" /></td></tr>
+				<tr><td></td><td><input type="submit" value="上传文件" /></td></tr>
+			</table>
+		</form>
+	</div>
+
+	<div>
+		<ul>
+			<li>
+				<a href="http://wcx.xyz:8080/files/1.pdf" >http://wcx.xyz:8080/files/1.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/6.pdf" >http://wcx.xyz:8080/files/6.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/8.pdf" >http://wcx.xyz:8080/files/8.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/21.pdf" >http://wcx.xyz:8080/files/21.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/bk" >http://wcx.xyz:8080/files/bk</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/reactiveSpring5.pdf" >http://wcx.xyz:8080/files/reactiveSpring5.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/15.epub" >http://wcx.xyz:8080/files/15.epub</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/2015 page 602 awk.Effective.awk.Programming.Universal.Text.Processing.and.Pattern.Matching.4th.pdf" >http://wcx.xyz:8080/files/2015 page 602 awk.Effective.awk.Programming.Universal.Text.Processing.and.Pattern.Matching.4th.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/0.pdf" >http://wcx.xyz:8080/files/0.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/3.pdf" >http://wcx.xyz:8080/files/3.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/2.pdf" >http://wcx.xyz:8080/files/2.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/ssm.pdf" >http://wcx.xyz:8080/files/ssm.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/7.pdf" >http://wcx.xyz:8080/files/7.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/9.pdf" >http://wcx.xyz:8080/files/9.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/4.pdf" >http://wcx.xyz:8080/files/4.pdf</a>
+			</li>
+			<li>
+				<a href="http://wcx.xyz:8080/files/5.pdf" >http://wcx.xyz:8080/files/5.pdf</a>
+			</li>
+		</ul>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+#REST API RequestConfig EFS Socket Timeout Key
+rest.requestconfig.efs.socketTimeout=45000
+
+yum deplist lighttpd | awk '/provider:/ {print $2}' | sort -u |xargs yum -y install
+
+for i in CourtCaseBO.class CSECaseInformationSectionFDO.class CSECaseInformationSectionFDR.class CSECourtCaptionActivityImpl.class CSECourtCaseHeaderFDO.class CSECourtCaseHeaderFDR.class CSEFormContentFDR.class CSELegalActionActivityImpl.class EFilingResponseDTO.class LegalActionDetailDTO.class ProcessFormsFromEfilingTaskStep.class
+
+CaseBatch.jar ProcessFormsFromEfilingTaskStep.class
+CSEFormsCommon.jar CSECaseInformationSectionFDO.class 
+
+for x in `ls *.jar`
+do
+	for i in CourtCaseBO.class CSECaseInformationSectionFDO.class CSECaseInformationSectionFDR.class CSECourtCaptionActivityImpl.class CSECourtCaseHeaderFDO.class CSECourtCaseHeaderFDR.class CSEFormContentFDR.class CSELegalActionActivityImpl.class EFilingResponseDTO.class LegalActionDetailDTO.class ProcessFormsFromEfilingTaskStep.class
+		do
+			jar -tvf $x | grep $i && echo $x && jar -uf $x $i
+		done
+done
+
+for x in `ls *.jar`
+do
+	for i in CourtCaseBO.class CSECourtCaptionActivityImpl.class CSECourtCaseHeaderFDO.class CSECourtCaseHeaderFDR.class CSEFormContentFDR.class CSELegalActionActivityImpl.class EFilingResponseDTO.class LegalActionDetailDTO.class ProcessFormsFromEfilingTaskStep.class
+		do
+			jar -tvf $x | grep -w $i && echo $x
+		done
+done
+
+| awk '{ print $8 }' 
+
+
+""""" ---- skipping CSECaseInformationSectionFDO.class  and CSECaseInformationSectionFDR.class
+
+for x in `ls *.jar`
+do
+	for i in CourtCaseBO.class CSECourtCaptionActivityImpl.class CSECourtCaseHeaderFDO.class CSECourtCaseHeaderFDR.class CSEFormContentFDR.class CSELegalActionActivityImpl.class EFilingResponseDTO.class LegalActionDetailDTO.class ProcessFormsFromEfilingTaskStep.class
+		do
+			class=`jar -tvf $x | grep -w $i | awk '{ print $8 }'` && cp ~/jars/classes/mod/$i ~/jars/classes/$class
+		done
+done
+
+BusinessUtilitiesPersistence.jar  gov/ca/dcss/cse/utilities/forms/persistence/CSECourtCaseHeaderFDR.class gov/ca/dcss/cse/utilities/forms/persistence/CSEFormContentFDR.class
+CSEFormsCommon.jar  gov/ca/dcss/cse/utilities/forms/common/CSECourtCaseHeaderFDO.class
+
+gov/ca/dcss/cse/cases/establishment/courtcaption/activity/CSECourtCaptionActivityImpl.class
+CaseActivity.jar
+gov/ca/dcss/cse/cases/legalactivity/legalaction/activity/CSELegalActionActivityImpl.class
+CaseActivity.jar
+gov/ca/dcss/cse/cases/establishment/efiling/batch/ProcessFormsFromEfilingTaskStep.class
+CaseBatch.jar
+gov/ca/dcss/cse/cases/business/CaseCourtCaseBO.class
+gov/ca/dcss/cse/cases/business/CountyCourtCaseBO.class
+gov/ca/dcss/cse/cases/business/CourtCaseBO.class
+CaseBusiness.jar
+gov/ca/dcss/cse/cases/legalactivity/legalaction/common/EFilingResponseDTO.class
+CaseCommon.jar
+gov/ca/dcss/cse/cases/legalactivity/legalaction/common/LegalActionDetailDTO.class
+gov/ca/dcss/cse/cases/legalactivity/legalaction/common/OtherLegalActionDetailDTO.class
+CaseCommon.jar
+
+scp BusinessUtilitiesPersistence.jar CaseActivity.jar CaseBatch.jar CaseBusiness.jar CaseCommon.jar CSEFormsCommon.jar cg1p05a:~

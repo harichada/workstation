@@ -1,0 +1,34 @@
+Timeout was reached
+another systray already running
+
+** (zeitgeist-datahub:10472): WARNING **: zeitgeist-datahub.vala:226: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+xkb group #0 is already defined
+
+** (evolution-alarm-notify:20152): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+** (pasystray:11552): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+** (krb5-auth-dialog:14780): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+** (notification-daemon:7232): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+(pasystray:11552): pasystray-WARNING **: Error initializing Avahi: Daemon not running
+The connection is closed
+KrbAuthDialog-Message: Caught signal 15
+
+(krb5-auth-dialog:14780): Gtk-CRITICAL **: gtk_widget_destroy: assertion 'GTK_IS_WIDGET (widget)' failed
+
+(pasystray:11552): Gdk-CRITICAL **: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
+executing 'minuet', pid 5476
+(pid 5476 stderr) QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-hchada'
+(pid 5476 stderr) QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-hchada'
+(pid 5476 stderr) qt5ct: using qt5ct plugin
+(pid 5476 stderr) QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-hchada'
+(pid 5476 stderr) fluidsynth: Using PulseAudio driver
+(pid 5476 stderr) fluidsynth: warning: Failed to set thread to high priority
+(pid 5476 stderr) Setting soundcontroller to FluidSynthSoundController
+(pid 5476 stderr) JIT is disabled for QML. Property bindings and animations will be very slow. Visit https://wiki.qt.io/V4 to learn about possible solutions for your platform.
+(pid 5476 stderr) i18nc() needs at least two arguments
+(pid 5476 stdout) wglMakeCurrent error: 00000006
+(pid 5476 stdout) wglMakeCurrent error: 00000006
+pid 5476 exited with status 0

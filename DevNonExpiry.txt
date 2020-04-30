@@ -1,0 +1,232 @@
+sec_master
+    Account expiry date: unlimited
+ivmgrd/master
+    Account expiry date: unlimited
+csehws001-webseald/csehws001
+    Account expiry date: unlimited
+csehws002/10.31.101.74
+    Account expiry date: unlimited
+csehap011/10.31.101.84
+    Account expiry date: unlimited
+csehap016/10.31.101.95
+    Account expiry date: unlimited
+csehap015/10.31.101.94
+    Account expiry date: unlimited
+csehap012/10.31.101.85
+    Account expiry date: unlimited
+csehap005.sanjose.mbs.ihost.com/10.31.101.73
+    Account expiry date: unlimited
+csehws011/10.31.101.111
+    Account expiry date: unlimited
+tam_admin
+    Account expiry date: unlimited
+cse_batch_read
+    Account expiry date: unlimited
+webseald/csehws007
+    Account expiry date: unlimited
+csehap011.cse.ca.gov/csehap011.cse.ca.gov
+    Account expiry date: unlimited
+csehap012.cse.ca.gov/csehap012.cse.ca.gov
+    Account expiry date: unlimited
+csehap015.cse.ca.gov/csehap015.cse.ca.gov
+    Account expiry date: unlimited
+csehap016.cse.ca.gov/csehap016.cse.ca.gov
+    Account expiry date: unlimited
+amwpm/csehap007
+    Account expiry date: unlimited
+appserver/cg1p06a
+    Account expiry date: unlimited
+appserver/ch1p05a
+    Account expiry date: unlimited
+appserver_85/cg1p06a
+    Account expiry date: unlimited
+appserver_85/ch1p05a
+    Account expiry date: unlimited
+laurie.caillot
+    Account expiry date: unlimited
+state.user1
+    Account expiry date: unlimited
+state.user2
+    Account expiry date: unlimited
+state.user3
+    Account expiry date: unlimited
+state.user4
+    Account expiry date: unlimited
+state.user5
+    Account expiry date: unlimited
+chris.ching
+    Account expiry date: unlimited
+keith.pepper
+    Account expiry date: unlimited
+uit01.alamedasupervisor
+    Account expiry date: unlimited
+uit01.alpinesupervisor
+    Account expiry date: unlimited
+uit01.amadorsupervisor
+    Account expiry date: unlimited
+uit01.calaverassupervisor
+    Account expiry date: unlimited
+uit01.colusasupervisor
+    Account expiry date: unlimited
+uit01.contracostasupervisor
+    Account expiry date: unlimited
+uit01.delnortesupervisor
+    Account expiry date: unlimited
+uit01.eldoradosupervisor
+    Account expiry date: unlimited
+uit01.fresnosupervisor
+    Account expiry date: unlimited
+uit01.glennsupervisor
+    Account expiry date: unlimited
+uit01.humboldtsupervisor
+    Account expiry date: unlimited
+uit01.imperialsupervisor
+    Account expiry date: unlimited
+uit01.inyosupervisor
+    Account expiry date: unlimited
+uit01.kernsupervisor
+    Account expiry date: unlimited
+uit01.kingssupervisor
+    Account expiry date: unlimited
+uit01.lakesupervisor
+    Account expiry date: unlimited
+uit01.lassensupervisor
+    Account expiry date: unlimited
+uit01.losangelessupervisor
+    Account expiry date: unlimited
+uit01.maderasupervisor
+    Account expiry date: unlimited
+uit01.marinsupervisor
+    Account expiry date: unlimited
+uit01.mariposasupervisor
+    Account expiry date: unlimited
+uit01.mendocinosupervisor
+    Account expiry date: unlimited
+uit01.mercedsupervisor
+    Account expiry date: unlimited
+uit01.modocsupervisor
+    Account expiry date: unlimited
+uit01.monosupervisor
+    Account expiry date: unlimited
+uit01.montereysupervisor
+    Account expiry date: unlimited
+uit01.napasupervisor
+    Account expiry date: unlimited
+uit01.nevadasupervisor
+    Account expiry date: unlimited
+uit01.orangesupervisor
+    Account expiry date: unlimited
+uit01.placersupervisor
+    Account expiry date: unlimited
+uit01.plumassupervisor
+    Account expiry date: unlimited
+uit01.riversidesupervisor
+    Account expiry date: unlimited
+uit01.sacramentosupervisor
+    Account expiry date: unlimited
+uit01.sanbenitosupervisor
+    Account expiry date: unlimited
+uit01.sanbernardinosupervisor
+    Account expiry date: unlimited
+uit01.sandiegosupervisor
+    Account expiry date: unlimited
+uit01.sanfranciscosupervisor
+    Account expiry date: unlimited
+uit01.sanjoaquinsupervisor
+    Account expiry date: unlimited
+uit01.sanluisobisposupervisor
+    Account expiry date: unlimited
+uit01.sanmateosupervisor
+    Account expiry date: unlimited
+uit01.santabarbarasupervisor
+    Account expiry date: unlimited
+uit01.santaclarasupervisor
+    Account expiry date: unlimited
+uit01.santacruzsupervisor
+    Account expiry date: unlimited
+uit01.shastasupervisor
+    Account expiry date: unlimited
+uit01.sierrasupervisor
+    Account expiry date: unlimited
+uit01.siskiyousupervisor
+    Account expiry date: unlimited
+uit01.solanosupervisor
+    Account expiry date: unlimited
+uit01.sonomasupervisor
+    Account expiry date: unlimited
+uit01.stanislaussupervisor
+    Account expiry date: unlimited
+uit01.suttersupervisor
+    Account expiry date: unlimited
+uit01.tehamasupervisor
+    Account expiry date: unlimited
+uit01.trinitysupervisor
+    Account expiry date: unlimited
+uit01.tularesupervisor
+    Account expiry date: unlimited
+uit01.tuolumnesupervisor
+    Account expiry date: unlimited
+uit01.venturasupervisor
+    Account expiry date: unlimited
+uit01.yubasupervisor
+    Account expiry date: unlimited
+uit05.auditor
+    Account expiry date: unlimited
+uit01.ccrworker
+    Account expiry date: unlimited
+uit02.ccrworker
+    Account expiry date: unlimited
+uit03.ccrworker
+    Account expiry date: unlimited
+uit04.ccrworker
+    Account expiry date: unlimited
+uit05.ccrworker
+    Account expiry date: unlimited
+uit01.collectionssuspensesupervisor
+    Account expiry date: unlimited
+uit02.collectionssuspensesupervisor
+    Account expiry date: unlimited
+uit03.collectionssuspensesupervisor
+    Account expiry date: unlimited
+uit04.collectionssuspensesupervisor
+    Account expiry date: unlimited
+uit05.collectionssuspensesupervisor
+    Account expiry date: unlimited
+uit01.collectionssuspenseworker
+    Account expiry date: unlimited
+uit02.collectionssuspenseworker
+    Account expiry date: unlimited
+uit03.collectionssuspenseworker
+    Account expiry date: unlimited
+uit04.collectionssuspenseworker
+    Account expiry date: unlimited
+uit05.collectionssuspenseworker
+    Account expiry date: unlimited
+uit01.cplsstaff
+    Account expiry date: unlimited
+uit02.cplsstaff
+    Account expiry date: unlimited
+uit03.cplsstaff
+    Account expiry date: unlimited
+uit04.cplsstaff
+    Account expiry date: unlimited
+uit05.cplsstaff
+    Account expiry date: unlimited
+uit02.dcssaccounting
+    Account expiry date: unlimited
+uit03.dcssaccounting
+    Account expiry date: unlimited
+uit04.dcssaccounting
+    Account expiry date: unlimited
+uit05.dcssaccounting
+    Account expiry date: unlimited
+uit01.dcssadministrator
+    Account expiry date: unlimited
+uit02.dcssadministrator
+    Account expiry date: unlimited
+uit03.dcssadministrator
+    Account expiry date: unlimited
+uit04.dcssadministrator
+    Account expiry date: unlimited
+uit01.dcssdataworker
+    Account expiry date: unlimited

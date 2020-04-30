@@ -1,0 +1,55 @@
+Build started at 2019-06-27T19:45:13.344745
+Main binary: /usr/bin/python3
+Python system: CYGWIN_NT-6.1
+The Meson build system
+Version: 0.47.1
+Source dir: /home/hchada/sshfs/sshfs-sshfs-3.5.2
+Build dir: /home/hchada/sshfs/sshfs-sshfs-3.5.2/build
+Build type: native build
+Project name: sshfs
+Project version: 3.5.2
+Sanity testing C compiler: ccache cc
+Is cross compiler: False.
+Sanity check compiler command line: ccache cc /home/hchada/sshfs/sshfs-sshfs-3.5.2/build/meson-private/sanitycheckc.c -o /home/hchada/sshfs/sshfs-sshfs-3.5.2/build/meson-private/sanitycheckc.exe
+Sanity check compile stdout:
+
+-----
+Sanity check compile stderr:
+
+-----
+Running test binary command: /home/hchada/sshfs/sshfs-sshfs-3.5.2/build/meson-private/sanitycheckc.exe
+Native C compiler: ccache cc (gcc 7.3.0 "cc (GCC) 7.3.0")
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Running compile:
+Working directory:  /tmp/tmpdkncn0j4
+Command line:  ccache cc /tmp/tmpdkncn0j4/testfile.c -pipe -c -o /tmp/tmpdkncn0j4/output.obj -O0 -O0 -Werror=unused-result 
+
+Code:
+ 
+__attribute__((warn_unused_result)) int get_4() {
+    return 4;
+}
+int main(void) {
+    (void) get_4();
+    return 0;
+}
+Compiler stdout:
+ 
+Compiler stderr:
+ /tmp/tmpdkncn0j4/testfile.c: In function ‘main’:
+/tmp/tmpdkncn0j4/testfile.c:6:5: error: ignoring return value of ‘get_4’, declared with attribute warn_unused_result [-Werror=unused-result]
+     (void) get_4();
+     ^~~~~~~~~~~~~~
+cc1: some warnings being treated as errors
+
+Message: Compiler warns about unused result even when casting to void
+Program rst2man found: NO
+Program rst2man.py found: YES (/usr/bin/rst2man.py)
+Configuring config.h using configuration
+Found pkg-config: /usr/bin/pkg-config (0.29.1)
+Determining dependency 'fuse3' with pkg-config executable '/usr/bin/pkg-config'
+Called `/usr/bin/pkg-config --modversion fuse3` -> 1
+
+
+meson.build:47:0: ERROR:  Native dependency 'fuse3' not found

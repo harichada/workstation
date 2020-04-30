@@ -1,0 +1,105 @@
+[504188.336] 
+X.Org X Server 1.20.0
+X Protocol Version 11, Revision 0
+[504188.336] Build Operating System: Linux Red Hat
+[504188.336] Current Operating System: CYGWIN_NT-6.1 L110903 2.10.0(0.325/5/3) 2018-02-02 15:16 x86_64
+[504188.351] Build Date: 04 June 2018  08:55:38PM
+[504188.351] Package: version 1.20.0-2 built 2018-06-04 
+[504188.351] Current version of pixman: 0.34.0
+[504188.351] 	Before reporting problems, check http://x.cygwin.com/
+	to make sure that you have the latest version.
+[504188.351] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[504188.351] (==) Log file: "/home/hchada/.local/share/xorg/Xorg.0.log", Time: Tue Sep 11 13:03:11 2018
+[504188.351] (II) Module ABI versions:
+[504188.351] 	X.Org ANSI C Emulation: 0.4
+[504188.351] 	X.Org Video Driver: 24.0
+[504188.351] 	X.Org XInput driver : 24.1
+[504188.351] 	X.Org Server Extension : 10.0
+[504188.351] (==) Using default built-in configuration (21 lines)
+[504188.351] (==) --- Start of built-in configuration ---
+[504188.351] 	Section "Device"
+[504188.351] 		Identifier	"Builtin Default fbdev Device 0"
+[504188.351] 		Driver	"fbdev"
+[504188.351] 	EndSection
+[504188.351] 	Section "Screen"
+[504188.351] 		Identifier	"Builtin Default fbdev Screen 0"
+[504188.351] 		Device	"Builtin Default fbdev Device 0"
+[504188.351] 	EndSection
+[504188.351] 	Section "Device"
+[504188.351] 		Identifier	"Builtin Default vesa Device 0"
+[504188.351] 		Driver	"vesa"
+[504188.351] 	EndSection
+[504188.351] 	Section "Screen"
+[504188.351] 		Identifier	"Builtin Default vesa Screen 0"
+[504188.351] 		Device	"Builtin Default vesa Device 0"
+[504188.351] 	EndSection
+[504188.351] 	Section "ServerLayout"
+[504188.351] 		Identifier	"Builtin Default Layout"
+[504188.351] 		Screen	"Builtin Default fbdev Screen 0"
+[504188.351] 		Screen	"Builtin Default vesa Screen 0"
+[504188.351] 	EndSection
+[504188.351] (==) --- End of built-in configuration ---
+[504188.351] (==) ServerLayout "Builtin Default Layout"
+[504188.351] (**) |-->Screen "Builtin Default fbdev Screen 0" (0)
+[504188.351] (**) |   |-->Monitor "<default monitor>"
+[504188.351] (**) |   |-->Device "Builtin Default fbdev Device 0"
+[504188.351] (==) No monitor specified for screen "Builtin Default fbdev Screen 0".
+	Using a default monitor configuration.
+[504188.351] (**) |-->Screen "Builtin Default vesa Screen 0" (1)
+[504188.351] (**) |   |-->Monitor "<default monitor>"
+[504188.351] (**) |   |-->Device "Builtin Default vesa Device 0"
+[504188.351] (==) No monitor specified for screen "Builtin Default vesa Screen 0".
+	Using a default monitor configuration.
+[504188.351] (==) Not automatically adding devices
+[504188.351] (==) Not automatically enabling devices
+[504188.351] (==) Not automatically adding GPU devices
+[504188.351] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[504188.351] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[504188.351] (==) ModulePath set to "/usr/lib/xorg/modules"
+[504188.351] (==) |-->Input Device "<default pointer>"
+[504188.351] (==) |-->Input Device "<default keyboard>"
+[504188.351] (==) The core pointer device wasn't specified explicitly in the layout.
+	Using the default mouse configuration.
+[504188.351] (==) The core keyboard device wasn't specified explicitly in the layout.
+	Using the default keyboard configuration.
+[504188.351] (II) LoadModule: "glx"
+[504188.351] (II) Loading /usr/lib/xorg/modules/extensions/cygglx.dll
+[504188.476] (II) Module glx: vendor="X.Org Foundation"
+[504188.476] 	compiled for 1.20.0, module version = 1.0.0
+[504188.476] 	ABI class: X.Org Server Extension, version 10.0
+[504188.476] (II) LoadModule: "fb"
+[504188.476] (II) Loading /usr/lib/xorg/modules/cygfb.dll
+[504188.492] (II) Module fb: vendor="X.Org Foundation"
+[504188.492] 	compiled for 1.20.0, module version = 1.0.0
+[504188.492] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[504188.492] (II) LoadModule: "shadow"
+[504188.492] (II) Loading /usr/lib/xorg/modules/cygshadow.dll
+[504188.507] (II) Module shadow: vendor="X.Org Foundation"
+[504188.507] 	compiled for 1.20.0, module version = 1.1.0
+[504188.507] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[504188.507] (II) LoadModule: "fbdev"
+[504188.507] (WW) Warning, couldn't open module fbdev
+[504188.507] (EE) Failed to load module "fbdev" (module does not exist, 0)
+[504188.507] (II) LoadModule: "vesa"
+[504188.507] (WW) Warning, couldn't open module vesa
+[504188.507] (EE) Failed to load module "vesa" (module does not exist, 0)
+[504188.507] (II) LoadModule: "mouse"
+[504188.507] (WW) Warning, couldn't open module mouse
+[504188.507] (EE) Failed to load module "mouse" (module does not exist, 0)
+[504188.507] (II) LoadModule: "kbd"
+[504188.523] (WW) Warning, couldn't open module kbd
+[504188.523] (EE) Failed to load module "kbd" (module does not exist, 0)
+[504188.523] (EE) No drivers available.
+[504188.523] (EE) Fatal server error:
+[504188.523] (EE) no screens found(EE) 
+[504188.523] (EE) 
+Please consult the The Cygwin/X Project support 
+	 at http://x.cygwin.com/
+ for help. 
+[504188.523] (EE) Please also check the log file at "/home/hchada/.local/share/xorg/Xorg.0.log" for additional information.
+[504188.523] (EE) 
+[504188.523] (EE) Server terminated with error (1). Closing log file.

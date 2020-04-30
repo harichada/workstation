@@ -1,0 +1,82 @@
+[504205.886] 
+X.Org X Server 1.20.0
+X Protocol Version 11, Revision 0
+[504205.886] Build Operating System: Linux Red Hat
+[504205.886] Current Operating System: CYGWIN_NT-6.1 L110903 2.10.0(0.325/5/3) 2018-02-02 15:16 x86_64
+[504205.886] Build Date: 04 June 2018  08:55:38PM
+[504205.886] Package: version 1.20.0-2 built 2018-06-04 
+[504205.886] Current version of pixman: 0.34.0
+[504205.886] 	Before reporting problems, check http://x.cygwin.com/
+	to make sure that you have the latest version.
+[504205.886] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[504205.886] (==) Log file: "/home/hchada/.local/share/xorg/Xorg.0.log", Time: Tue Sep 11 13:03:29 2018
+[504205.886] (++) Using config file: "/etc/X11/xdummy_modified_xconfig.conf_0"
+[504205.886] (==) ServerLayout "Layout0"
+[504205.886] (**) |-->Screen "Screen0" (0)
+[504205.886] (**) |   |-->Monitor "Monitor0"
+[504205.886] (**) |   |-->Device "Device0"
+[504205.886] (**) |-->Input Device "Keyboard0"
+[504205.886] (**) |-->Input Device "Mouse0"
+[504205.886] (**) Option "DontVTSwitch" "true"
+[504205.886] (**) Option "AllowMouseOpenFail" "true"
+[504205.886] (==) Not automatically adding devices
+[504205.886] (==) Not automatically enabling devices
+[504205.886] (==) Not automatically adding GPU devices
+[504205.886] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[504205.886] (==) FontPath set to:
+	catalogue:/etc/X11/fontpath.d,
+	built-ins
+[504205.886] (==) ModulePath set to "/usr/lib/xorg/modules"
+[504205.886] (II) Module ABI versions:
+[504205.886] 	X.Org ANSI C Emulation: 0.4
+[504205.886] 	X.Org Video Driver: 24.0
+[504205.886] 	X.Org XInput driver : 24.1
+[504205.886] 	X.Org Server Extension : 10.0
+[504205.886] (II) "glx" will be loaded. This was enabled by default and also specified in the config file.
+[504205.886] (II) "fb" will be loaded by default.
+[504205.886] (II) "shadow" will be loaded by default.
+[504205.886] (II) LoadModule: "dbe"
+[504205.886] (II) Module "dbe" already built-in
+[504205.886] (II) LoadModule: "extmod"
+[504205.886] (II) Module "extmod" already built-in
+[504205.886] (II) LoadModule: "glx"
+[504205.886] (II) Loading /usr/lib/xorg/modules/extensions/cygglx.dll
+[504205.886] (II) Module glx: vendor="X.Org Foundation"
+[504205.886] 	compiled for 1.20.0, module version = 1.0.0
+[504205.886] 	ABI class: X.Org Server Extension, version 10.0
+[504205.886] (II) LoadModule: "fb"
+[504205.886] (II) Loading /usr/lib/xorg/modules/cygfb.dll
+[504205.886] (II) Module fb: vendor="X.Org Foundation"
+[504205.886] 	compiled for 1.20.0, module version = 1.0.0
+[504205.886] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[504205.886] (II) LoadModule: "shadow"
+[504205.886] (II) Loading /usr/lib/xorg/modules/cygshadow.dll
+[504205.886] (II) Module shadow: vendor="X.Org Foundation"
+[504205.886] 	compiled for 1.20.0, module version = 1.1.0
+[504205.886] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[504205.901] (II) LoadModule: "dummy"
+[504205.901] (II) Loading /usr/lib/xorg/modules/drivers/dummy_drv.dll
+[504205.917] (II) Module dummy: vendor="X.Org Foundation"
+[504205.917] 	compiled for 1.19.0, module version = 0.3.8
+[504205.917] 	Module class: X.Org Video Driver
+[504205.917] 	ABI class: X.Org Video Driver, version 23.0
+[504205.917] (EE) dummy: module ABI major version (23) doesn't match the server's version (24)
+[504205.917] (EE) Failed to load module "dummy" (module requirement mismatch, 0)
+[504205.917] (II) LoadModule: "kbd"
+[504205.917] (WW) Warning, couldn't open module kbd
+[504205.917] (EE) Failed to load module "kbd" (module does not exist, 0)
+[504205.917] (II) LoadModule: "mouse"
+[504205.917] (WW) Warning, couldn't open module mouse
+[504205.917] (EE) Failed to load module "mouse" (module does not exist, 0)
+[504205.917] (EE) No drivers available.
+[504205.917] (EE) Fatal server error:
+[504205.917] (EE) no screens found(EE) 
+[504205.917] (EE) 
+Please consult the The Cygwin/X Project support 
+	 at http://x.cygwin.com/
+ for help. 
+[504205.917] (EE) Please also check the log file at "/home/hchada/.local/share/xorg/Xorg.0.log" for additional information.
+[504205.917] (EE) 
+[504205.917] (EE) Server terminated with error (1). Closing log file.

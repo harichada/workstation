@@ -1,0 +1,164 @@
+** Message: environement.vala:58: Exporting primary_variable
+** Message: environement.vala:59: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:150: confir_dirs is null, export : /etc/xdg
+** Message: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:191: data_dirs is null, export : /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: utils.vala:68: User config used : /home/hchada/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/hchada/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:540: Key file does not have key “iGtk/ColorScheme” in group “GTK”
+** Message: settings.vala:540: Key file does not have key “windows_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “panel/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “dock/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “file_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “desktop_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “launcher_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “composite_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “im1/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “im2/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “widget1/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “notification/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “keybindings/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “im_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “screensaver/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “power_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “audio_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “workspace_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “screenshot_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “message_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “upgrade_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “updates_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “updates_manager/timeout” in group “Session”
+** Message: settings.vala:540: Key file does not have key “crash_manager/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “crash_manager/dev_mode” in group “Session”
+** Message: settings.vala:540: Key file does not have key “crash_manager/timeout” in group “Session”
+** Message: settings.vala:540: Key file does not have key “upstart_user_session” in group “Session”
+** Message: settings.vala:540: Key file does not have key “proxy_manager/http” in group “Session”
+** Message: settings.vala:540: Key file does not have key “a11y/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “xrandr/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “network_gui/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “webbrowser/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “email/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “pdf_reader/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “video_player/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “audio_player/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “images_display/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “text_editor/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “archive/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “charmap/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “calculator/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “spreadsheet/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “bittorent/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “document/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “webcam/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “burn/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “notes/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “disk_utility/command” in group “Session”
+** Message: settings.vala:540: Key file does not have key “tasks/command” in group “Session”
+** Message: settings.vala:540: Key file does not have group “Keymap”
+** Message: settings.vala:540: Key file does not have key “laptop_mode” in group “State”
+** Message: settings.vala:540: Key file does not have key “gnome” in group “Dbus”
+** Message: settings.vala:540: Key file does not have key “type” in group “Environment”
+** Message: settings.vala:540: Key file does not have key “ubuntu_menuproxy” in group “Environment”
+** Message: settings.vala:540: Key file does not have key “toolkit_integration” in group “Environment”
+** Message: settings.vala:540: Key file does not have key “gtk/overlay_scrollbar_disable” in group “Environment”
+** Message: settings.vala:540: Key file does not have key “qt/force_theme” in group “Environment”
+** Message: settings.vala:540: Key file does not have key “qt/platform” in group “Environment”
+** Message: settings.vala:462: Monitoring: /home/hchada/.config/lxsession/LXDE/desktop.conf
+** Message: settings.vala:466: Desktop file is already in config home, do nothing
+** Message: settings.vala:373: Settings default for Session, windows_manager, command : openbox
+** Message: settings.vala:373: Settings default for Session, windows_manager, session : LXDE
+** Message: settings.vala:373: Settings default for Session, launcher_manager, command : lxpanelctl
+** Message: environement.vala:79: Exporting variable
+** Message: environement.vala:80: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:177: custom_config :
+** Message: environement.vala:178: config_dirs :/etc/xdg
+** Message: environement.vala:179: confir_dirs not null, export : /etc/xdg
+** Message: environement.vala:184: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:218: custom_data :
+** Message: environement.vala:219: data_dirs :/usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:220: data_dirs not null, export : /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:225: Exporting XDG_DATA_DIRS
+** Message: utils.vala:68: User config used : /home/hchada/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/hchada/.config/lxsession/LXDE/desktop.conf
+** Message: environement.vala:254: No entry in [Environment_variable]. Key file does not have group “Environment_variable”
+** Message: utils.vala:79: Config system location : /etc/xdg/lxsession/LXDE
+** Message: utils.vala:85: System system path location : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: utils.vala:89: Final file used : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: options.vala:164: Activate xsettings_manager build-in
+** Message: utils.vala:68: User config used : /home/hchada/.config/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /home/hchada/.config/lxsession/LXDE/desktop.conf
+** Message: app.vala:721: polkit separate
+** Message: app.vala:721: polkit separate
+
+** (lxsession:13084): WARNING **: app.vala:86: Failed to execute child process “lxpolkit” (No such file or directory)
+
+** (lxsession:13084): WARNING **: app.vala:87: Error when launching lxpolkit
+** Message: utils.vala:68: User config used : /home/hchada/.config/lxsession/LXDE/autostart
+** Message: utils.vala:89: Final file used : /home/hchada/.config/lxsession/LXDE/autostart
+** Message: autostart.vala:42: Autostart path : /home/hchada/.config/lxsession/LXDE/autostart
+** Message: app.vala:76: Launching lxpanel 
+** Message: app.vala:76: Launching pcmanfm 
+Openbox-Message: A window manager is already running on screen 0
+** Message: options.vala:110: Create Option Clipboard
+** Message: options.vala:44: Options - Launch command lxclipboard
+** Message: main.vala:442: Check keymap_mode (null)
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-hchada'
+** Message: app.vala:76: Launching /usr/bin/ssh-agent 
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-hchada'
+** Message: app.vala:347: openbox-lxde exit with this type of exit: 0
+
+** Message: app.vala:363: Exit normal, don't reload
+SSH_AUTH_SOCK=/tmp/ssh-HCHgyyOHzERm/agent.6380; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=19040; export SSH_AGENT_PID;
+echo Agent pid 19040;
+** Message: app.vala:130: /usr/bin/ssh-agent exit with this type of exit: 0
+qt5ct: using qt5ct plugin
+QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-hchada'
+log_kgpg: checking version of GnuPG executable "gpg"
+log_kgpg: version is "1.4.23" 66583
+** Message: app.vala:130: pcmanfm exit with this type of exit: 256
+** Message: app.vala:145: Exit normal, don't reload
+
+** (indicator-keylock:14060): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+** (pasystray:17772): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+** (krb5-auth-dialog:11936): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+** (eekboard:15664): WARNING **: Error retrieving accessibility bus address: org.freedesktop.DBus.Error.NoReply: Message recipient disconnected from message bus without replying
+
+(pasystray:17772): pasystray-WARNING **: Error initializing Avahi: Daemon not running
+
+** (indicator-keylock:14060): WARNING **: Couldn't show notification: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+
+(krb5-auth-dialog:11936): libnotify-WARNING **: Failed to connect to proxy
+
+(krb5-auth-dialog:11936): KrbAuthDialog-WARNING **: Failed to read server caps
+
+(pasystray:17772): Gdk-CRITICAL **: gdk_window_thaw_toplevel_updates: assertion 'window->update_and_descendants_freeze_count > 0' failed
+
+(krb5-auth-dialog:11936): KrbAuthDialog-WARNING **: Failed to show notification: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+qt5ct: D-Bus global menu: no
+Desktop accessibility support is disabled
+qt5ct: D-Bus system tray: no
+QSystemTrayIcon::setVisible: No Icon set
+QSystemTrayIcon::setVisible: No Icon set
+QXcbShmImage: shmget() failed (88: Function not implemented) for size 2304 (24x24)
+Timeout was reached
+lxsession: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+openbox-lxde (null) 
+lxpanel --profile LXDE (null) 
+pcmanfm --desktop --profile LXDE (null) 
+/usr/bin/ssh-agent -s (null) 
+lxpanel: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+The X11 connection broke (error 1). Did the X11 server die?
+lxclipboard: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Gdk-Message: pasystray: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+
+** (zeitgeist-datahub:11180): WARNING **: zeitgeist-datahub.vala:226: Unable to get name "org.gnome.zeitgeist.datahub" on the bus!
+Gdk-Message: krb5-auth-dialog: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+
+Gdk-Message: indicator-keylock: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+

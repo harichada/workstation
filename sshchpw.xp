@@ -1,0 +1,11 @@
+#!/usr/bin/expect
+spawn ssh ch1p21a
+expect "password:"
+send "hc123\r"
+expect "Old password:"
+send "hc123\r"
+expect "New password:"
+send "Hari@123\r"
+expect "new password again:"
+send "Hari@123\r"
+interact

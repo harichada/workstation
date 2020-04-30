@@ -1,0 +1,7 @@
+#!/usr/bin/expect
+set arg1 [lindex $argv 0]
+
+spawn scp -r .ssh $arg1:~/
+expect "*password:"
+send "Shru@345\r"
+expect "eof"

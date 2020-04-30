@@ -1,0 +1,4 @@
+fruits banana,orange,apple,grapes
+plants pine,sequoia,cedar,walnut
+place LosAngles,Sacramenta,Cumming,parlin
+Cars Honda,Toyota,VolksWagen,BMW

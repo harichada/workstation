@@ -1,0 +1,15 @@
+- hosts: 
+       - sytas
+  become: true
+  vars_files:
+          - users.yml
+  tasks:
+          - user:
+                      name: "{{ item.name }}" 
+                      state: present
+                      comment: "{{ item.comment }}"
+                      password: "test123"
+                      update_password: on_create
+                      groups: "{{ item.groups }}"
+                      append: yes
+            with_items: "{{ users }}"

@@ -1,0 +1,3112 @@
+#
+# FILENAME
+#	webseald.conf
+#
+# DESCRIPTION
+#	Configuration file for the Access Manager WebSEAL server (webseald)
+#
+# Optional stanza added by upgrade
+# [auth-cookies]
+# Optional stanza added by upgrade
+# [local-response-macros]
+# Optional stanza added by upgrade
+# [eai-trigger-urls]
+# Optional stanza added by upgrade
+# [audit-response-codes]
+# Optional stanza added by upgrade
+# [audit-mime-types]
+# Optional stanza added by upgrade
+# [auth-cookies]
+# Optional stanza added by upgrade
+# [local-response-macros]
+# Optional stanza added by upgrade
+# [eai-trigger-urls]
+# Optional stanza added by upgrade
+# [audit-response-codes]
+# Optional stanza added by upgrade
+# [validate-headers]
+# Optional stanza added by upgrade
+# [audit-mime-types]
+
+
+[server]
+###############################
+# WEBSEAL GENERAL
+###############################
+# Optional entry added by upgrade
+# connection-request-limit = 100
+# Optional entry added by upgrade
+# suppress-dynurl-parsing-of-posts = no
+# Optional entry added by upgrade
+# suppress-backend-server-identity = no
+# Optional entry added by upgrade
+# filter-nonhtml-as-xhtml = no
+# Optional entry added by upgrade
+# reject-invalid-host-header = no
+# Optional entry added by upgrade
+# use-http-only-cookies = no
+# Optional entry added by upgrade
+# allow-shift-jis-chars = no
+# Optional entry added by upgrade
+# cope-with-pipelined-request = yes
+# Optional entry added by upgrade
+# allow-unauth-ba-supply = no
+# Optional entry added by upgrade
+# tag-value-missing-attr-tag = NOT_FOUND
+# Optional entry added by upgrade
+# force-tag-value-prefix = yes
+# Optional entry added by upgrade
+# connection-request-limit = 100
+# Optional entry added by upgrade
+# suppress-dynurl-parsing-of-posts = no
+# Optional entry added by upgrade
+# slash-before-query-on-redirect = no
+# Optional entry added by upgrade
+# preserve-base-href2 = yes
+# Optional entry added by upgrade
+# filter-nonhtml-as-xhtml = no
+# Optional entry added by upgrade
+# http-method-disabled-local = TRACE
+# Optional entry added by upgrade
+# http-method-disabled-remote = TRACE
+# Optional entry added by upgrade
+# reject-invalid-host-header = no
+# Optional entry added by upgrade
+# use-http-only-cookies = no
+# Optional entry added by upgrade
+# allow-shift-jis-chars = no
+# Optional entry added by upgrade
+# cope-with-pipelined-request = yes
+# Optional entry added by upgrade
+# allow-unauth-ba-supply = no
+# Optional entry added by upgrade
+# tag-value-missing-attr-tag = NOT_FOUND
+# Optional entry added by upgrade
+# force-tag-value-prefix = yes
+# Optional entry added by upgrade
+# enable-IE6-2GB-downloads = no
+# Optional entry added by upgrade
+# strip-www-authenticate-headers = yes
+# Optional entry added by upgrade
+# allow-unsolicited-logins = yes
+# Optional entry added by upgrade
+# io-buffer-size = 4096
+
+suppress-backend-server-identity = no
+
+#----------------------
+# SYSTEM
+#----------------------
+
+# WebSEAL instance UNIX user account
+unix-user = ivmgr
+
+# WebSEAL instance UNIX group account
+unix-group = ivmgr
+
+# PID file
+# 03/10/2014 (ht) update to default
+# unix-pid-file = /var/pdweb/log/webseald-csehws008.pid
+unix-pid-file = /var/pdweb/log/webseald-default.pid
+
+#Root directory for the webserver
+# 03/10/2014 (ht) update to default
+# server-root = /opt/pdweb/www-csehws008
+server-root = /opt/pdweb/www-default
+
+# WebSEAL server instance name. Typically, this is based on the hostname of the
+# machine and the instance name of the server.
+# 03/10/2014 (ht) update to default
+#server-name = csehws008-csehws008
+server-name = cp2p04a.dts.ca.gov-default
+
+#----------------------
+# THREADS AND CONNECTIONS
+#----------------------
+
+# Number of WebSEAL worker threads
+worker-threads = 200
+
+# Initial client connection timeout (seconds)
+client-connect-timeout = 120
+
+
+# HTTP/1.1 persistent connection timeout (seconds)
+# This only affects connections to clients, not backend systems.
+persistent-con-timeout = 5
+
+# Intra-request timeout.  Time out between data received or sent
+# for a given request, but not the first read.  When this value
+# is non-zero, it also enables timeouts on http writes to clients,
+# and causes a TCP RST packet to be sent if a connection timeout
+# occurs on the non-first data I/O.  When this value is zero the
+# client-connection-timeout is used instead.
+intra-connection-timeout = 60
+
+# Allow WebSEAL to write chunked data to HTTP/1.1 clients.  This can
+# improve performance by allowing connections to be reused even when
+# exact response length is not known before the response is written.
+chunk-responses = yes
+
+#----------------------
+# HTTPS CLIENT
+#----------------------
+
+# Allow HTTPS access
+# KL 04122013
+#https = yes
+https = no
+
+# Port to user for HTTPS requests
+https-port = 443
+
+#----------------------
+#  HTTP CLIENT
+#----------------------
+
+# Allow (unsecure) TCP HTTP access
+# HT 03/23/2012 Disable http access
+# HT 05/22/2012 Enable http access
+http = yes
+#http = no
+
+# Port to use for unsecure HTTP requests
+http-port = 80
+
+#----------------------
+# REQUEST BODIES AND CACHING
+#----------------------
+
+# This parameter specifies the maximum number of bytes that
+# WebSEAL will hold in internal buffers while reading from a
+# client.  It affects the maximum size of URLs, HTTP Headers,
+# and the size of a request that will be cached.
+# This parameter must be set to at least twice the value
+# of request-body-max-read (below), and cannot be set lower
+# than it's default: 32768
+max-client-read = 32768
+
+# This parameter specifies the maximum number of bytes to
+# read in as content from the body of requests for use in
+# dynurl, authentication, and request caching.
+#
+# 1) This impacts dynurl because the query portion of a
+#    POST request URI is contained in the request body.
+#
+# 2) This impacts forms authentication, because this limits
+#    the size of the POST data that will be processed
+#    when performing such authentication.  For this reason,
+#    WebSEAL sets a hard minimum of 512 bytes on
+#    request-body-max-read. If this value is set below
+#    that minimum, the setting will be ignored and the
+#    minimum will be used.
+#
+# 3) This affects the amount of data that WebSEAL will cache
+#    for users who must authenticate before their request can be
+#    fulfilled.  This affects all request that have bodies
+#    (POSTs, PUTs, etc.).
+#
+# This does not limit the max POST size (which is unlimited).
+#
+# If this parameter is set to a value higher than 16384,
+# max-client-read must be increased to at least twice the
+# desired value.  Otherwise, a maximum of half the value of
+# max-client-read will be imposed.
+request-body-max-read = 4096
+
+# When a user is prompted to authenticate before a request
+# can be fulfilled, the data from that request is cached
+# for processing after the completion of the authentication.
+# The maximum amount of data cached per request is determined
+# by request-max-cache.
+# If you want to ensure that you will be caching all of
+# request-body-max-read worth of the body of requests, you
+# must account for the maximum size of all the other request
+# components in this value.
+# Example: If you want to cache 2048 bytes of request bodies
+# and you anticipate that the maximum size of all request headers
+# and cookies will be 4096 bytes, you would:
+# 1)  set request-body-max-read = 2048
+# 2)  set request-max-cache = 2048 + 4096 = 6144
+request-max-cache = 8192
+
+#----------------------
+#  DYNURL
+#----------------------
+
+# Location of the URL -> protected object mapping file
+# This path is relative to the server-root value in the [server] stanza
+dynurl-map = lib/dynurl1.conf
+
+# Disallow/Allow POST requests larger than request-body-max-read.
+# This parameter only takes effect if dynurl is enabled.
+#
+# WebSEAL is not able to compare the entire contents of a POST
+# request to the URL mappings inside the dynurl.conf file if the body
+# of the post is larger than request-body-max-read.
+#
+# If this option is set to "no", then WebSEAL will not
+# allow POST requests with a body larger than request-body-max-read.
+#
+# If this option is set to "yes", then WebSEAL will compare only
+# up to request-body-max-read bytes of a POST request to the URL mappings
+# in the dynurl.conf file.
+dynurl-allow-large-posts = yes
+
+#----------------------
+# URI AND POST BODY DECODING
+#----------------------
+
+# If decode-query is set to "yes", WebSEAL will validate the query string
+# in requests according to the utf8-qstring-support-enabled parameter.
+# Otherwise, WebSEAL will not validate the query string.  If decode-query
+# is set to "no" then dynurl must be disabled.
+decode-query = yes
+
+# Different portions of HTTP requests may be interpreted as either UTF-8 or
+# local code page according to the configuration items in this section.  The
+# options for each portion of the request are either to ensure that the data
+# is UTF-8, ensure that the data is local codepage, or to accept either.
+#
+# If an option in this section is "yes", WebSEAL will ensure that the data
+# in that portion of the request is UTF-8.
+#
+# If an option in this section is "no", WebSEAL will ensure that the data
+# in that portion of the request is local codepage.
+#
+# If an option in this section is "auto", WebSEAL will first attempt to
+# validate the data as UTF-8.  If the data is not UTF-8, then WebSEAL will
+# ensure the data is local codepage.
+
+# utf8-url-support-enabled controls how the location portion of the URI
+# (the portion before any question mark character) is intepreted.
+utf8-url-support-enabled = yes
+
+# utf8-qstring-support-enabled controls how the query portion of the URI
+# (the portion after the question mark character) is interpreted.  This also
+# applies to the POST bodies of requests to junctions when dynurl is enabled.
+utf8-qstring-support-enabled = no
+
+# utf8-forms-support-enabled option controls how form logins, password change
+# requests, and other WebSEAL specific forms are parsed.
+utf8-form-support-enabled = yes
+
+# When double-byte-encoding is set to 'yes' WebSEAL will assume that URL's
+# which contain encoding characters are always encoded in unicode, and will
+# not contain UTF-8 encoded characters.
+double-byte-encoding = no
+
+#----------------------
+# SUPPRESSING SERVER IDENTITY
+#----------------------
+
+# The "Server: WebSEAL/version.number" line normally included
+# in http responses can be suppressed by setting this to "yes."
+suppress-server-identity = no
+
+#----------------------
+# AUTH TOKEN VERSION
+#----------------------
+
+# [e-community-sso], [failover], [cdsso] all use a common method
+# for generating tokens.  Version 4.1.0 has increased the security
+# of these.  However, it is not backward compatible.  If you are
+# integrating with earlier web servers you will need to enable this.
+pre-410-compatible-tokens = no
+
+# Version 5.1.0 tokens are formatted differently then tokens in prior releases.
+# If you are integrating with earlier web servers you will need to enable this
+# to ensure the integrity of data across [e-community-sso], [failover], and
+# [cdsso].
+pre-510-compatible-tokens = no
+
+#----------------------
+# P3P Compact Policy header
+#----------------------
+# If 'preserve-p3p-policy' is set to 'no' (default), then any P3P headers from
+# junctioned servers will be replaced.
+#
+# If 'preserve-p3p-policy' is set to 'yes', then any P3P headers from junctioned
+# servers will be preserved.
+preserve-p3p-policy = no
+
+#----------------------
+# Network Interface
+#----------------------
+# Specify an alternative I.P. address to be used by this instance of WebSEAL.
+# This allows two or more WebSEAL instances to run on the same machine
+# while using differing I.P. addresses and host names.
+#
+# network-interface = 0.0.0.0
+
+#----------------------
+# Filtering
+#----------------------
+# If preserve-base-href is no, then WebSEAL will remove all BASE HREF tags
+# from filtered HTML documents and prepend the base tag to filtered links.
+# Otherwise, the BASE HREF tag will be filtered.
+preserve-base-href = no
+
+#---------------------
+# TRACE method
+#---------------------
+# WebSEAL blocks the TRACE method by default for all requests
+# to prevent a well-publicized security exploit.
+#
+# To enable TRACE method requests for local resources set
+# http-method-trace-enabled = yes
+#
+# To enable TRACE method requests for junctioned resources set
+# http-method-trace-enabled-remote = yes
+
+#---------------------
+# Processing root junction requests
+#---------------------
+# Specify whether WebSEAL will attempt to process requests for resources
+# located at the root ('/') junction before attempting to identify a
+# junction point to send the request via junction mapping mechanisms
+# such as the JMT or IV_JCT cookie.
+#
+# Avoiding root junction processing prevents processing being performed
+# for incorrect resources before the intended resource is identified.
+# This will have performance benefits and prevent false authorization or
+# filetype check failures.
+#
+# Valid choices are:
+#  never  - Root junction requests will never be processed at the root junction.
+#           If a junction mapping mechanism is configured, such requests will
+#           be immediately mapped, then processed at a mapped junction point if
+#           one is identified.
+#
+#  always - Always attempt to process requests for the root junction at the root
+#           junction first before attempting to use a junction mapping mechanism.
+#           This is not recommended unless the root junction serves a large
+#           set of resources or no junction mapping mechanisms are configured
+#           for the set of junctions served by this WebSEAL server.
+#
+#  filter - All root junction requests will be examined to determine whether they
+#           start with the patterns specified in the process-local-filter stanza.
+#           If yes, they will be processed at the root junction first.
+#           If no, they will be remapped immediately.
+#
+#
+process-root-requests = always
+reject-request-transfer-encodings = no
+ipv6-support = no
+ip-support-level = displaced-only
+late-lockout-notification = yes
+max-idle-persistent-connections = 512
+max-file-cat-command-length = 4096
+
+[process-root-filter]
+# This stanza is only used if process-root-requests = filter
+# Request URLs starting with the following patterns will be processed at the
+# root junction before attempting to remap the requests to a new junction point.
+# Format is
+#       root = <pattern>
+# where <pattern> is a standard WebSEAL wildcard pattern.
+#
+root = /index.html
+root = /cgi-bin*
+
+[header-names]
+###############################
+# HTTP Header Names
+###############################
+
+# server-name - This header can be used to pass the azn-api administration
+# server name used with the "server task" command to junctioned applications.
+# Leave this entry blank to disable the header.
+server-name = iv_server_name
+
+[ldap]
+###############################
+# LDAP
+###############################
+# ldap-server-config      - Indicates the location of the ldap.conf file
+#                           (set by configuration)
+# prefer-readwrite-server - yes|no Indicates whether to select writable
+#                           LDAP server when available
+# auth-using-compare      - yes|no Indicates whether to perform
+#                           authentication using LDAP bind or comparing password
+# bind-dn                 - Indicates the Distinguished Name of the daemon
+#                           (set by configuration)
+# ssl-enabled             - yes|no Indicates whether SSL is enabled (set
+#                           by configuration)
+# ssl-keyfile             - Indicates path/filename of SSL keyfile (set by
+#                           configuration)
+# ssl-keyfile-dn          - Indicates the certificate label in the SSL
+#                           keyfile, if any (set by configuration)
+# default-policy-override-support
+#                         - yes|no When "yes", no user Policy will
+#                           be checked, only the default Policy is checked
+#                           (saves some LDAP searches)
+# user-and-group-in-same-suffix
+#                         - yes|no When "yes", indicates that the groups are
+#                           defined in the same LDAP suffix as the user
+#                           (saves some LDAP searches)
+# cache-enabled           - yes|no Indicates whether to enable the local
+#                           LDAP cache
+#
+# cache-enabled related configuration settings:
+#
+# cache-user-size         - (optional) The number of entries in the LDAP user
+#                           cache.  Ignored if the cache is not enabled.  If
+#                           not set, the default is 256.
+# cache-group-size        - (optional) The number of entries in the LDAP group
+#                           cache.  Ignored if the cache is not enabled.  If
+#                           not set, the default is 64.
+# cache-policy-size       - (optional) The number of entries in the LDAP policy
+#                           cache.  Ignored if the cache is not enabled.  If
+#                           not set, the default is 20.
+# cache-user-expire-time  - (optional) The amount of time (in seconds) until a
+#                           user entry in the cache is considered stale and is
+#                           discarded.  Ignored if the cache is not enabled.
+#                           If not set, the default is 30 seconds.
+# cache-group-expire-time - (optional) The amount of time (in seconds) until a
+#                           group entry in the cache is considered stale and is
+#                           discarded.  Ignored if the cache is not enabled.
+#                           If not set, the default is 300 seconds (5 minutes).
+# cache-policy-expire-time
+#                         - (optional) The amount of time (in seconds) until a
+#                           policy entry in the cache is considered stale and is
+#                           discarded.  Ignored if the cache is not enabled.
+#                           If not set, the default is 30 seconds.
+# cache-group-membership  - (optional) Indicates whether group membership
+#                           information should be cached.  Ignored if the cache
+#                           is not enabled.  If not set, the default is yes.
+# cache-use-user-cache    - (optional) Indicates whether to use the user cache
+#                           information or not.  Ignored if the cache is not
+#                           enabled.  If not set, the default is yes.
+
+
+ldap-server-config = /opt/PolicyDirector/etc/ldap.conf
+prefer-readwrite-server = no
+auth-using-compare = no
+ssl-enabled = no
+ssl-keyfile = <ldap-ssl-keyfile>
+ssl-keyfile-dn = <ldap-ssl-keyfile-dn>
+default-policy-override-support = no
+user-and-group-in-same-suffix = yes
+
+cache-enabled = yes
+#bind-dn = cn=csehws008-webseald/csehws008,cn=SecurityDaemons,secAuthority=Default
+# 03/10/2014 (ht) update to default
+# bind-dn = cn=webseald/csehws008,cn=SecurityDaemons,secAuthority=Default
+bind-dn = cn=default-webseald/cp2p04a.dts.ca.gov,cn=SecurityDaemons,secAuthority=Default
+
+enabled = yes
+# 03/10/2014 (ht) update ldap hostname
+#host = csehds009.cse.ca.gov
+host = cp2p06a.dts.ca.gov
+port = 389
+
+cache-user-size = 10000
+#cache-group-size = 64
+#cache-policy-size = 20
+cache-user-expire-time = 30
+#cache-group-expire-time = 300
+#cache-policy-expire-time = 30
+#cache-group-membership = yes
+#cache-use-user-cache = yes
+
+timeout = 30
+authn-timeout = 30
+search-timeout = 30
+cache-return-registry-id = no
+enhanced-pwd-policy = no
+enable-last-login = no
+
+[uraf-registry]
+###############################
+# DOMINO OR ACTIVE DIRECTORY
+###############################
+
+uraf-registry-config =
+bind-id =
+cache-mode = enabled
+cache-size = 251
+cache-lifetime = user:30;group:300;resgroup:3600;resource:3600;rescreds:300;
+
+[ssl]
+###############################
+# SSL
+###############################
+# Optional entry added by upgrade
+# undetermined-revocation-cert-action = log
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# disable-ssl-v2-hello = yes
+# Optional entry added by upgrade
+# disable-tls-v11 = no
+# Optional entry added by upgrade
+# disable-tls-v12 = no
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# undetermined-revocation-cert-action = log
+# Optional entry added by upgrade
+# suppress-client-ssl-errors = false
+# Optional entry added by upgrade
+# enable-duplicate-ssl-dn-not-found-msgs = yes
+
+# This section contains entries that affect the behavior of the SSL
+# components of WebSEAL.  These will affect both clients connecting
+# via SSL as well as SSL junctions to backend systems.
+
+# The first four parameters (webseal-cert-*) relate to the certificate
+# keystore WebSEAL keep for exchanging with browsers when negotiating
+# SSL sessions.
+
+# WebSEAL certificate keyfile
+#webseal-cert-keyfile = /opt/pdweb/etc/pdsrv.kdb
+# 03/10/2014 (ht) update to default
+# webseal-cert-keyfile = /opt/pdweb/www-csehws008/certs/pdsrv.kdb
+webseal-cert-keyfile = /var/pdweb/www-default/certs/pdsrv.kdb
+
+# Password used to protect private keys in the keyfile.  The password
+# can be stored in plain text or encrypted in a "stashfile".
+# The stashfile is recommended, as it is more secure.
+# If both password and stashfile are specified, the password will be used.
+# webseal-cert-keyfile-pwd = <password>
+#webseal-cert-keyfile-stash = /opt/pdweb/etc/pdsrv.sth
+# 03/10/2014 (ht) update to default
+#webseal-cert-keyfile-stash = /opt/pdweb/www-csehws008/certs/pdsrv.sth
+webseal-cert-keyfile-stash = /var/pdweb/www-default/certs/pdsrv.sth
+webseal-cert-keyfile-pwd =
+
+# Label of key to use other than the default
+#webseal-cert-keyfile-label = WebSEAL-Test-Only
+# webseal-cert-keyfile-label = CSE-Online-Services
+#webseal-cert-keyfile-label = csehws008
+# 03/10/2014 (ht) update to new hostname label
+# webseal-cert-keyfile-label = csepft.cse.ca.gov
+webseal-cert-keyfile-label = csepft2.dts.ca.gov
+
+# The next four parameters (ssl-keyfile-*) relate to the keystore WebSEAL
+# uses for communicating with other Access Manager servers via SSL.  These
+# parameters typically do not need to be modified other than by the
+# configuration scripts.
+# 03/10/2014 (ht) update to default
+# ssl-keyfile = /var/pdweb/keytab-csehws008/webseald.kdb
+ssl-keyfile = /var/pdweb/keytab-default/default-webseald.kdb
+
+# Password used to protect private keys in the keyfile.  The password
+# can be stored in plain text or encrypted in a "stashfile".
+# The stashfile is recommended, as it is more secure.
+# If both password and stashfile are specified, the password will be used.
+#ssl-keyfile-pwd = <password>
+# 03/10/2014 (ht) update to default
+# ssl-keyfile-stash = /var/pdweb/keytab-csehws008/webseald.sth
+ssl-keyfile-stash = /var/pdweb/keytab-default/default-webseald.sth
+ssl-keyfile-pwd =
+
+# Label of key to use other than the default
+# ssl-keyfile-label =
+ssl-keyfile-label = PD Server
+
+# Selectively disable SSL version support for browser connections
+#disable-ssl-v2 = no
+disable-ssl-v2 = yes
+# 02/20/2015 JR Disabled SSLv3 per POODLE remediation
+#disable-ssl-v3 = no
+disable-ssl-v3 = yes
+disable-tls-v1 = no
+
+# Session timeout for SSL v2 connections (range: 1-100 secs)
+ssl-v2-timeout = 100
+
+# Session timeout for SSL v3 connections (range: 1-86400 secs)
+ssl-v3-timeout = 7200
+
+# The maximum number of concurrent entries in the SSL cache
+ssl-max-entries = 4096
+
+# CRL Cache configuration.
+# When gsk-crl-cache-size and gsk-crl-cache-entry-lifetime are
+# both set to zero (which they are by default), CRL Caching will
+# be disabled.
+
+# The maximum number of entries in the GSKit CRL cache
+# (must be > 0 to initialize CRL Caching)
+gsk-crl-cache-size = 0
+
+# Lifetime timeout for individual entries in the GSKit CRL cache
+# (range: 0-86400 secs)
+gsk-crl-cache-entry-lifetime = 0
+
+# The following block of entries enables the configuration of an LDAP
+# server to be referenced for CRL checking during SSL authentication.
+# A null value for crl-ldap-user indicates that the SSL authenticator
+# should bind to the LDAP server anonymously.
+
+#crl-ldap-server = <server_name>
+#crl-ldap-server-port = <port>
+#crl-ldap-user = <user_DN>
+#crl-ldap-user-password = <user_password>
+crl-ldap-server =
+crl-ldap-server-port =
+crl-ldap-user =
+crl-ldap-user-password =
+
+# The following three entries allow configuration of GSKit support
+# for external PKCS#11 libraries.
+#pkcs11-driver-path = <path of shared library>
+#pkcs11-token-label = <token label>
+#pkcs11-token-pwd = <token password>
+
+# The following two entries allow disabling of GSKit's automatic use
+# of nCipher nForce/nFast or Rainbow CryptoSwift Hardware Accelerators via
+# their RSA BSAFE interface.
+disable-ncipher-bsafe = no
+disable-rainbow-bsafe = no
+
+# Determine the Cipher engine used by GSKit
+# It can be one of Default, RSA, ICC.  Setting it to RSA will
+# affect the settings possible for fips-mode-processing.
+base-crypto-library = Default
+
+# Configure FIPS mode processing.  GSKit will not allow it to be
+# enabled (set to yes) if base-crypto-library = RSA.
+fips-mode-processing = no
+
+#
+# local domain name.
+#
+ssl-local-domain = Default
+ssl-auto-refresh = yes
+ssl-listening-port = 7234
+ssl-pwd-life = 183
+ssl-authn-type = certificate
+
+
+[junction]
+###############################
+# JUNCTION
+###############################
+# Optional entry added by upgrade
+# validate-backend-domain-cookies = yes
+# Optional entry added by upgrade
+# allow-backend-domain-cookies = no
+# Optional entry added by upgrade
+# support-virtual-host-domain-cookies = yes
+# Optional entry added by upgrade
+# jct-undetermined-revocation-cert-action = log
+# Optional entry added by upgrade
+# jct-ssl-reneg-warning-rate = 0
+# Optional entry added by upgrade
+# use-new-stateful-on-error = no
+# Optional entry added by upgrade
+# dont-reprocess-jct-404s = yes
+# Optional entry added by upgrade
+# pass-http-only-cookie-attr = no
+# Optional entry added by upgrade
+# mangle-domain-cookies = no
+# Optional entry added by upgrade
+# insert-client-real-ip-for-option-r = no
+# Optional entry added by upgrade
+# ping-method = HEAD
+# Optional entry added by upgrade
+# jct-undetermined-revocation-cert-action = log
+# Optional entry added by upgrade
+# disable-ssl-v2-hello = yes
+# Optional entry added by upgrade
+# disable-tls-v11 = no
+# Optional entry added by upgrade
+# disable-tls-v12 = no
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# jct-ssl-reneg-warning-rate = 0
+# Optional entry added by upgrade
+# use-new-stateful-on-error = no
+# Optional entry added by upgrade
+# dont-reprocess-jct-404s = yes
+# Optional entry added by upgrade
+# reprocess-root-jct-404s = no
+# Optional entry added by upgrade
+# pass-http-only-cookie-attr = no
+# Optional entry added by upgrade
+# mangle-domain-cookies = no
+# Optional entry added by upgrade
+# insert-client-real-ip-for-option-r = no
+# Optional entry added by upgrade
+# max-cached-persistent-connections = 0
+# Optional entry added by upgrade
+# persistent-con-timeout = 5
+# Optional entry added by upgrade
+# share-cookies = false
+# Optional entry added by upgrade
+# dynamic-addresses = no
+# Optional entry added by upgrade
+# disable-local-junctions = no
+
+allow-backend-domain-cookies = no
+validate-backend-domain-cookies = yes
+support-virtual-host-domain-cookies = yes
+
+# Location of the junction database
+# This path is relative to the server-root value in the [server] stanza
+junction-db = jct
+
+# Location of the Junction to Request Mapping Table (JMT)
+# This path is relative to the server-root value in the [server] stanza
+jmt-map = lib/jmt1.conf
+
+# Timeout (in seconds) for sending to and reading from a TCP junction.
+# Must be an integer greater than or equal to zero.
+# A value of zero will cause WebSEAL to wait indefinitely.
+http-timeout = 120
+
+# Timeout (in seconds) for sending to and reading from an SSL junction.
+# Must be an integer greater than or equal to zero.
+# A value of zero will cause WebSEAL to wait indefinitely.
+https-timeout = 120
+
+# The WebSEAL server performs a periodic background 'ping' of each junctioned
+# Web server, to determine whether it is running.  This entry sets the interval,
+# in seconds, between pings.
+# Must be an integer greater than zero.
+ping-time = 300
+
+# Global password used when supplying basic authentication
+# data over junctions created with the "-b supply" argument.
+basicauth-dummy-passwd = dummy
+
+# These values will limit the percentage of total worker threads processing
+# requests for junctions.  The default of 100% means there is no
+# limit.  When the "soft" limit is reached, WebSEAL will generate a warning
+# message.  When the "hard" limit is reached, WebSEAL will generate an error
+# message and return a 503, "Service Unavailable", result to the client browser
+# instead of requesting the resource from the junction.
+# This value can be overridden on a per junction basis using pdadmin.
+worker-thread-hard-limit = 100
+worker-thread-soft-limit = 90
+
+# Buffer size for reading from and writing to a junction.
+io-buffer-size = 4096
+
+# Maximum size, in bytes, of WebSEAL generated HTTP Headers.
+# Headers over this size will be split across multiple
+# HTTP Headers.  A value of "0" disables this support.
+max-webseal-header-size = 0
+
+# The following block of entries enables the configuration of an LDAP
+# server to be referenced for CRL checking during SSL authentication.
+# A null value for crl-ldap-user indicates that the SSL authenticator
+# should bind to the LDAP server anonymously.
+
+#crl-ldap-server = <server_name>
+#crl-ldap-server-port = <port>
+#crl-ldap-user = <user_DN>
+#crl-ldap-user-password = <user_password>
+
+# Selectively disable SSL version support for junction connections
+disable-ssl-v2 = no
+disable-ssl-v3 = no
+disable-tls-v1 = no
+jct-cert-keyfile =
+jct-cert-keyfile-pwd =
+jct-cert-keyfile-stash =
+match-vhj-first = yes
+
+[illegal-url-substrings]
+#----------------------
+# ILLEGAL URL SUBSTRINGS
+#----------------------
+# WebSEAL will block HTTP requests with any of the substrings from this
+# list in the URL.
+#
+# Format is:
+#     substring = <STRING>
+#
+substring = <script
+
+
+[filter-url]
+#----------------------
+# DOCUMENT FILTERING
+#----------------------
+# URL attributes that the server will filter in responses from
+# junctioned servers.
+# Format is <TAG> = <ATTRIBUTE>
+A = HREF
+APPLET = CODEBASE
+AREA = HREF
+BASE = HREF
+BGSOUND = SRC
+BLOCKQUOTE = CITE
+BODY = BACKGROUND
+DEL = CITE
+DIV = EMPTYURL
+DIV = IMAGEPATH
+DIV = URL
+DIV = VIEWCLASS
+EMBED = PLUGINSPAGE
+EMBED = SRC
+FORM = ACTION
+FRAME = LONGDESC
+FRAME = SRC
+HEAD = PROFILE
+IFRAME = LONGDESC
+IFRAME = SRC
+ILAYER = BACKGROUND
+ILAYER = SRC
+IMG = SRC
+IMG = LOWSRC
+IMG = LONGDESC
+IMG = USEMAP
+IMG = DYNSRC
+INPUT = SRC
+INPUT = USEMAP
+INS = CITE
+ISINDEX = ACTION
+ISINDEX = HREF
+LAYER = BACKGROUND
+LAYER = SRC
+LINK = HREF
+LINK = SRC
+OBJECT = CODEBASE
+OBJECT = DATA
+OBJECT = USEMAP
+Q = CITE
+SCRIPT = SRC
+TABLE = BACKGROUND
+TD = BACKGROUND
+TH = BACKGROUND
+TR = BACKGROUND
+WM:CALENDARPICKER = FOLDERURL
+WM:CALENDARPICKER = IMAGEPREVARROW
+WM:CALENDARPICKER = IMAGENEXTARROW
+WM:CALENDARVIEW = FOLDERURL
+WM:MESSAGE = DRAFTSURL
+WM:MESSAGE = URL
+WM:NOTIFY = FOLDER
+WM:REMINDER = FOLDER
+?IMPORT = IMPLEMENTATION
+
+[filter-events]
+#------------------------
+# EVENT HANDLER FILTERING
+#------------------------
+# Specifies (TAG,EVENT-HANDLER) pairs that contain JavaScript requiring
+# filtering of URL references.  Currently, only absolute URLs are
+# supported.
+#
+# Format is <TAG> = <EVENT-HANDLER>
+A = ONCLICK
+A = ONDBLCLICK
+A = ONMOUSEDOWN
+A = ONMOUSEOUT
+A = ONMOUSEOVER
+A = ONMOUSEUP
+AREA = ONCLICK
+AREA = ONMOUSEOUT
+AREA = ONMOUSEOVER
+BODY = ONBLUR
+BODY = ONCLICK
+BODY = ONDRAGDROP
+BODY = ONFOCUS
+BODY = ONKEYDOWN
+BODY = ONKEYPRESS
+BODY = ONKEYUP
+BODY = ONLOAD
+BODY = ONMOUSEDOWN
+BODY = ONMOUSEUP
+BODY = ONMOVE
+BODY = ONRESIZE
+BODY = ONUNLOAD
+FORM = ONRESET
+FORM = ONSUBMIT
+FRAME = ONBLUR
+FRAME = ONDRAGDROP
+FRAME = ONFOCUS
+FRAME = ONLOAD
+FRAME = ONMOVE
+FRAME = ONRESIZE
+FRAME = ONUNLOAD
+IMG = ONABORT
+IMG = ONERROR
+IMG = ONLOAD
+INPUT = ONBLUR
+INPUT = ONCHANGE
+INPUT = ONCLICK
+INPUT = ONFOCUS
+INPUT = ONKEYDOWN
+INPUT = ONKEYPRESS
+INPUT = ONKEYUP
+INPUT = ONMOUSEDOWN
+INPUT = ONMOUSEUP
+INPUT = ONSELECT
+LAYER = ONBLUR
+LAYER = ONLOAD
+LAYER = ONMOUSEOUT
+LAYER = ONMOUSEOVER
+SELECT = ONBLUR
+SELECT = ONCHANGE
+SELECT = ONFOCUS
+TEXTAREA = ONBLUR
+TEXTAREA = ONCHANGE
+TEXTAREA = ONFOCUS
+TEXTAREA = ONKEYDOWN
+TEXTAREA = ONKEYPRESS
+TEXTAREA = ONKEYUP
+TEXTAREA = ONSELECT
+
+[filter-schemes]
+#
+# URLs with these schemes are not filtered in responses from junctioned
+# servers.
+#
+# Notes and Exceptions:
+# - HTTP: and HTTPS: are internally handled and will be ignored if present in
+#   this list.
+# - Webseald will filter URLs with a scheme matching one in this list if
+#   the response from a junctioned server has a BASE tag HREF URL scheme the
+#   same as the URLs.
+# - If a URL in the response from a junctioned server does not have a scheme
+#   from this list, and the scheme is not HTTP: or HTTPS:, then webseald will
+#   assume the URL is the same scheme as the junctioned server (HTTP: or
+#   HTTPS:) with it's scheme missing.
+# - The trailing ':' on scheme-name is optional, and if missing will be assumed.
+#
+# Format is:
+#    scheme = <scheme-name>
+#
+scheme = file
+scheme = ftp
+scheme = mailto
+scheme = news
+scheme = telnet
+
+[filter-content-types]
+#
+# Document content types that the server will filter in responses from
+# junctioned servers.  If types besides text/html and text/vnd.wap.wml
+# are added to this list then the option [script-filtering]script-filter
+# should be set to 'yes'.
+#
+# Format is:
+#    type = <type-name>
+#
+type = text/html
+type = text/vnd.wap.wml
+
+[filter-request-headers]
+#
+# HTTP headers to filter from the client request before sending to the
+# back-end web server.  Note that this list is in addition to headers
+# that WebSEAL will always filter, eg iv-user, iv-groups.
+#
+# Format is:
+#   header = <header-name>
+#
+# The header name is case insensitive.
+#
+# The addition of "accept-encoding" to this list will prevent junctioned
+# servers from returning compressed data to WebSEAL.  WebSEAL cannot
+# filter compressed data.
+header = accept-encoding
+
+
+[script-filtering]
+# When script filtering support is enabled, filtering of
+# absolute urls between html <script> tags can be enabled.
+#
+# Only absolute URLs that exist as a complete string in the
+# html schema:server format will be filtered.
+script-filter = no
+
+# When script-filter is set to yes, enabling this flag will rewrite
+# the absolute URLs with new absolute URLs that contain the protocol,
+# host and port (if necessary) that represent how the user accessed
+# the WebSEAL server.
+#rewrite-absolute-with-absolute = no
+
+# If another WebSEAL server has created a junction to this WebSEAL
+# server using a WebSEAL to WebSEAL junction, set this to 'yes'
+# to uniquely identify the cookie used for resolving unfiltered links.
+hostname-junction-cookie = no
+
+
+[preserve-cookie-names]
+#
+# WebSEAL will, by default, modify the names of cookies returned in
+# responses from junctions created with the -j flag or listed in the
+# Junction Mapping Table.  This is done to prevent naming conflicts with
+# cookies returned from other junctions.
+#
+# If front end applications depend on the names of certain cookies, you
+# you may want to disable this behavior for those cookies.  To do so, list
+# the cookies in this stanza.
+#
+# Format is:
+#   name = <cookie-name>
+
+[credential-refresh-attributes]
+#
+# When a user's credential is refreshed, some attributes may be preserved
+# by copying their values from the original credential into the new
+# credential.  This stanza is used to control which attributes are preserved and
+# which are refreshed. The attribute name patterns are case-insensitive wild
+# card patterns that are used to select attributes.
+#
+# Order is important.  The first pattern which matches a given attribute
+# will decide whether the attribute is preserved or refreshed.  If no
+# pattern matches an attribute, then the attribute will be refreshed.
+#
+# Format is one of:
+#   <attribute-name-pattern> = preserve
+#   <attribute-name-pattern> = refresh
+#
+authentication_level = preserve
+tagvalue_* = preserve
+
+[gso-cache]
+#----------------------
+# GSO CACHE
+#----------------------
+
+# GSO cache configuration.
+# gso-cache-enabled must be set to 'yes' before the other parameters
+# will take effect.
+gso-cache-enabled = no
+
+# Cache size (number of entries)
+gso-cache-size = 1024
+
+# Cache entry lifetime (in seconds)
+gso-cache-entry-lifetime = 900
+
+# Cache entry idle timeout (in seconds)
+gso-cache-entry-idle-timeout = 120
+
+
+[ltpa-cache]
+#----------------------
+# LTPA CACHE
+#----------------------
+
+# LTPA cache configuration.
+# The ltpa-cache-enabled entry must be set to 'yes' before
+# the other ltpa parameters will take effect.
+ltpa-cache-enabled = yes
+
+# Cache size (number of entries)
+ltpa-cache-size = 4096
+
+# Cache entry lifetime (in seconds)
+ltpa-cache-entry-lifetime = 3600
+
+# Cache entry idle timeout (in seconds)
+ltpa-cache-entry-idle-timeout = 600
+
+
+
+###############################
+# AUTHENTICATION
+###############################
+
+[ba]
+#----------------------
+# BASIC AUTHENTICATION
+#----------------------
+
+# Enable authentication using the Basic Authentication mechanism
+# One of <http, https, both, none>
+ba-auth = none
+
+# Realm name.  This is the text that is displayed in the
+# browser's dialog box when prompting the user for login data.
+# By default, the string 'Access Manager' is used.
+#basic-auth-realm = Access Manager
+
+# IMPORTANT:
+# 1) If forms authentication is enabled for a particular transport,
+# the basic authentication settings for that transport will be ignored.
+#
+# 2) An appropriate authentication library must be configured to handle
+# username/password authentication to complete this configuration.  Please
+# refer to the "authentication mechanisms and libraries" subsection
+# at the end of the authentication section.
+
+[forms]
+#----------------------
+# FORMS
+#----------------------
+
+# Enable authentication using the forms authentication mechanism
+# One of <http, https, both, none>
+forms-auth = both
+
+allow-empty-form-fields = yes
+
+# IMPORTANT:
+# 1) If forms authentication is enabled for a particular transport,
+# the basic authentication settings for that transport will be ignored.
+#
+# 2) An appropriate authentication library must be configured to handle
+# username/password authentication to complete this configuration.  Please
+# refer to the "authentication mechanisms and libraries" subsection
+# at the end of the authentication section.
+
+[spnego]
+#----------------------
+# SPNEGO
+#----------------------
+
+# Enable authentication using the SPNEGO authentication mechanism
+# One of <http, https, both, none>
+spnego-auth = none
+
+# IMPORTANT:
+# 1) If forms authentication is enabled for a particular transport,
+# the SPNEGO authentication settings for that transport will be ignored.
+# 2) An appropriate authentication library must be configured to handle
+# SPNEGO authentication to complete this configuration.  Please
+# refer to the "authentication mechanisms and libraries" subsection
+# at the end of the authentication section.
+
+#
+# The kerberos service-principal-name (SPN) for the server.  This is only
+# used on UNIX platforms.  It must have the form HTTP@<hostname>, where
+# hostname is the DNS name browsers will use to contact the web server.
+#
+# In most cases hostname should be fully qualified.
+#
+spnego-krb-service-name =
+
+#
+# The path to the kerberos keytab file for the server.  This is only used
+# on UNIX platforms.
+#
+spnego-krb-keytab-file =
+use-domain-qualified-name = no
+
+[token]
+#----------------------
+# TOKEN
+#----------------------
+
+# Enable authentication using the token authentication mechanism
+# One of <http, https, both, none>
+token-auth = none
+
+# IMPORTANT:
+# 1) If token authentication is enabled for a particular transport,
+# the basic authentication settings for that transport will be ignored.
+#
+# 2) An appropriate authentication library must be configured to handle
+# token authentication to complete this configuration.  Please
+# refer to the "authentication mechanisms and libraries" subsection
+# at the end of the authentication section.
+
+[certificate]
+#----------------------
+# CERTIFICATE
+#----------------------
+# Optional entry added by upgrade
+# disable-cert-login-page = no
+# Optional entry added by upgrade
+# disable-cert-login-page = no
+
+# When to accept a certificate from HTTPS clients.  Options are:
+#
+# never            Never request a client certificate.
+#
+# required         Always request a client certificate.  Do not accept the
+#                  connection if the client does not present a certificate.
+#
+# optional         Always request a client certificate.  If presented, use it.
+#
+# prompt_as_needed Certificates will only be prompted for and processed when
+#                  certificate authentication is necessary (due to an ACL or
+#                  POP check failure).
+#
+accept-client-certs = never
+
+# IMPORTANT
+# 1) If this is set to 'required', all other authentication
+# settings are ignored for HTTPS clients
+#
+# 2) An appropriate authentication library must be configured to handle
+# certificate authentication to complete this configuration.  Please
+# refer to the "authentication mechanisms and libraries" subsection
+# at the end of the authentication section.
+
+#----------------------
+# CERTIFICATE SSL ID CACHE SETTINGS
+#----------------------
+# A cache is necessary to store the SSL IDs of sessions that require a
+# certificate exchange. This cache is only required when accept-client-certs =
+# prompt_as_needed.
+
+# The maximum number of concurrent entries in the Certificate SSL ID cache
+# This corresponds to the number of concurrent certificate logins.
+# Setting this to zero will allow unlimited cache size.
+cert-cache-max-entries = 1024
+
+# Maximum lifetime (in seconds) for an entry in the Certificate SSL ID cache.
+# Setting this to zero allows entries the cache to fill without expiry until the
+# cache contains the number of entries specified by cert-cache-max-entries.
+# After that point, entries are expired according to a least recently used
+# algorithm.
+cert-cache-timeout = 120
+cert-prompt-max-tries = 5
+
+[http-headers]
+#----------------------
+# HTTP HEADERS
+#----------------------
+
+# Enable authentication using http headers
+# One of <http, https, both, none>
+http-headers-auth = none
+
+[auth-headers]
+# HTTP headers to be used for authentication.
+# List any HTTP headers which will contain authentication data .
+# This list should contain no more than 20 entries.
+# Do not include the colon (:)
+#
+# Syntax:
+# header = header-name
+#
+#header = entrust-client
+
+# IMPORTANT
+# An appropriate authentication library must be configured to handle
+# http header authentication to complete this configuration.  Please
+# refer to the "authentication mechanisms and libraries" subsection
+# at the end of the authentication section.
+
+[ipaddr]
+#----------------------
+# IP ADDRESS
+#----------------------
+
+# Enable authentication using the client's IP address
+# One of <http, https, both, none>
+ipaddr-auth = none
+
+# IMPORTANT
+# An appropriate authentication library must be configured to handle
+# IP address authentication to complete this configuration.  Please
+# refer to the "authentication mechanisms and libraries" subsection
+# at the end of the authentication section.
+
+[authentication-levels]
+#----------------------
+# STEP UP
+#----------------------
+
+# authentication levels
+#
+# Syntax:
+# level = <method-name>
+#
+# Valid method names are:
+#   unauthenticated
+#   password
+#   token-card
+#   ssl
+#
+level = unauthenticated
+level = password
+
+# IMPORTANT
+# 1) You cannot step up to an authentication method that is not enabled.
+#    For example, you must enable either BA or forms authentication
+#    before 'level = password' in this list will have any effect.
+#
+# 2) POP settings are required to enable step-up authentication.
+#    Please see the administration guide for details.
+
+[step-up]
+#
+# The following entry determines, in the event of a step-up operation,
+# whether the new user ID must match the user ID from the previous
+# authentication. In the situation where verify-step-up-user = yes,
+# and the user IDs do not match, an error will be presented to the user.
+#
+# Optional entry added by upgrade
+# step-up-at-higher-level = no
+
+verify-step-up-user = no
+show-all-auth-prompts = no
+
+[mpa]
+#----------------------
+# MULTIPLEXING PROXY AGENTS
+#----------------------
+
+# Support Multiplexing Proxy Agents (yes/no)
+mpa = no
+
+[cdsso]
+#----------------------
+# CDSSO
+#----------------------
+# Optional entry added by upgrade
+# clean-cdsso-urls = no
+# Optional entry added by upgrade
+# clean-cdsso-urls = no
+
+# Accept cdsso tokens
+# This will require that an authentication module is specified for
+# 'sso-consume' in the 'authentication-mechanisms' stanza.
+# One of <http, https, both, none>
+cdsso-auth = none
+
+# Generate cdsso tokens.
+# This will require that an authentication module is specified for
+# 'sso-create' in the 'authentication-mechanisms' stanza.
+# One of <http, https, both, none>
+cdsso-create = none
+
+# Single sign on authentication token lifetime (in seconds)
+# This mitigates clock skew between separate WebSEAL servers.
+authtoken-lifetime = 180
+
+# cdsso-argument
+# This is the name of the argument containing the CDSSO token in a query string
+# of a request. This is used to identify incoming requests containing
+# CDSSO authentication information.
+#
+# Syntax:
+# cdsso-argument = <argument name>
+# For standard CDSSO, use PD-ID
+cdsso-argument = PD-ID
+
+# Specify if UTF-8 encoding should be used in the strings within the cdsso
+# token. UTF-8 should be used when user names or credential attributes in the
+# token are not encoded in the same code page as the WebSEAL server is using.
+# Set to "no" if your tokens need to interoperate with legacy environments which
+# use local code page. This option only affects CDSSO tokens created and
+# consumed by the default SSO create and consume libraries.
+use-utf8 = yes
+propagate-cdmf-errors = no
+
+[cdsso-peers]
+# Peers that are participating in Cross Domain Single Sign On (CDSSO)
+#
+# Syntax:
+# <fully qualified host name> = <key file location>
+
+[cdsso-token-attributes]
+#
+# Credential attributes to include in CDSSO authentication tokens.
+#
+# This stanza defines the sets of attributes to be included in
+# CDSSO authentication tokens, specified on a per-peer or
+# per-domain basis.  This processing only takes place if the
+# default SSO token creation and consumption libraries are
+# in use.
+#
+# Credential attributes matching the patterns specified in this stanza
+# for a target host or domain are included in CDSSO authentication tokens
+# constructed for that target host or domain.  Only a single value for
+# each attribute is used, and only string values are supported.  Other
+# types of credential attribute values will be ignored.
+#
+# Patterns can be specified using shell-style wildcards.
+#
+# The format of these entries is:
+#
+#    <domain-name> = <pattern-1>, <pattern-2>, ..., <pattern-n>
+#
+# For example:
+#
+#    [cdsso-token-attributes]
+#    ibm.com    = attrprefix_*, *name*
+#    tivoli.com = *_attrsuffix, some_exact_attribute
+#
+# A default set of attributes can be configured with a '<default>'
+# entry in this stanza.  This set of attributes is used when there
+# is no other entry matching a particular target host.  If the '<default>'
+# entry is not present, then no attributes will be included in tokens
+# by default.
+#
+# If no credential attributes are required in CDSSO authentication tokens,
+# then this stanza can remain empty.
+#
+
+[cdsso-incoming-attributes]
+#
+# Attributes to accept from incoming CDSSO authentication tokens.
+#
+# This stanza defines the sets of attributes to be accepted and rejected
+# from incoming CDSSO authentication tokens.  Unlike the outgoing
+# attributes configuration, incoming attributes cannot be configured
+# on a per-peer or per-domain basis.  Only one set of attribute patterns
+# can be configured, and these patterns will be applied to incoming
+# tokens regardless of source.  This processing only takes place if the
+# default SSO token creation and consumption libraries are
+# in use.
+#
+# The format of entries in this stanza is:
+#
+#  <attribute pattern> = <preserve|refresh>
+#
+# Attributes in CDSSO authentication tokens that match a 'refresh' entry
+# will be removed from the token before the CDMF library is called
+# to map the remote user into the local domain.  Attributes matching
+# a 'preserve' entry, or matching none of the entries, will be kept.
+# If no entries are configured, then all attributes will be kept.
+#
+
+[failover]
+#----------------------
+# FAILOVER
+#----------------------
+# Optional entry added by upgrade
+# reissue-missing-failover-cookie = no
+# Optional entry added by upgrade
+# failover-cookie-name = PD-ID
+# Optional entry added by upgrade
+# reissue-missing-failover-cookie = no
+
+# Accept failover cookies
+# One of <http, https, both, none>
+failover-auth = none
+
+# Key file for failover cookie encryption
+# The cdsso_key_gen utility must be used to create this file
+# failover-cookies-keyfile =
+failover-cookies-keyfile =
+
+# Number of minutes that failover cookie contents are valid
+failover-cookie-lifetime = 60
+
+# Enable the failover cookie for the domain
+# This allows the cookie to send back to any server within
+# the same domain as WebSEAL.
+enable-failover-cookie-for-domain = no
+
+# Specify if UTF-8 encoding should be used in the strings within the failover
+# cookie. UTF-8 should be used when user names or credential attributes in the
+# cookie are not encoded in the same code page as the WebSEAL server is using.
+# Set to "no" if your cookies need to interoperate with legacy environments
+# which use local code page.
+use-utf8 = yes
+
+# The integer number of seconds that pass between updating the failover cookie's
+# last activity timestamp. With each request, if n seconds have passed since the
+# last cookie update, and last activity timestamps are configured to be
+# inserted in failover cookies, another update will occur.
+# A zero value will cause the last activity timestamp in the failover cookie
+# to be updated with each request.
+# Negative values will cause the last activity timestamp in the cookie to never
+# be updated.
+failover-update-cookie = -1
+
+# Enable validation of session lifetime and activity timestamp attributes of
+# incoming failover cookies. Settings are:
+#   no:  The timestamp is not required, but if it exists and is invalid,
+#        failover authentication will fail.
+#   yes: If the timestamp is invalid or missing, failover authentication
+#        will fail.
+failover-require-lifetime-timestamp-validation = no
+failover-require-activity-timestamp-validation = no
+failover-include-session-id = no
+
+[failover-add-attributes]
+# Specify which attributes from the credential to store in a failover cookie.
+#
+# The format for attributes to add to the failover cookie is:
+#    <attribute pattern> = add
+# where <attribute pattern> is a case-insensitive wild card pattern.
+#
+# The AUTHENTICATION_LEVEL attribute will always be added to
+# the failover cookie, regardless of the entries in this stanza.
+
+[failover-restore-attributes]
+# Specify which attributes to put in the new credential when recreating a
+# credential from a failover cookie.  This stanza is used to control which
+# attributes are preserved and which are refreshed.
+
+# The attribute name pattern are case-insensitive wild card patterns that are
+# used to select attributes.
+#
+# Order is important. Rules that appear earlier in either failover-attribute
+# stanza take precedence over those that appear later in the stanza. If an
+# attribute does not match any of the rules, it will not be considered for
+# special handling.
+#
+# The format for adding attributes from the cookie (if present) to the new
+# credential is:
+#   <attribute pattern> = preserve
+#
+# The format for explicitly ignoring failover cookie attributes (default
+# behavior) for addition to the new credential is:
+#   <attribute pattern> = refresh
+#
+# All failover cookie attributes will be ignored (for the purpose of
+# adding them to a new credential) unless specified by a 'preserve' line.
+#
+
+[e-community-sso]
+#----------------------
+# e-COMMUNITY SSO
+#----------------------
+# Participate in e-community single sign on
+# One of <http, https, both, none>
+# Optional entry added by upgrade
+# cache-requests-for-ecsso = yes
+# Optional entry added by upgrade
+# ecsso-propagate-errors = no
+# Optional entry added by upgrade
+# disable-ec-cookie = no
+# Optional entry added by upgrade
+# handle-auth-failure-at-mas = no
+# Optional entry added by upgrade
+# cache-requests-for-ecsso = yes
+# Optional entry added by upgrade
+# ecsso-propagate-errors = no
+# Optional entry added by upgrade
+# disable-ec-cookie = no
+# Optional entry added by upgrade
+# handle-auth-failure-at-mas = no
+
+e-community-sso-auth = none
+
+# The e-community name. This needs to match any vouch-for tokens or
+# e-community cookies that are received.
+# e-community-name = <name>
+
+# Master authentication server settings. If is-master-authn-server
+# is set to "yes " then this server will accept vouch-for requests from
+# other WebSEAL instances whose domain keys are listed in the
+# [e-community-domain-keys] stanza.
+# is-master-authn-server = <yes/no>
+
+# If is-master-authn-server is set to "no" then this value needs
+# to be specified. If a local domain login has not already been performed then
+# authentication attempts will be routed through this machine,
+# which will need to vouch for a users identity.
+# The domain key for the master-authn-server needs to be listed in the
+# [e-community-domain-keys] stanza.
+# master-authn-server = <server name>
+
+# If e-community-sso-auth permits use of the HTTP protocol and
+# the master-authn-server listens for HTTP requests on a port other
+# than the standard HTTP port (port 80) then this non-standard port
+# needs to be configured here. This parameter is ignored if this server
+# is the master authentication server.
+#
+# master-http-port = <port>
+
+# If e-community-sso-auth permits use of the HTTPS protocol and
+# the master-authn-server listens for HTTPS requests on a port other
+# than the standard HTTPS port (port 443) then this non-standard port
+# needs to be configured here. This parameter is ignored if this server
+# is the master authentication server.
+#
+# master-https-port = <port>
+
+
+# vouch-for token lifetime in seconds. This needs to take into account clock
+# skew between participants.
+vf-token-lifetime = 180
+
+# vouch-for URL designator
+# This specifies the start of a URL relative to the server root. This is used
+# to construct vouch-for requests by participating ECSSO servers, and to
+# distinguish requests for vouch-for information from other requests by the
+# MAS.
+#
+# '/pkmsvouchfor' is used by default
+# vf-url = /pkmsvouchfor
+
+# vouch-for argument
+# This is the name of the vouch-for token (as an argument name) contained in
+# a vouch-for reply.
+# This is used to construct vouch-for replies by the MAS, and to distinguish
+# incoming requests as ones with vouch-for information by participating ECSSO
+# servers.
+#
+# 'PD-VF' is used by default
+# vf-argument = PD-VF
+
+# ecommunity cookie lifetime, in minutes.
+ec-cookie-lifetime = 300
+
+# Enable or disable unauthenticated access with ECSSO.
+# When set to no, every initial ECSSO request will require authentication.
+# Default value is yes.
+ecsso-allow-unauth = yes
+
+# Specify if UTF-8 encoding should be used in the strings within the vouch-for
+# token. UTF-8 should be used when user names or credential attributes in the
+# token are not encoded in the same code page as the WebSEAL server is using.
+# Set to "no" if your tokens need to interoperate with legacy environments
+# which use local code page.
+use-utf8 = yes
+propagate-cdmf-errors = no
+
+[e-community-domain-keys]
+# Keys for any domains that are participating in the e-community, including
+# the domain in which the WebSEAL server is running.  These are shared on a
+# pair-wise-by-domain basis.  The format of these entries is:
+# <domain name> = <key file>
+
+[ecsso-token-attributes]
+#
+# Credential attributes to include in eCSSO vouch-for tokens.
+#
+# This stanza defines the sets of attributes to be included in
+# eCSSO vouch-for tokens, specified on a per-peer or
+# per-domain basis.  This processing only takes place if the
+# default SSO token creation and consumption libraries are
+# in use.
+#
+#
+# Credential attributes matching the patterns specified in this stanza
+# for a target host or domain are included in eCSSO vouch-for tokens
+# constructed for that target host or domain.  Only a single value for
+# each attribute is used, and only string values are supported.  Other
+# types of credential attribute values will be ignored.
+#
+# Patterns can be specified using shell-style wildcards.
+#
+# The format of these entries is:
+#
+#    <domain-name> = <pattern-1>, <pattern-2>, ..., <pattern-n>
+#
+# For example:
+#
+#    [ecsso-token-attributes]
+#    ibm.com    = attrprefix_*, *name*
+#    tivoli.com = *_attrsuffix, some_exact_attribute
+#
+# A default set of attributes can be configured with a '<default>'
+# entry in this stanza.  This set of attributes is used when there
+# is no other entry matching a particular target host.  If the '<default>'
+# entry is not present, then no attributes will be included by default.
+#
+# If no credential attributes are required in eCSSO vouch-for tokens,
+# then this stanza can remain empty.
+#
+
+
+[ecsso-incoming-attributes]
+#
+# Attributes to accept from incoming eCSSO vouch-for tokens.
+#
+# This stanza defines the sets of attributes to be accepted and rejected
+# from incoming eCSSO vouch-for tokens.  Unlike the outgoing
+# attributes configuration, incoming attributes cannot be configured
+# on a per-peer or per-domain basis.  Only one set of attribute patterns
+# can be configured, and these patterns will be applied to incoming
+# tokens regardless of source.  This processing only takes place if the
+# default SSO token creation and consumption libraries are
+# in use.
+#
+# The format of entries in this stanza is:
+#
+#  <attribute pattern> = <preserve|refresh>
+#
+# Attributes in eCSSO vouch-for tokens that match a 'refresh' entry
+# will be removed from the token before the CDMF library is called
+# to map the remote user into the local domain.  Attributes matching
+# a 'preserve' entry, or matching none of the entries, will be kept.
+# If no entries are configured, then all attributes will be kept.
+#
+
+
+[reauthentication]
+#----------------------
+# REAUTHENTICATION
+#----------------------
+# Optional entry added by upgrade
+# reauth-at-any-level = no
+# Optional entry added by upgrade
+# replace-inactive-cred = yes
+# Optional entry added by upgrade
+# reauth-at-any-level = no
+
+# Prompt users to reauthenticate if their entry in the WebSEAL
+# credential cache has timed out due to inactivity
+#
+# If set to 'no', entries in the cache will be deleted when the
+# inactivity timeout is reached.
+#
+# If set to 'yes', entries in the cache will be retained until the
+# cache lifetime timeout is reached.  If the inactivity timeout has
+# been reached and the client makes another request before the cache
+# lifetime timeout is reached, they will be prompted to reauthenticate.
+reauth-for-inactive = no
+
+# Reset the lifetime timer for WebSEAL credential cache entries
+# following successful reauthentication.
+# This applies to reauthentication resulting from either inactivity or
+# from security policy
+reauth-reset-lifetime = no
+
+# Time in seconds that the credential cache entry lifetime timer should
+# be extended to allow clients to complete a reauthentication.
+# A value of 0 indicates that the lifetimer timer will not be extended.
+# This applies to any clients who are required to log in who
+# already have an existing cache entry, including clients stepping up and
+# clients performing reauthentication resulting from either inactivity or
+# from security policy.
+reauth-extend-lifetime = 0
+terminate-on-reauth-lockout = yes
+
+
+[authentication-mechanisms]
+#----------------------
+# AUTHENTICATION MECHANISMS AND LIBRARIES
+#----------------------
+# List of supported authentication mechanisms and
+# their associated shared libraries
+# Uncomment the line and supply the full path to a library to
+# enable a mechanism.
+
+# Username/Password - such as Basic Authentication or Forms
+#passwd-cdas       = <passwd-cdas-library>
+#passwd-ldap       = <passwd-ldap-library>
+#passwd-uraf       = <uraf-authn-library>
+# 03/10/2014 (ht) update to default
+#passwd-ldap = /opt/PolicyDirector/lib/libldapauthn.a & -cfgfile [/opt/pdweb/etc/webseald-csehws008.conf]
+#cert-ldap = /opt/PolicyDirector/lib/libcertauthn.a & -cfgfile [/opt/pdweb/etc/webseald-csehws008.conf]
+passwd-ldap = /opt/PolicyDirector/lib/libldapauthn.a & -cfgfile [/opt/pdweb/etc/webseald-default.conf]
+cert-ldap = /opt/PolicyDirector/lib/libcertauthn.a & -cfgfile [/opt/pdweb/etc/webseald-default.conf]
+
+# Token
+#token-cdas        = <token-cdas-library>
+
+# Certificates
+#cert-ssl          = <cert-ssl-library>
+
+# HTTP Header or IP Address
+#http-request      = <http-request-library>
+
+# SSO Creation
+#sso-create             = <sso-creation-library>
+
+# SSO Consumption
+#sso-consume            = <sso-consumption-library>
+
+# SPNEGO
+#kerberosv5             = <stli-authn-library>
+
+# Password-Strength
+#passwd-strength   = <passwd-strength-library>
+
+# Extended Attributes
+#cred-ext-attrs    = <cred-ext-attrs-library>
+
+# Switch User
+#su-password       = <su-password-library>
+#su-token-card     = <su-token-card-library>
+#su-certificate    = <su-certificate-library>
+#su-http-request   = <su-http-request-library>
+#su-cdsso          = <su-cdsso-library>
+#su-kerberosv5     = <su-kerberosv5-library>
+
+# Failover
+#failover-password       = <failover-password-library>
+#failover-token-card     = <failover-token-card-library>
+#failover-certificate    = <failover-certificate-library>
+#failover-http-request   = <failover-http-request-library>
+#failover-cdsso          = <failover-cdsso-library>
+#failover-kerberosv5     = <failover-kerberosv5-library>
+
+# Post Password Change Processing
+#post-pwdchg-process     = <post-pwdchg-process-library>
+
+[ssl-qop]
+#----------------------
+# SSL QUALITY OF PROTECTION MANAGEMENT
+#----------------------
+
+# Enable/Disable SSL Quality of Protection management
+#ssl-qop-mgmt = no
+ssl-qop-mgmt = yes
+
+# Legal cipher values for qop in the following stanzas are:
+# NONE, ALL, NULL, DES-56, FIPS-DES-56, DES-168, FIPS-DES-168,
+# RC2-40, RC2-128, RC4-40, RC4-56, RC4-128, AES-128, AES-256
+#
+# Notes:
+# - NONE = No SSL connection allowed.
+# - NULL = Unencrypted SSL connection allowed.
+# - ALL = All types of SSL connections allowed.
+# - There maybe multiple cipher/MAC made available to the connection
+#   for a given qop cipher selection.  These will still have the same
+#   encryption bit strength, just different MAC methods (SHA1 or MD5).
+# - RC2-128 is only available with SSLv2. If it is the only cipher selection
+#   webseald will disable SSLv3 and TLSv1 for the affected connection.
+# - NULL, FIPS-DES-56, FIPS-DES-168, RC4-56, AES-128, and AES-256 are
+#   only available with SSLv3 and TLSv1.  If they are the only ciphers
+#   available to a given connection, SSLv2 will be disabled for the
+#   affected connection.
+# - AES Support is determined automatically by GSKit based on
+#   the base-crypto-library setting.  AES-128 and AES-256 are only
+#   available if AES Support is enabled by GSKit, else they will be
+#   ignored.
+# - FIPS-DES-56 and FIPS-DES-168 are only available when
+#   fips-mode-processing is enabled (set to yes), otherwise they will
+#   be ignored.
+
+# host ssl qop
+[ssl-qop-mgmt-hosts]
+
+# networks ssl qop
+[ssl-qop-mgmt-networks]
+
+# default ssl qop
+[ssl-qop-mgmt-default]
+#default = ALL
+#default = DES-56
+#default = FIPS-DES-56
+default = DES-168
+default = FIPS-DES-168
+default = RC2-128
+default = RC4-128
+default = AES-256
+#default = RC2-40
+#default = RC4-40
+#default = RC4-56
+
+
+[session]
+##################################
+# SESSION
+##################################
+# Optional entry added by upgrade
+# send-constant-sess = no
+# Optional entry added by upgrade
+# temp-session-one-time-use = false
+# Optional entry added by upgrade
+# temp-session-overrides-unauth-session = no
+# Optional entry added by upgrade
+# send-constant-sess = no
+# Optional entry added by upgrade
+# create-unauth-sessions = no
+# Optional entry added by upgrade
+
+#----------------------
+# SESSION CACHE SETTINGS
+#----------------------
+
+# The maximum number of concurrent entries in the credential cache
+# This corresponds to the number of concurrent logins
+max-entries = 10000
+
+# Maximum lifetime (in seconds) for an entry in the credential cache
+# Setting this to zero allows entries the cache to fill without expiry until the
+# cache contains the number of entries specified by max-entries. After that
+# point, entries are expired according to a least recently used algorithm.
+timeout = 36000
+
+# Lifetime (in seconds) of inactive entries in the credential cache.
+# To disable, set to 0.
+inactive-timeout = 3600
+
+#----------------------
+# SSL CLIENT SESSIONS
+#----------------------
+
+# Use the SSL ID to maintain a user's HTTPS login session.
+ssl-id-sessions = no
+
+#----------------------
+# SHARING SESSIONS
+#----------------------
+
+# Use the same session for SSL and HTTP clients.  This means that a client
+# having authenticated via HTTP will still be authenticated when connecting
+# via HTTPS and vice versa.
+#
+# A consequence of setting this to 'yes' is that the ssl-id-sessions
+# parameter will be ignored, because HTTP clients cannot use the SSL ID
+# to maintain sessions.
+use-same-session = yes
+
+#----------------------
+# SENDING SESSION COOKIES
+#----------------------
+
+# Send the WebSEAL cookies with every response.  Use in environments where:
+#   1) Cookies are used to maintain sessions with clients
+#   2) Applications place many in-memory cookies per domain on client systems.
+# This helps ensure that the WebSEAL cookies remain in the browser memory in
+# such environments.
+resend-webseal-cookies = no
+
+#----------------------
+# SENDING DOMAIN COOKIES
+#----------------------
+
+# Allow WebSEAL to send domain cookies from a back-end to a client.
+# If set to 'no', then WebSEAL will filter such cookies and only allow
+# cookies that tail-match the WebSEAL server FQHN to be sent
+# and WebSEAL will remove the Domain attribute from the cookie.
+#
+# If set to 'yes', all domain cookies will be passed to the client and
+# left unmodified.
+
+
+#----------------------
+# USER SESSION IDS
+#----------------------
+# Enable/disable the creation and handling of user session ids.
+user-session-ids = no
+tcp-session-cookie-name = PD-H-SESSION-ID
+ssl-session-cookie-name = PD-S-SESSION-ID
+logout-remove-cookie = no
+user-session-ids-include-replica-set = yes
+dsess-enabled = no
+enforce-max-sessions-policy = yes
+prompt-for-displacement = yes
+register-authentication-failures = no
+dsess-last-access-update-interval = 60
+standard-junction-replica-set = default
+require-mpa = yes
+temp-session-max-lifetime = 0
+temp-session-cookie-name = PD-H-TMP-SESSION-ID
+preserve-inactivity-timeout =
+
+[content]
+##################################
+# CONTENT
+##################################
+# Optional entry added by upgrade
+
+#----------------------
+# LOCAL DIRECTORIES AND FILES
+#----------------------
+
+# Root directory of the document tree.
+#
+# IMPORTANT:  This entry is used in two cases:
+# 1) The first time the WebSEAL server is started after
+#    the product installation.
+#
+# 2) In the event that the junction database has been removed and
+#    the server restarted.
+#
+# In both of these cases, the value is then stored in the junction database
+# and modifying the value below will have no effect after this.
+# Future modifications to the document root must be performed by
+# changing the local junction using the pdadmin program.
+# 03/10/2014 (ht) update to default
+# doc-root = /opt/pdweb/www-csehws008/docs
+doc-root = /opt/pdweb/www-default/docs
+
+# Name of directory index file.
+# If a request is made for a directory located on the local WebSEAL server,
+# WebSEAL will attempt first to find a file by this name located in that
+# directory before attempting a directory listing.
+directory-index = index.html
+
+# Absolute path to a directory in which local files removed
+# by the DELETE method will be moved until an administrator
+# decides to remove them.
+# NOTES:
+#   1) This does not apply to empty directories, which will just be deleted.
+#   2) If a file already exists in this directory with the same name,
+#      it will be replaced.
+#   3) The specified directory must be writable by the
+#      WebSEAL server user account.
+#   4) If this parameter is left commented out, the files will
+#      just be deleted from the system.
+#
+# delete-trash-dir =
+delete-trash-dir =
+
+#----------------------
+# LOCAL USER DIRECTORIES
+#----------------------
+# Directory in user's home directories containing public HTML documents
+user-dir = public_html
+
+# The utf8-template-macros-enabled option controls how standard WebSEAL files,
+# such as login.html, have data inserted into them when %MACRO% strings are
+# encountered.  If you have modified your WebSEAL html charset value to be the
+# local code page, and not UTF-8, then set this option to "no".  This affects
+# files in the error-dir and mgt-pages-root directories, listed below.
+utf8-template-macros-enabled = yes
+
+#----------------------
+# ERROR PAGES
+#----------------------
+# Directory containing WebSEAL error description files
+# This path is relative to the server-root value in the [server] stanza
+error-dir = lib/errors
+
+[acnt-mgt]
+#----------------------
+# ACCOUNT MANAGEMENT PAGES
+#----------------------
+# Root of account management pages.
+# The actual directory used is a subdirectory of this root
+# determined by localization.
+# This path is relative to the server-root value in the [server] stanza
+# Optional entry added by upgrade
+# change-password-auth = no
+# Optional entry added by upgrade
+# enable-local-response-redirect = no
+# Optional entry added by upgrade
+# use-filename-for-pkmslogout = no
+# Optional entry added by upgrade
+# use-restrictive-logout-filenames = yes
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# change-password-auth = no
+# Optional entry added by upgrade
+# enable-html-redirect = no
+# Optional entry added by upgrade
+# enable-local-response-redirect = no
+# Optional entry added by upgrade
+# use-restrictive-logout-filenames = yes
+# Optional entry added by upgrade
+# redirect-to-root-for-pkms = no
+# Optional entry added by upgrade
+# enable-passwd-warn = no
+
+allow-unauthenticated-logout = yes
+# Optional entry added by upgrade
+# redirect-to-root-for-pkms = no
+use-filename-for-pkmslogout = yes
+
+mgt-pages-root = lib/html
+
+# Standard login form
+login = login.html
+
+# Page displayed after successful login
+login-success = login_success.html
+
+# Page displayed after successful logout
+logout = logout.html
+
+# Page displayed if user authentication failed due to a locked account
+account-locked = acct_locked.html
+
+# Page displayed if user authentication failed due to an expired password
+passwd-expired = passwd_exp.html
+
+# Change password form
+passwd-change = passwd.html
+
+# Page displayed if password change request was successful
+passwd-change-success = passwd_rep.html
+
+# Page displayed if password change request failed
+passwd-change-failure = passwd.html
+
+# Page containing links to valid administration pages
+help = help.html
+
+# Token login form
+token-login = tokenlogin.html
+
+# Next-token form
+next-token = nexttoken.html
+
+# Certificate login form.
+# This is only used if accept-client-certs = prompt_as_needed.
+certificate-login = certlogin.html
+
+# Step-up authentication login form
+stepup-login = stepuplogin.html
+
+# Switch user management form
+switch-user = switchuser.html
+
+# Page displayed if a client fails to authenticate with
+# a certificate and certificates are necessary.
+cert-failure = certfailure.html
+
+# Page displayed if a client attempts to step up to certificates over http
+cert-stepup-http = certstepuphttp.html
+
+#-----------------------------
+# ACCOUNT EXPIRY NOTIFICATION
+#-----------------------------
+# The following configuration option will determine whether a user with
+# an invalid/expired account will be notified as such on an attempted login,
+# or if he/she will receive the same message as if invalid authentication
+# information (i.e. an invalid username, password, or client certificate)
+# had been submitted.
+account-expiry-notification = no
+
+#----------------------
+# AUTHORIZATION ERRORS
+#----------------------
+
+# By default, WebSEAL will return the standard 'Forbidden' page for
+# all authorization failures.
+
+# If client-notify-tod = yes, clients failing a time-of-day
+# POP access check will be sent a specific error page informing them
+# of the reason for their authorization failure.
+client-notify-tod = no
+too-many-sessions = too_many_sessions.html
+account-inactivated = acct_locked.html
+passwd-warn = passwd_warn.html
+passwd-warn-failure = passwd_warn.html
+html-redirect = redirect.html
+temp-cache-response = temp_cache_response.html
+enable-secret-token-validation = false
+
+#----------------------
+# AUTOMATIC REDIRECT
+#----------------------
+# Page to which users are automatically redirected after completing a successful
+# authentication.
+#
+# The format can either be an absolute URL or server relative URL:
+#       login-redirect-page = http://www.ibm.com/
+#       login-redirect-page = /jct/page.html
+
+[enable-redirects]
+# This stanza contains a list of authentication mechanisms
+# for which automatic redirects are enabled.
+# Valid choices are forms-auth, token-auth, and basic-auth
+# Any or all of them may be enabled.
+#redirect = forms-auth
+#redirect = basic-auth
+#redirect = token-auth
+
+[cgi]
+#----------------------
+# LOCAL CGI
+#----------------------
+
+# Timeout (in seconds) for writing to and reading from child CGI processes
+cgi-timeout = 120
+
+[cgi-types]
+#
+# CGI file extension to command mappings (Windows NT Only)
+#
+# For WIN32 servers we nominate CGI file extensions and the program
+# that is used to execute them. If a CGI has an extension that is not
+# in this list then it is not executed.  The sole exception to this is that
+# files with a .EXE extension are executable by default.
+#
+# Command line arguments are not supported.
+#
+# IMPORTANT NOTE:
+#      Any mapping to 'cmd' (and most shells) can create a potential security
+#      risk for any CGI enabled NT web server due to certain default behaviours.
+#      These risks are well publicized, so please use with caution.
+#
+
+# bat = cmd
+# cmd = cmd
+# pl = perl
+# sh = sh
+# tcl = tclsh76
+
+[cgi-environment-variables]
+# Environment variables to be inherited by CGI programs
+# The variable names are case sensitive.  The PD_HOME environment
+# variable must be set for CGI programs installed with the WebSEAL
+# package to function properly.
+#
+# Syntax:
+# ENV = <variable name>
+#
+#ENV = SystemDrive
+ENV = PD_HOME
+ENV = SystemRoot
+ENV = PATH
+ENV = LANG
+ENV = LC_ALL
+ENV = LC_CTYPE
+ENV = LC_MESSAGES
+ENV = LOCPATH
+ENV = NLSPATH
+
+#----------------------
+# ICONS
+#----------------------
+
+#
+# Directory indexing icons
+#
+# This stanza specifies the icons to use in directory indices.  Directory
+# indices are generated by the server if the directory does not contain
+# an index file.  This generated index contains a list of the directory
+# contents, with links to each member of the directory.  The index is only
+# generated if the client requesting the list has 'list' permissions for
+# the requested directory.
+#
+# Each entry has the following form:
+#
+#       <type> = <icon>
+#
+# Where:
+#       type    is a wildcard pattern which specifies which document types
+#               the icon should be used for.
+#
+#       icon    is the location of the icon in the server's Web space.
+#
+# Note that the paths given below are treated as literal strings and put
+# straight into the generated HTML as embedded images, ie <IMG SRC="path">.
+# The browser will then try to fetch these images using the supplied path.
+# Make sure this path is a valid URI.
+#
+[content-index-icons]
+image/* = /icons/image2.gif
+video/* = /icons/movie.gif
+audio/* = /icons/sound2.gif
+text/html = /icons/generic.gif
+text/* = /icons/text.gif
+application/x-tar = /icons/tar.gif
+application/* = /icons/binary.gif
+
+
+#
+# Icons for other objects
+#
+[icons]
+
+# icon to use for subdirectories
+diricon = /icons/folder2.gif
+
+# icon to use for the parent directory
+backicon = /icons/back.gif
+
+# icon to use for unknown file types
+unknownicon = /icons/unknown.gif
+
+[content-cache]
+#----------------------
+# DOCUMENT CACHING
+#----------------------
+
+# The entries below define the caches which the Web Server uses to store
+# documents in memory.
+#
+# Syntax:
+# <MIME-Type> = <Cache-Type>:<Cache-Size>
+#
+# Where:
+#
+#   <MIME-Type>
+#       Represents any valid MIME type conveyed in an HTTP "Content-Type:"
+#       response header.  This value may contain a wildcard (*).  A value
+#       of */* represents a default object cache that will hold any object
+#       that does not correspond to an explicitly configured cache.
+#
+#   <Cache-Type>
+#       Defines the type of backing store to use for the cache.  Currently
+#       only "memory" caches are supported.
+#
+#   <Cache-Size>
+#       Represents the maximum size to which the given cache may grow before
+#       objects are removed according to a LRU algorithm.  This value is
+#       defined in Kbytes.
+#
+# No Caching is performed if no caches are defined.  If no default cache
+# is specified, documents which do not match any cache are not cached.
+#
+# text/html = memory:2000
+# image/* = memory:5000
+# */* = memory:1000
+# KL 10/14/2014
+# per IBM performance tuning recommendations to allieviate 9/2014 CPU spiking
+text/html = memory:10000
+image/* = memory:40000
+*/* = memory:40000
+
+
+[compress-mime-types]
+#----------------------
+# HTTP COMPRESSION MIME-TYPE CONFIGURATION
+#----------------------
+
+# This stanza allows HTTP compression to be enabled or disabled based
+# on the mime-type of the response and the size of the returned document.
+# Order is important.  The first entry that matches a returned document
+# will be used for that document.
+#
+# Syntax:
+# <MIME-type> = <Min-Doc-Size>[:<Compress-Level>]
+#
+# Where:
+#
+#   <MIME-Type>
+#       Represents any valid MIME type conveyed in an HTTP "Content-Type:"
+#       response header.  This value may contain a wildcard (*).  A value
+#       of */* will match all mime-types.
+#
+#   <Min-Doc-Size>
+#       The minimum document size to be compressed.  A size of -1 means never
+#       to compress this mime-type.  A size of 0 means to compress the
+#       document regardless of its size.  A size greater than 0 means that the
+#       document will only be compressed if its initial size is greater than
+#       or equal to Min-Doc-Size.
+#
+#   <Compress-Level>
+#       The compression level to be used for documents of this MIME type.
+#       The compression level must be between 1 and 9, inclusive.  Higher
+#       compression levels decrease the size of the compressed data at the
+#       expense of additional CPU utilization.  This value is optional; if it
+#       is not specified a compression level of 1 is used.
+#
+# These example configuration lines will:
+# - disable compression for images.
+# - enable compression for HTML documents larger than 1000 bytes.
+# - enable compression for all other text documents regardless of size.
+# - enable compression of PDF documents of all sizes at compression level 5.
+# - disable compression for any other documents.
+#
+image/* = -1
+text/css = -1
+text/html = 1000
+text/* = 0
+application/pdf = 0:5
+# */* = -1
+
+# */* = -1
+
+
+[compress-user-agents]
+#----------------------
+# HTTP COMPRESSION USER-AGENT CONFIGURATION
+#----------------------
+
+# This stanza allows HTTP compression to be enabled or disabled based
+# on the user-agent header sent by clients.  This stanza should be used
+# to disable compression for clients which send an "accept-encoding: gzip"
+# HTTP header but don't actually handle gzipped content-encodings properly
+#
+# Syntax:
+# <Pattern> = <Compression>
+#
+# Where:
+#
+#   <Pattern>
+#       A wild card pattern to match a particular user-agent header
+#
+#   <Compression>
+#       Is yes if the user-agent can handle compressed data, no otherwise.
+#
+# The first matching entry is used when determining whether a user-agent
+# can handle compression content-encodings.  If no entry matches the
+# user-agent's accept-encoding header is assumed to be correct.  User-agents
+# that do not send an "accept-encoding: gzip" header will never receive
+# compressed data.
+
+
+[content-mime-types]
+#----------------------
+# MIME TYPES
+#----------------------
+
+# This stanza defines the MIME type for particular document extensions.
+#
+# Syntax:
+#       <extension> = <type>
+#
+# where
+#       extension       is the extension of documents of this MIME type
+#       type            is a MIME type
+#
+# The first matching entry is used when determining the type of a particular
+# document.
+#
+html = text/html
+htm = text/html
+gif = image/gif
+jpeg = image/jpeg
+ps = application/postscript
+shtml = text/x-server-parsed-html
+jpg = image/jpeg
+jpe = image/jpeg
+mpeg = video/mpeg
+mpe = video/mpeg
+mpg = video/mpeg
+bin = application/octet-stream
+exe = application/octet-stream
+Z = application/octet-stream
+EXE = application/octet-stream
+dll = application/octet-stream
+DLL = application/octet-stream
+ivsrv = application/octet-stream
+pdf = application/pdf
+au = audio/basic
+snd = audio/basic
+aiff = audio/x-aiff
+aifc = audio/x-aiff
+aif = audio/x-aiff
+wav = audio/x-wav
+ai = application/postscript
+eps = application/postscript
+rtf = application/rtf
+zip = application/zip
+ief = image/ief
+tiff = image/tiff
+tif = image/tiff
+ras = image/x-cmu-raster
+pnm = image/x-portable-anymap
+pbm = image/x-portable-bitmap
+pgm = image/x-portable-graymap
+ppm = image/x-portable-pixmap
+rgb = image/x-rgb
+xbm = image/x-xbitmap
+xpm = image/x-xpixmap
+xwd = image/x-xwindowdump
+txt = text/plain
+rtx = text/richtext
+tsv = text/tab-separated-values
+etx = text/x-setext
+qt = video/quicktime
+mov = video/quicktime
+avi = video/x-msvideo
+movie = video/x-sgi-movie
+js = application/x-javascript
+ls = application/x-javascript
+mocha = application/x-javascript
+wrl = x-world/x-vrml
+dir = application/x-director
+dxr = application/x-director
+dcr = application/x-director
+crt = application/x-x509-ca-cert
+tar = application/x-tar
+css = text/css
+ico = image/x-icon
+
+# default type to assign to pages that don't match any of the above
+deftype = text/plain
+
+[content-encodings]
+#----------------------
+# CONTENT ENCODINGS
+#----------------------
+
+# Some browsers support content encodings.  These entries map a document
+# extension to an encoding type.
+gz = x-gzip
+Z = x-compress
+
+
+
+[logging]
+##################################
+#  LOGGING
+##################################
+# Optional entry added by upgrade
+# absolute-uri-in-request-log = no
+# Optional entry added by upgrade
+# host-header-in-request-log = no
+
+# Server error log file
+# 03/10/2014 (ht) update to default
+# server-log = /var/pdweb/log/msg__webseald-csehws008.log
+server-log = /var/pdweb/log/msg__webseald-default.log
+
+# Log files' size limit
+# Applies to the request, referer, and agent logs
+# Negative values will cause the logs to be rolled over daily.
+# A value of zero will cause no rollover file to be created.
+# 05/11/2017 HTeoh update the rotation to daily -1 like production.  
+# max-size = 2000000
+max-size = -1
+
+# Frequency in seconds to force a flush of log buffers
+flush-time = 20
+
+# Enable the request log
+# 01/08/2013 (hteoh) enabled
+requests = yes
+# Location of the request log
+# 03/10/2014 (ht) update to default
+# requests-file = /var/PolicyDirector/log/HPD/logs/request.log
+requests-file = /var/pdweb/www-default/log/request.log
+#requests-file = /var/pdweb/www-csehws008/log/request.log
+#
+# Enable the the referer log
+referers = no
+# Location of the referer log
+# 03/10/2014 (ht) update to default
+# referers-file = /var/pdweb/www-csehws008/log/referer.log
+referers-file = /var/pdweb/www-default/log/referer.log
+
+# Enable the user agent log
+agents = no
+# Location of the user agent log
+# 03/10/2014 (ht) update to default
+# agents-file = /var/pdweb/www-csehws008/log/agent.log
+agents-file = /var/pdweb/www-default/log/agent.log
+
+# Log requests with time in GMT instead of local TZ
+gmt-time = no
+config-data-log = /var/pdweb/log/config_data.log
+log-invalid-requests = yes
+request-log-format = %h %l %u %t "%r" %s %b
+
+[aznapi-configuration]
+###############################
+# AUTHORIZATION API
+###############################
+
+# The path for the local client's policy database cache file.
+# 03/10/2014 (ht) update to default
+# db-file = /var/pdweb/db/webseald-csehws008.db
+db-file = /var/pdweb/db/webseald-default.db
+
+# Update poll interval. This is the interval, in seconds, between checks
+# for updates to the master authzn server. The local cache is only rebuilt
+# if an update is detected. Values can be "disable", "default" or a time
+# in seconds.
+cache-refresh-interval = disable
+
+# Flags to enable the reception of policy cache update notifications.
+# Values can be one of: "disable", "enable"
+# A "disable" value disables the notification listener.
+#
+# This parameter is set by the svrsslcfg utility.
+listen-flags = enable
+
+#----------------------
+# POLICY CACHE TUNING
+#----------------------
+# The maximum size of the in-memory policy cache is configurable.
+# The cache consists of policy and the relationships between policy
+# and resources.  The knowledge that a resource has no directly
+# associated policy is also cached.
+#
+# The maximum cache size should be relative to the number
+# of policy objects defined and the number of resources
+# protected and the available memory.
+#
+# A reasonable algorithm to begin with is:
+# (number of policy objects * 3) + (number of protected resources * 3)
+#
+# This value controls how much information is cached.   A larger
+# cache will  potentially improve the application performance but use
+# addditional memory as well.
+#
+# Size is specifed as the number of entries.
+#
+# policy-cache-size = 32768
+
+policy-cache-minimum-size = 8192
+
+
+#----------------------
+# AUTHORIZATION API LOGGING
+#----------------------
+# Audit Trail
+# Enable/Disable audit event recording
+logaudit = yes
+
+# Location of the audit trail file for WebSESAL
+# 03/10/2014 (ht) update to default
+# auditlog = /var/pdweb/log/aznapi_webseald-csehws008.log
+auditlog = /var/pdweb/log/aznapi_webseald-default.log
+
+# Name of daemon whose activities are audited
+logclientid = webseald
+
+# To selectively capture audit events from specific components, uncomment the
+# appropriate auditcfg lines.
+auditcfg = azn
+#auditcfg = authn
+#auditcfg = http
+
+# Log file size limit
+# Negative values will cause the logs to be rolled over daily.
+# A value of zero will cause no rollover file to be created.
+logsize = -1
+
+# Frequency, in seconds, to flush the log buffers
+logflush = 20
+
+# Attributes to be audited.
+# tagvalue_su-admin is audited by default.
+audit-attribute = tagvalue_su-admin
+
+
+#---------------------------
+# AUTHORIZATION API SERVICE DEFINITIONS
+#---------------------------
+# Each stanza entry defines different types of aznAPI service.
+# For more information refer to the Authorization API programmers
+# guide.
+#
+# Each entry is of the format:
+#
+# 	<service-id> = <path-to-dll> [ & <params> ... ]
+#
+# The <service-id> is the string by which the service can be
+# identified by the aznAPI client. The <path-to-dll> is the
+# fully qualified path to the DLL which contains the service
+# executable code. Optionally you can specify parameters to
+# pass to the service when it is initialised by the aznAPI.
+# The parameters are considered to be all data following the
+# '&' symbol in the string.
+#
+
+
+#---------------------------------------------------
+# BOOLEAN AUTHORIZATION RULES CONFIGURATION ENTRIES.
+#---------------------------------------------------
+#
+# A list of string prefixes that identify Access Decision Information (ADI)
+# to be supplied by the resource manager (in this case, WebSEAL). The
+# default setting below tell the authorization engine that when it requires
+# ADI with the prefixes "AMWS_hd_", "AMWS_qs_" or "AMWS_pb_" to evaluate a
+# boolean authorization rule, and the ADI is not available in the credential
+# or application context passed in with the access decision call, that the
+# engine should fail the access decision and request that the resource manager
+# retry the request and provide the required data in the application context
+# of the next request.  The prefixes given below represent special values
+# for WebSEAL:
+# AMWS_hd_ - Indicates that the ADI can be found within the HTTP Environment
+#	     (Headers) of the request that WebSEAL is currently serving.
+# AMWS_qs_ - Indicates that the ADI can be found within the Query String of
+#	     the request that WebSEAL is currently serving.
+# AMWS_pb_ - Indicates that the ADI can be found within the POST Body of the
+#	     request that WebSEAL is currently serving.
+#
+resource-manager-provided-adi = AMWS_hd_
+resource-manager-provided-adi = AMWS_pb_
+resource-manager-provided-adi = AMWS_qs_
+
+
+# To enable certain Boolean Authorization Rules options, it is necessary
+# to set the permission information that the authorization engine will
+# return to WebSEAL.
+# The permission attribute that will enable the authorization engine to
+# request ADI from the current WebSEAL request is
+# "azn_perminfo_rules_adi_request".
+# To use the "-R" junction option, the "azn_perminfo_reason_rule_failed"
+# attribute must be included.
+# To enable the Privacy Redirection capabilities of the AMWebARS Web Service,
+# the "azn_perminfo_amwebars_redirect_url" must be included.
+permission-info-returned = azn_perminfo_rules_adi_request azn_perminfo_reason_rule_failed
+mode = local
+# 03/10/2014 (ht) update to default
+# azn-app-host = csehws008
+# azn-server-name = webseald-csehws008
+# pd-user-name = webseald/csehws008
+azn-app-host = cp2p04a.dts.ca.gov
+azn-server-name = default-webseald-cp2p04a.dts.ca.gov
+pd-user-name = default-webseald/cp2p04a.dts.ca.gov
+skip-eas-on-bypass-pop = no
+
+# The prolog to be added to the top of the XML document that is created
+# using the Access Decision Information (ADI) needed to evaluate a boolean
+# authorization rule. If not specified then the default XML prolog is:
+#
+#       <?xml version='1.0' encoding='UTF-8'?>
+#
+# It is strongly suggested that you read and thoroughly understand the
+# boolean authorization rules documentation before attempting to change
+# this setting from the default provided.
+#
+## input-adi-xml-prolog = <?xml version='1.0' encoding='UTF-8'?>
+
+
+# The prolog to be added to the top of the XSL styleheet that is created
+# using the XSL text that defines a boolean authorization rule.  If not
+# specified then the default XSL stylesheet prolog is:
+#
+#       <?xml version='1.0' encoding='UTF-8'?> <xsl:stylesheet xmlns:xsl=\
+#               'http://www.w3.org/1999/XSL/Transform' version='1.0'> \
+#           <xsl:output method = 'text' omit-xml-declaration='yes' \
+#           indent='no'/> <xsl:template match='text()'> </xsl:template>
+#
+# It is strongly suggested that you read and thoroughly understand
+# the boolean authorization rules documentation before attempting
+# to change this setting from the default provided.
+#
+## xsl-stylesheet-prolog = <?xml version='1.0' encoding='UTF-8'?> <xsl:stylesheet xmlns:xsl='http://www.w3.org/1999/XSL/Transfo rm' version='1.0'> <xsl:output method = 'text' omit-xml-declaration='yes' indent='no'/> <xsl:template match='text()'> </xsl:tem plate>
+
+
+# A list of configured entitlements service IDs that will be
+# queried by the rules engine if missing ADI is detected during an
+# authorization rule evaluation. Entitlement services listed here
+# must adhere to the input and output specifications for a dynamic ADI
+# retrieval service which are outlined in the Authorization Programmer's
+# Guide.  When ADI is found to be missing during a rule evaluation each
+# service in this list is queried in the order defined in this entry.
+# These entries must refer to existing entitlement services that were
+# loaded via service entries in the entitlement service configuration
+# stanza or initialization attribute.
+#
+# Example:
+#	dynamic-adi-entitlement-services = AMWebARS_A
+#	dynamic-adi-entitlement-services = AMWebARS_B
+#
+#dynamic-adi-entitlement-services = <service ID of AMWebARS Entitlement Service>
+
+
+[aznapi-entitlement-services]
+AZN_ENT_EXT_ATTR = azn_ent_ext_attr
+
+# Dynamic ADI Entitlement Services
+#<service ID of AMWebARS Entitlement Service> = azn_ent_amwebars
+
+
+[amwebars]
+#################################################
+# DYNAMIC ADI ENTITLEMENT SERVICE CONFIGURATION #
+#################################################
+#service-url = <url of AMWebARS Web Service>
+
+
+[policy-director]
+###############################
+# POLICY DIRECTOR
+###############################
+
+# File containing Access Manager configuration info
+config-file = /opt/PolicyDirector/etc/pd.conf
+
+[webseal-config]
+#################################################
+# WebSEAL Configuration Information
+#################################################
+# This value is used by the WebSEAL server to determine the version
+# of WebSEAL that generated this configuration file.  Do not manually
+# modify this value unless specifically instructed to do so by a
+# support representative or documentation.
+orig-version = 6.1.0
+version = 7.0.0
+# WebSEAL configuration status
+status = config
+# 03/10/2014 (ht) update to default
+# instance-name = csehws008
+instance-name = default
+tivoli_common_dir =
+
+[p3p-header]
+#
+# This stanza specifies the P3P compact policy that applies
+# to all HTTP cookies set.  See the W3C P3P Specification
+# for more information about P3P:  http://www.w3c.org/TR/P3P/
+#
+# The default configured policy allows cookies to be accepted
+# by the default privacy settings for Microsoft Internet Explorer
+# version 6.
+#
+# Before configuring any P3P policy, consult the P3P Technical
+# Recommendation Specification to ensure that the values configured
+# match your organization's privacy policy.
+#
+# If a junction server sets a P3P header in it's response, a
+# decision must be as to whether it should be preserved as it is,
+# or replaced by the WebSEAL policy.  This determination will be
+# made based on the value of the 'preserve-p3p-policy' item
+# in the [server] stanza.
+
+#
+# The 'p3p-element' item can be used to specify any elements
+# to add to the P3P header besides the compact policy configured
+# with the other configuration items in this stanza.  This can
+# be used to supply a reference to a full XML policy:
+#
+# p3p-element = policyref="/w3c/p3p.xml"
+#
+
+#
+# The 'access' item specifies the access the user has to the
+# information contained within and linked to the cookie.
+#
+# Possible values are 'none', 'all', 'nonident', 'contact-and-other',
+# 'ident-contact', 'other-ident'.
+#
+access = none
+
+#
+# The 'disputes' item, if yes, specifies that the full P3P policy
+# contains some information regarding disputes over the information
+# contained within the cookie.
+#
+# The default value is 'no'.
+#
+# disputes = no
+
+#
+# The 'remedies' item specifies the possible remedies for disputes.
+# Possible values are:  'correct', 'money', and 'law'.
+# If not specified, no remedy information is included in the policy.
+#
+# remedies = correct
+
+#
+# The 'non-identifiable' item, if yes, specifies that no information
+# in the cookie, or linked to by the cookie, personally identifies the
+# user in any way.
+#
+non-identifiable = no
+
+#
+# The 'purpose' item specifies the purpose of the information in the
+# cookie and linked to by the cookie.
+#
+# Possible values are 'current', 'admin', 'develop', 'tailoring',
+# 'pseudo-analysis', 'pseudo-decision', 'individual-analysis',
+# 'individual-decision', 'contact', 'historical', 'telemarketing',
+# and 'other-purpose'.
+#
+# For all values except 'current', an additional specifier may be
+# configured.  The possible values are 'always', 'opt-in', 'opt-out'.
+# If no value is specified, 'always' will be used.
+# This value is specified after the purpose and separated from it by a
+# colon, for example:
+#    purpose = contact:opt-in
+#
+purpose = current
+purpose = other-purpose:opt-in
+
+#
+# The 'recipient' item specifies the recipients of the information in
+# the cookie, and linked to by the cookie.
+#
+# Possible values are 'ours', 'delivery', 'same', 'unrelated',
+#   'public', 'other-recipient'.
+#
+recipient = ours
+
+#
+# The 'retention' item specifies how long the information in the cookie
+# or linked to by the cookie will be retained.
+#
+# Possible values are 'no-retention', 'stated-purpose',
+#   'legal-requirement', 'business-practices', 'indefinitely'.
+#
+retention = no-retention
+
+#
+# The 'categories' item specifies the type of information stored in the
+# cookie or linked to by the cookie.  If the 'non-identifiable' item
+# is yes, then no categories need be configured.
+#
+# Possible values are: 'physical', 'online', 'uniqueid', 'purchase',
+#   'financial', 'computer', 'navigation', 'interactive',
+#   'demographic', 'content', 'state', 'political', 'health',
+#   'preference', 'location', 'government', 'other-category'.
+#
+categories = uniqueid
+
+
+
+[meta-info]
+#
+# Meta stanza
+#
+
+#
+# version =
+#
+version = 1792
+
+[manager]
+# 03/10/2014 (ht) update ps hostname
+#master-host = csehds009.cse.ca.gov
+master-host = cp2p06a.dts.ca.gov
+master-port = 7135
+management-domain = Default
+
+[configuration-database]
+# 03/10/2014 (ht) update to default
+# file = /opt/pdweb/etc/webseald-csehws008.conf.obf
+file = /opt/pdweb/etc/webseald-default.conf.obf
+
+[dsess]
+dsess-sess-id-pool-size = 125
+
+[session-cookie-domains]
+
+[tfimsso:<jct-id>]
+token-type = kerberos
+applies-to = http://<webseal-server>/<junction>
+service-name = <spn>
+renewal-window = 15
+token-collection-size = 10
+always-send-tokens = false
+tfim-cluster-name = my-cluster
+one-time-token = true
+preserve-xml-token = false
+token-transmit-type = header
+token-transmit-name = Authorization
+
+[tfim-cluster:my-cluster]
+handle-pool-size = 10
+handle-idle-timeout = 240
+timeout = 240
+ssl-keyfile =
+ssl-keyfile-stash =
+ssl-keyfile-label =
+
+[dsess-cluster]
+response-by = 60
+handle-pool-size = 10
+handle-idle-timeout = 240
+timeout = 240
+ssl-keyfile =
+ssl-keyfile-stash =
+ssl-keyfile-label =
+
+[local-response-redirect]
+
+[eai]
+# Optional entry added by upgrade
+# eai-auth = none
+# Optional entry added by upgrade
+# eai-pac-header = am-eai-pac
+# Optional entry added by upgrade
+# eai-pac-svc-header = am-eai-pac-svc
+# Optional entry added by upgrade
+# eai-user-id-header = am-eai-user-id
+# Optional entry added by upgrade
+# eai-auth-level-header = am-eai-auth-level
+# Optional entry added by upgrade
+# eai-xattrs-header = am-eai-xattrs
+# Optional entry added by upgrade
+# eai-redir-url-header = am-eai-redir-url
+# Optional entry added by upgrade
+# retain-eai-session = no
+# Optional entry added by upgrade
+# eai-auth = none
+# Optional entry added by upgrade
+# eai-pac-header = am-eai-pac
+# Optional entry added by upgrade
+# eai-pac-svc-header = am-eai-pac-svc
+# Optional entry added by upgrade
+# eai-user-id-header = am-eai-user-id
+# Optional entry added by upgrade
+# eai-auth-level-header = am-eai-auth-level
+# Optional entry added by upgrade
+# eai-xattrs-header = am-eai-xattrs
+# Optional entry added by upgrade
+# eai-redir-url-header = am-eai-redir-url
+# Optional entry added by upgrade
+# eai-flags-header = am-eai-flags
+# Optional entry added by upgrade
+# eai-session-id-header = am-eai-session-id
+# Optional entry added by upgrade
+# retain-eai-session = no
+# Optional entry added by upgrade
+# eai-verify-user-identity = no
+
+
+[e-community-domains]
+
+[interfaces]
+
+[credential-policy-attributes]
+
+[arm]
+# Optional entry added by upgrade
+# enable-arm = no
+# Optional entry added by upgrade
+# report-transactions = no
+# Optional entry added by upgrade
+# accept-correlators = no
+# Optional entry added by upgrade
+# correlator-header = arm_correlator
+# Optional entry added by upgrade
+# enable-arm = no
+# Optional entry added by upgrade
+# report-transactions = no
+# Optional entry added by upgrade
+# accept-correlators = no
+# Optional entry added by upgrade
+# correlator-header = arm_correlator
+
+
+[dsess-cluster:dsess]
+
+[query-contents]
+# Optional entry added by upgrade
+# query-contents-uriencoded = no
+# Optional entry added by upgrade
+# query-contents-uriencoded = no
+
+
+[session-http-headers]
+
+[replica-sets]
+
+[aznapi-admin-services]
+AZN_ADMIN_SVC_TRANS_LOG = pdtranslogadmin
+
+[jdb-cmd:replace]
+
+[azn-decision-info]
+
+[ltpa]
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# Optional entry added by upgrade
+# cookie-name = Ltpatoken2
+# Optional entry added by upgrade
+# update-cookie = -1
+# Optional entry added by upgrade
+# use-full-dn = true
+
+ltpa-auth = none
+keyfile =
+keyfile-password =
+
+[translog]
+max-file-size = 262144
+
+[cert-map-authn]
+rules-file =
+debug-level = 0
+
+[cfg-db-cmd:entries]
+server::unix-pid-file = exclude
+server::http-port = exclude
+server::https-port = exclude
+server::server-root = exclude
+server::network-interface = exclude
+ldap::bind-dn = exclude
+ldap::bind-pwd = exclude
+ssl::webseal-cert-keyfile-label = include
+ssl::*keyfile* = exclude
+ssl::ssl-listening-port = exclude
+ssl::listen-interface = exclude
+authentication-mechanisms::passwd-ldap = exclude
+authentication-mechanisms::cert-ldap = exclude
+content::doc-root = exclude
+logging::*log = exclude
+logging::server-log* = exclude
+logging::*file = exclude
+aznapi-configuration::db-file = exclude
+aznapi-configuration::auditlog = exclude
+aznapi-configuration::azn-app-host = exclude
+aznapi-configuration::azn-server-name = exclude
+aznapi-configuration::pd-user-name = exclude
+webseal-config::* = exclude
+configuration-database::* = exclude
+cluster::* = exclude
+interfaces::* = exclude
+*::* = include
+
+[http-transformations]
+
+[cfg-db-cmd:files]
+file = cfg(ssl::webseal-cert-keyfile)
+file = cfg(ssl::webseal-cert-keyfile-stash)
+file = cfg(junction::jct-cert-keyfile)
+file = cfg(junction::jct-cert-keyfile-stash)
+file = cfg(failover::failover-cookies-keyfile)
+file = cfg(ltpa::keyfile)
+file = cfg(junction::jmt-map)
+file = cfg(server::dynurl-map)
+file = cfg(dsess-cluster::ssl-keyfile)
+file = cfg(dsess-cluster::ssl-keyfile-stash)
+file = cfg(tfim-cluster:my-cluster::ssl-keyfile)
+file = cfg(tfim-cluster:my-cluster::ssl-keyfile-stash)
+
+[system-environment-variables]
+
+[cluster]
+max-wait-time = 60

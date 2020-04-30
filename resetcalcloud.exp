@@ -1,0 +1,31 @@
+#!/usr/bin/expect -f
+set arg1 [lindex $argv 0]
+set arg2 [lindex $argv 1]
+set arg3 [lindex $argv 2]
+set acount [llength $argv]
+#send_user $acount
+if {$acount != 3} {
+#	send_user " |  | |==| |  |     |==| |==|  |==| |==|\n"
+ #       send_user " |\\ | |  | |\\ |     |==  |==|  |  | |  |\n"
+  #      send_user " | \\| |__| | \\|     |    |  \\  |__| |__|\n"
+	send_user "Wrong no. of arguments\nSyntax: resetuser.exp <Temp Password> <New Passwd> <hostname>\n"
+send_user " _   _ _____ _   _  ____________ ___________ \n"
+send_user "| \\ | |  _  | \\ | | | ___ \\ ___ \\  _  |  _  \\\n"
+send_user "|  \\| | | | |  \\| | | |_/ / |_/ / | | | | | |\n"
+send_user "| . ` | | | | . ` | |  __/|    /| | | | | | |\n"
+send_user "| |\\  \\ \\_/ / |\\  | | |   | |\\ \\  \\_/ / |/ / \n"
+send_user "\\_| \\_/\\___/\\_| \\_/ \\_|   \\_| \\_|\\___/|___/  \n"
+                                             
+	exit 1
+}
+spawn ssh -o HostKeyAlgorithms=+ssh-dss -o StrictHostKeyChecking=no hchada@$arg3
+expect "*password: "
+send -- "Temp4now\r"
+expect "*Password:"
+send -- "Temp4now\r"
+expect "*hchada's New password: "
+send -- $arg1\r 
+expect "Enter the new password again:"
+send -- $arg1\r
+send -- "exit\r"
+expect eof

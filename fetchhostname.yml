@@ -1,0 +1,9 @@
+- hosts: 127.0.0.1 
+  gather_facts: no
+  tasks:
+          - name: Create file
+            file:
+                    path: /home/hchada/ansione.txt
+                    state: touch
+
+

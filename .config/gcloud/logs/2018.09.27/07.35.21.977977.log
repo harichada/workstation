@@ -1,0 +1,58 @@
+2018-09-27 07:35:24,948 DEBUG    root            Metrics collector initialized...
+2018-09-27 07:35:24,957 DEBUG    root            Loaded Command Group: [u'gcloud', u'components']
+2018-09-27 07:35:24,977 DEBUG    root            Loaded Command Group: [u'gcloud', u'components', u'update']
+2018-09-27 07:35:24,980 DEBUG    root            Running [gcloud.components.update] with arguments: [--allow-no-backup: "True", --quiet: "True", COMPONENT-IDS:5: "[u'core', u'gcloud-deps', u'bq', u'gcloud', u'gsutil']"]
+2018-09-27 07:35:25,285 DEBUG    root            [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:661)
+Traceback (most recent call last):
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/calliope/cli.py", line 841, in Execute
+    resources = calliope_command.Run(cli=self, args=args)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/calliope/backend.py", line 770, in Run
+    resources = command_instance.Run(args)
+  File "/home/hchada/google-cloud-sdk/lib/surface/components/update.py", line 111, in Run
+    version=args.version)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 892, in Update
+    command_path='components.update')
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 602, in _GetStateAndDiff
+    command_path=command_path)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/updater/update_manager.py", line 585, in _GetLatestSnapshot
+    *effective_url.split(','), command_path=command_path)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 179, in FromURLs
+    for url in urls]
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/updater/snapshots.py", line 200, in _DictFromURL
+    response = installers.ComponentInstaller.MakeRequest(url, command_path)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 295, in MakeRequest
+    return ComponentInstaller._RawRequest(req, timeout=timeout)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/updater/installers.py", line 339, in _RawRequest
+    should_retry_if=RetryIf, sleep_ms=500)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 181, in RetryOnException
+    exceptions.reraise(exc_info[1], tb=exc_info[2])
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/exceptions.py", line 139, in reraise
+    six.reraise(type(exc_value), exc_value, tb)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/util/retry.py", line 162, in TryFunc
+    return func(*args, **kwargs), None
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/url_opener.py", line 79, in urlopen
+    return opener.open(req, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 429, in open
+    response = self._open(req, data)
+  File "/usr/lib/python2.7/urllib2.py", line 447, in _open
+    '_open', req)
+  File "/usr/lib/python2.7/urllib2.py", line 407, in _call_chain
+    result = func(*args)
+  File "/home/hchada/google-cloud-sdk/lib/googlecloudsdk/core/url_opener.py", line 64, in https_open
+    return self.do_open(build, req)
+  File "/usr/lib/python2.7/urllib2.py", line 1195, in do_open
+    h.request(req.get_method(), req.get_selector(), req.data, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1042, in request
+    self._send_request(method, url, body, headers)
+  File "/usr/lib/python2.7/httplib.py", line 1082, in _send_request
+    self.endheaders(body)
+  File "/usr/lib/python2.7/httplib.py", line 1038, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 882, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 844, in send
+    self.connect()
+  File "/home/hchada/google-cloud-sdk/lib/third_party/httplib2/python2/httplib2/__init__.py", line 1120, in connect
+    raise SSLHandshakeError(e)
+SSLHandshakeError: [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed (_ssl.c:661)
+2018-09-27 07:35:25,517 DEBUG    root            Metrics reporting process started...

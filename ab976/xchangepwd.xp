@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+set arg1 [lindex $argv 0]
+set arg2 [lindex $argv 1]
+set arg3 [lindex $argv 2]
+spawn ssh  -o StrictHostKeyChecking=no tomadmin@$arg3
+expect "*password:" 
+send -- $arg1\r
+expect "*Old password:"
+send -- $arg1\r
+expect "*New password:"
+send -- $arg2\r
+expect "*new password again:"
+send -- $arg2\r
+send -- "exit\r"
+expect eof 
