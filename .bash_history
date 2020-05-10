@@ -1,86 +1,3 @@
-telnet localhost 7777
-telnet 172.24.26.204 7777
-ip add
-ifconfig
-ipconfig
-hostname
-telnet L110978 7777
-telnet localhost 80
-nc
-nc -p 80
-nc -l 80
-nc -l 80
-cd
-cd javaide/
-ls -la
-cd netbeans
-ls
-ls -la
-cd ..
-cd
-ls
-cd /cygdrive/c/
-ls
-ls N*
-cd /cygdrive/
-ls
-cd c/
-ls
-cd Users/
-ls
-cd hchada/
-ls
-cd Do
-cd Downloads/
-ls
-ls N*
-cd ..
-cd Documents/
-ls
-cd ..
-cd My\ Documents
-ls
-clear
-cd \\dcss.gov\
-cd //dcss.gov/data
-cd users/data
-cd users
-cd hchada
-cd My\ Documents/
-ls
-cd NetBeansProjects/
-ls
-ls -la
-cd mavenproject1
-ls -la
-cd ..
-cd mavenproject5
-ls -la
-git show
-git commit -m "final"
-history | grep push
-git push maven1 master
-git push maven1 master
-git push maven1 master
-git remote
-git remote maven1
-git remote get-url
-git remote get-url -all
-git remote get-url -all maven1
-git remote get-url --all maven1
-git push maven1 master
-git show
-ls -la
-history
-hitory push
-history | grep push
-ls
-cd src/
-ls
-cd main/
-ls
-cd webapp/
-ls
 more index.html 
 vi index.html 
 git show
@@ -498,3 +415,86 @@ grep 64 /etc/hosts
 ssh prodas1
 grep 85 /etc/hosts
 grep 47 /etc/hosts
+ls
+df -h .
+du -h .
+du -h . | tail
+ls -lagrt 
+ls -lart
+ls -lat
+du -ha . | tail
+du -ha . | sort -o | tail
+du -ha . | sort -n | tail
+du -ma . | sort -n | tail
+rm -rf ./prodihslogs
+rm -rf ./pft01dumps
+ls javaide
+rm -rf javaide
+rm -rf ./prodihslogs
+clear
+du -ma . | sort -n | tail
+rm -rf ./prod-oom ./pft1 ./gcc-4.9.2 
+du -ma . | sort -n | tail
+ls ibmpa*
+rm -rf ./ibmpackageutility ./flask-course ./anaconda/Anaconda3-2019.07-Windows-x86_64.exe ./anaconda ./dumps
+du -ma . | sort -n | tail
+ls docker
+rm -rf ./docker ./prodlogs ./cg1p43a ./gcc-4.9.2.tar.gz
+du -ma . | sort -n | tail
+rm -rf ./pft2cselogs ./heapdump-CGDCSSL1056UL.calcloud.local-28466-20190405_160616.hprof ./google-cloud-sdk ./pft2cselogs
+du -ma . | sort -n | tail
+ls efs-aem
+rm -rf ./efs-aem ./efs_sya_ws ./EFSOnlineClassFiles ./content-aws-csa2019
+du -ma . | sort -n | tail
+ls -la *.war
+r m-rf *.war
+ls
+ls *.war
+rm -rf *.war
+ls -lad c*
+ls -la c*
+rm -rf c*
+ls -lagrt
+ls *.swp
+ls *.java
+ls -la
+ls syt*
+rm -rf syt*
+rm -rf sqt*
+rm -rf pft*
+rm -rf prod*
+ls
+ls -la efs*
+rm -rf efs*
+ls
+rm -rf heapdump*
+ls *.jar
+cd sseb
+ls
+cd ssweb
+ls
+cd ..
+rm -rf ssweb
+ls *.log
+rm -rf *.log
+ls -lagrt
+ls *.class
+clear
+ls
+du -h .
+ls
+git
+git add --all
+git init
+ls
+git add .
+git remote add https://github.com/harichada/workstation
+git remote add workstation https://github.com/harichada/workstation
+git status
+git commit -m "workstation last"
+git status
+git push workstation master
+ls
+scp * syaas:~/workstation
+scp -rf * syaas:~/workstation
+scp -r * syaas:~/workstation
